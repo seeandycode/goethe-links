@@ -160,7 +160,8 @@ footer{
 .day-name .date{color:#93A2B2}
 .day.today .day-name{color:var(--blue)}
 .day.today .day-name .date{color:var(--blue)}
-.meal + .meal{margin-top:11px}
+.meals-inner{display:grid;gap:11px}
+.day.solo .meals-inner{grid-template-columns:1fr 1fr;gap:24px}
 .meal-label{
   font-family:"Bricolage Grotesque",sans-serif;
   font-weight:700;font-size:0.61rem;letter-spacing:0.13em;text-transform:uppercase;
@@ -175,6 +176,15 @@ footer{
   color:#93A2B2;margin-top:11px;line-height:1.7;
 }
 .meals-note a{color:var(--ink-soft)}
+.meals-toggle{
+  display:inline-flex;align-items:center;
+  margin-top:11px;padding:0;border:0;background:none;cursor:pointer;
+  font-family:"IBM Plex Mono",monospace;font-size:0.68rem;letter-spacing:0.02em;
+  color:var(--blue);
+}
+.meals-toggle:hover{text-decoration:underline}
+.meals-toggle:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:3px}
+.meals-toggle[hidden]{display:none}
 
 @media (max-width:900px){.meals{grid-template-columns:repeat(2,1fr)}}
 
@@ -183,6 +193,7 @@ footer{
   .hint{display:none}
   .grid{grid-template-columns:1fr}
   .meals{grid-template-columns:1fr}
+  .day.solo .meals-inner{grid-template-columns:1fr}
 }
 @media (prefers-reduced-motion:reduce){
   *{transition:none!important}
@@ -212,6 +223,7 @@ footer{
 <section id="meals">
   <div class="sec-head"><svg class="star" width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><path fill="#C8102E" d="M12 1.6l2.35 6.02 6.45.2-5.06 4-1.74 6.2L12 14.4 6 18.02l-1.74-6.2-5.06-4 6.45-.2z"/></svg><h2 id="meals-head">This week&rsquo;s meals</h2><div class="rule"></div><a class="more" href="https://schools.mealviewer.com/school/609942-51115" target="_blank" rel="noopener">full menu &#8599;</a></div>
   <div class="meals" id="meals-grid"></div>
+  <button class="meals-toggle" id="meals-toggle" type="button" hidden aria-controls="meals-grid" aria-expanded="false">Show the rest of the week &#9662;</button>
   <div class="meals-note" id="meals-note"></div>
 </section>
 
@@ -337,8 +349,8 @@ document.addEventListener("keydown", e => {
 
 /* ============================================================
    MEALS — pulled live from MealViewer's public API.
-   Shows the current school week (Mon-Fri), K-8 breakfast + lunch.
-   On weekends it rolls forward to the coming week.
+   Today's meals by default; the rest of the week on request.
+   On weekends it rolls forward to the coming Monday.
    ============================================================ */
 const MEALVIEWER = "https://schools.mealviewer.com/school/609942-51115";
 const MEALS_API  = "https://api.mealviewer.com/api/v4/school/609942-51115";
@@ -355,6 +367,7 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":
 const pad = n => String(n).padStart(2,"0");
 const apiDate = d => `${pad(d.getUTCMonth()+1)}-${pad(d.getUTCDate())}-${d.getUTCFullYear()}`;
 const keyOf = d => d.getUTCFullYear()*10000 + (d.getUTCMonth()+1)*100 + d.getUTCDate();
+const dayName = d => new Intl.DateTimeFormat("en-US",{timeZone:"UTC",weekday:"long"}).format(d);
 
 /* "Today" means today in Chicago, not on the visitor's device. */
 function chicagoToday(){
@@ -413,20 +426,19 @@ function mealHTML(label, meal){
     </div>`;
 }
 
-function dayHTML(day){
-  const cls = ["day", day.isToday && "today", day.isPast && "past"].filter(Boolean).join(" ");
+/* solo = the single-day view, which gets the full width and two columns. */
+function dayHTML(day, solo){
+  const cls = ["day", solo && "wide solo", day.isToday && "today", !solo && day.isPast && "past"]
+    .filter(Boolean).join(" ");
   const meals = mealHTML("Breakfast", day.breakfast) + mealHTML("Lunch", day.lunch);
   return `<div class="${cls}">
       <div class="day-name"><span>${day.isToday ? "Today" : esc(day.weekday)}</span><span class="date">${esc(day.date)}</span></div>
-      ${meals || '<div class="none">No meals listed</div>'}
+      <div class="meals-inner">${meals || '<div class="none">No meals listed</div>'}</div>
     </div>`;
 }
 
-function renderMeals(data, week){
-  const todayKey = keyOf(week.today);
-  const daily = new Set();
-
-  const days = (data.menuSchedules || []).map(sched => {
+function buildDays(data, todayKey){
+  return (data.menuSchedules || []).map(sched => {
     const info = sched.dateInformation || {};
     const day = {
       weekday: (info.weekDayName || "").slice(0,3),
@@ -439,50 +451,93 @@ function renderMeals(data, week){
       if (/K-8.*breakfast/i.test(name)) day.breakfast = parseBlock(block);
       else if (/K-8.*lunch/i.test(name)) day.lunch = parseBlock(block);
     }
-    [day.breakfast, day.lunch].forEach(m => m && m.daily.forEach(d => daily.add(d)));
     return day;
   });
-
-  if (!days.length) throw new Error("no days returned");
-
-  mealsHead.textContent = week.ahead ? "Next week's meals" : "This week's meals";
-
-  /* Whole week off (spring break, winter break) — one line beats five empty cards. */
-  if (!days.some(d => hasFood(d.breakfast) || hasFood(d.lunch))){
-    mealsGrid.innerHTML = '<div class="day wide"><div class="none">No school meals this week.</div></div>';
-    mealsNote.innerHTML = '';
-    return;
-  }
-
-  mealsGrid.innerHTML = days.map(dayHTML).join("");
-
-  const note = [];
-  if (daily.size) note.push(`Available every day: ${esc([...daily].join(", "))}.`);
-  note.push("Milk is served with every meal.");
-  mealsNote.innerHTML = note.join(" ");
 }
 
-const mealsSec  = document.getElementById("meals");
-const mealsGrid = document.getElementById("meals-grid");
-const mealsHead = document.getElementById("meals-head");
-const mealsNote = document.getElementById("meals-note");
+function paint(days, solo, emptyMsg){
+  if (!days.some(d => hasFood(d.breakfast) || hasFood(d.lunch))){
+    mealsGrid.innerHTML = `<div class="day wide"><div class="none">${emptyMsg}</div></div>`;
+    mealsNote.innerHTML = "";
+    return;
+  }
+  mealsGrid.innerHTML = days.map(d => dayHTML(d, solo)).join("");
 
-(function loadMeals(){
-  const week = weekToShow();
-  mealsHead.textContent = week.ahead ? "Next week's meals" : "This week's meals";
-  mealsGrid.innerHTML = '<div class="day"><div class="none">Loading…</div></div>'.repeat(5);
+  const daily = new Set();
+  days.forEach(d => [d.breakfast, d.lunch].forEach(m => m && m.daily.forEach(x => daily.add(x))));
+  const bits = [];
+  if (daily.size) bits.push(`Available every day: ${esc([...daily].join(", "))}.`);
+  bits.push("Milk is served with every meal.");
+  mealsNote.innerHTML = bits.join(" ");
+}
 
-  fetch(`${MEALS_API}/${apiDate(week.monday)}/${apiDate(week.friday)}/0`)
+const mealsSec    = document.getElementById("meals");
+const mealsGrid   = document.getElementById("meals-grid");
+const mealsHead   = document.getElementById("meals-head");
+const mealsNote   = document.getElementById("meals-note");
+const mealsToggle = document.getElementById("meals-toggle");
+
+const week     = weekToShow();
+const todayKey = keyOf(week.today);
+const focusDay = week.ahead ? week.monday : week.today;   // weekends point at Monday
+const focusWord = week.ahead ? dayName(focusDay) : "today";
+
+const HEAD_ONE  = week.ahead ? `${dayName(focusDay)}'s meals` : "Today's meals";
+const HEAD_WEEK = week.ahead ? "Next week's meals" : "This week's meals";
+
+let oneDay   = null;   // the focus day, fetched up front
+let weekDays = null;   // the whole week, fetched only if asked for
+let expanded = false;
+
+function getMenu(from, to){
+  return fetch(`${MEALS_API}/${apiDate(from)}/${apiDate(to)}/0`)
     .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
-    .then(data => renderMeals(data, week))
-    .catch(() => {
-      mealsGrid.innerHTML =
-        `<div class="day wide"><div class="none">Couldn't load the menu &mdash;
-         <a href="${MEALVIEWER}" target="_blank" rel="noopener">open it on MealViewer</a>.</div></div>`;
-      mealsNote.textContent = "";
-    })
-    .finally(() => q.dispatchEvent(new Event("input")));   // re-apply an active filter
-})();
+    .then(data => buildDays(data, todayKey));
+}
+
+function showOne(){
+  expanded = false;
+  mealsHead.textContent = HEAD_ONE;
+  paint(oneDay, true, `No school meals ${week.ahead ? "on " + dayName(focusDay) : "today"}.`);
+  mealsToggle.hidden = false;
+  mealsToggle.textContent = "Show the rest of the week ▾";
+  mealsToggle.setAttribute("aria-expanded", "false");
+}
+
+function showWeek(){
+  expanded = true;
+  mealsHead.textContent = HEAD_WEEK;
+  paint(weekDays, false, "No school meals this week.");
+  mealsToggle.hidden = false;
+  mealsToggle.textContent = `Show just ${focusWord} ▴`;
+  mealsToggle.setAttribute("aria-expanded", "true");
+}
+
+mealsToggle.addEventListener("click", () => {
+  if (expanded)   { showOne();  q.dispatchEvent(new Event("input")); return; }
+  if (weekDays)   { showWeek(); q.dispatchEvent(new Event("input")); return; }
+
+  mealsToggle.textContent = "Loading the week…";
+  getMenu(week.monday, week.friday)
+    .then(days => { weekDays = days; showWeek(); })
+    .catch(() => { mealsToggle.textContent = "Couldn't load the week — tap to retry"; })
+    .finally(() => q.dispatchEvent(new Event("input")));
+});
+
+/* Only the focus day is fetched on load — the week costs ~5x and most
+   visits never ask for it. */
+mealsHead.textContent = HEAD_ONE;
+mealsGrid.innerHTML = '<div class="day wide"><div class="none">Loading&hellip;</div></div>';
+getMenu(focusDay, focusDay)
+  .then(days => { oneDay = days; showOne(); })
+  .catch(() => {
+    mealsGrid.innerHTML =
+      `<div class="day wide"><div class="none">Couldn't load the menu &mdash;
+       <a href="${MEALVIEWER}" target="_blank" rel="noopener">open it on MealViewer</a>.</div></div>`;
+    mealsNote.textContent = "";
+    mealsToggle.hidden = true;
+  })
+  .finally(() => q.dispatchEvent(new Event("input")));   // re-apply an active filter
 
 </script>
 </body>

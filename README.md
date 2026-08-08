@@ -7,7 +7,7 @@ A single-page dashboard of school and community links for families at Goethe Ele
 
 Replace the "where was that link again" problem. One page, one tap to anything a parent
 needs during the school year — absence form, grades portal, calendar, parent Facebook
-groups. This week's school meals are shown on the page itself rather than linked out to.
+groups. The day's school meals are shown on the page itself rather than linked out to.
 Shareable with family via a public URL.
 
 ## Scope decisions
@@ -28,8 +28,9 @@ Shareable with family via a public URL.
 |---|---|
 | Single self-contained `index.html` | No toolchain to maintain for ~25 links. Inline CSS/JS. |
 | `LINKS` array as the config surface | One place to edit. `{ name, desc, url }` per link, grouped. |
-| Meals fetched live from MealViewer | `api.mealviewer.com` serves `Access-Control-Allow-Origin: *`, so the browser can read it straight from GitHub Pages — no proxy, no scheduled job, no menu data committed to the repo. ~150KB gzipped for a week, fetched after the links render. |
-| Mon–Fri week, K-8 breakfast + lunch | The API returns five blocks per day (Pre-K and snacks too); showing all of them buried the links. On weekends the strip rolls forward to the coming week. |
+| Meals fetched live from MealViewer | `api.mealviewer.com` serves `Access-Control-Allow-Origin: *`, so the browser can read it straight from GitHub Pages — no proxy, no scheduled job, no menu data committed to the repo. |
+| One day by default, week on click | The day's card costs ~34KB gzipped; the whole week is ~150KB. Most visits only want today, so the week is fetched lazily on the first click and cached — toggling after that is free. |
+| K-8 breakfast + lunch only | The API returns five blocks per day (Pre-K and snacks too); showing all of them buried the links. On weekends the page rolls forward to the coming Monday and says so. |
 | All-caps items are section headers | MealViewer stores `FEATURED ENTREES` / `AVAILABLE DAILY` / `CHOICE OF MILK` as ordinary food items. Real food always has lowercase letters — checked against 7 months of menus (15 all-caps strings, all headers; 3,017 real items). `portionUnit: "DONT USE"` looks like the same signal but is unreliable. |
 | Client-side filter, `/` to focus | Faster than scanning 25 tiles on a phone. |
 | Google Fonts via CDN | Bricolage Grotesque (display), Public Sans (body), IBM Plex Mono (data). Degrades to system fonts offline. |
@@ -44,7 +45,8 @@ index.html
     ├── LINKS[]      ← the only thing that needs regular editing
     ├── render       builds sections from LINKS, no framework
     ├── filter       input handler + "/" and Escape shortcuts (meals match too)
-    └── meals        week math (Chicago time) → fetch → parse → 5 day cards
+    └── meals        day math (Chicago time) → fetch → parse → render
+                     one card, or five behind the toggle
 ```
 
 ## Hosting
@@ -74,6 +76,8 @@ edit history given the repo is already local).
   page falls back to a link, but the parsing would need revisiting.
 - Condiments are filtered by name (`CONDIMENT` in the script). New ones will slip through
   until added.
+- While collapsed, the filter box only searches the day on screen — a term matching
+  Friday's lunch finds nothing until the week is expanded.
 
 ## Ideas not yet built
 
