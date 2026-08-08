@@ -40,7 +40,6 @@ header{
   padding-top:30px;
   padding-bottom:18px;
 }
-.title-row{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}
 h1{
   font-family:"Bricolage Grotesque",sans-serif;
   font-weight:800;
@@ -50,17 +49,6 @@ h1{
   margin:0 0 4px;
 }
 h1 .sub{display:block;font-size:0.3em;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-soft);margin-top:10px}
-.facts{
-  font-family:"IBM Plex Mono",monospace;
-  font-size:0.72rem;
-  color:var(--ink-soft);
-  text-align:right;
-  line-height:1.7;
-  padding-bottom:6px;
-}
-.facts a{color:var(--ink-soft)}
-.facts strong{color:var(--ink);font-weight:500}
-
 /* ---------- Search ---------- */
 .search-row{display:flex;gap:10px;align-items:center;margin:26px 0 8px}
 #q{
@@ -189,7 +177,6 @@ footer{
 @media (max-width:900px){.meals{grid-template-columns:repeat(2,1fr)}}
 
 @media (max-width:560px){
-  .facts{text-align:left}
   .hint{display:none}
   .grid{grid-template-columns:1fr}
   .meals{grid-template-columns:1fr}
@@ -205,14 +192,7 @@ footer{
 <div class="wrap">
 
 <header>
-  <div class="title-row">
-    <h1>Goethe<span class="sub">Parent links · Logan Square</span></h1>
-    <div class="facts">
-      <div><strong>2236 N Rockwell St</strong>, Chicago 60647</div>
-      <div><a href="tel:+17735344135">773-534-4135</a> · office</div>
-      <div>Principal Nader Elmasri</div>
-    </div>
-  </div>
+  <h1>Goethe<span class="sub">Parent links</span></h1>
 </header>
 
 <div class="search-row">
