@@ -174,6 +174,38 @@ footer{
 .meals-toggle:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:3px}
 .meals-toggle[hidden]{display:none}
 
+/* ---------- This week (calendar) ---------- */
+.week-card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:4px 15px 6px;
+}
+.evt-day{display:flex;gap:16px;padding:12px 0;border-top:1px solid var(--line)}
+.evt-day:first-child{border-top:0}
+.evt-day.past{opacity:.45}
+.when{
+  flex:0 0 96px;
+  font-family:"IBM Plex Mono",monospace;font-size:0.65rem;
+  letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--ink-soft);padding-top:2px;
+}
+.when .date{display:block;color:#93A2B2;margin-top:2px}
+.evt-day.today .when,.evt-day.today .when .date{color:var(--blue)}
+.evt-list{flex:1;min-width:0}
+.evt{display:grid;grid-template-columns:58px 1fr;gap:10px;padding:3px 0;align-items:baseline}
+.evt-time{font-family:"IBM Plex Mono",monospace;font-size:0.68rem;color:var(--ink-soft)}
+.evt-title{font-size:0.9rem;letter-spacing:-0.006em}
+.evt-where{font-size:0.75rem;color:#93A2B2;margin-top:1px}
+.tag{
+  font-family:"IBM Plex Mono",monospace;font-size:0.58rem;
+  letter-spacing:0.08em;text-transform:uppercase;
+  color:var(--ink-soft);border:1px solid var(--line);border-radius:4px;
+  padding:1px 5px;margin-left:7px;white-space:nowrap;vertical-align:1px;
+}
+.evt-day.next .when{color:var(--red)}
+.week-card .none{font-size:0.85rem;color:#93A2B2;font-style:italic;padding:11px 0}
+
 @media (max-width:900px){.meals{grid-template-columns:repeat(2,1fr)}}
 
 @media (max-width:560px){
@@ -181,6 +213,9 @@ footer{
   .grid{grid-template-columns:1fr}
   .meals{grid-template-columns:1fr}
   .day.solo .meals-inner{grid-template-columns:1fr}
+  .evt-day{display:block}
+  .when{margin-bottom:6px}
+  .when .date{display:inline;margin:0 0 0 6px}
 }
 @media (prefers-reduced-motion:reduce){
   *{transition:none!important}
@@ -207,11 +242,19 @@ footer{
   <div class="meals-note" id="meals-note"></div>
 </section>
 
+<section id="week">
+  <div class="sec-head"><svg class="star" width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><path fill="#C8102E" d="M12 1.6l2.35 6.02 6.45.2-5.06 4-1.74 6.2L12 14.4 6 18.02l-1.74-6.2-5.06-4 6.45-.2z"/></svg><h2>This week at school</h2><div class="rule"></div><a class="more" href="https://sites.google.com/cps.edu/goetheelementaryschool/our-school/calendar-news" target="_blank" rel="noopener">full calendar &#8599;</a></div>
+  <div class="week-card" id="week-card"></div>
+  <div class="meals-note" id="week-note"></div>
+</section>
+
 <main id="board"></main>
 
 <footer>
   Edit the LINKS list near the top of this file's script to add, remove, or reorder anything.<br>
-  Meals load live from MealViewer each time the page opens &mdash; nothing to update by hand.
+  Meals load live from MealViewer each time the page opens. Calendar events are refreshed
+  nightly from the school&rsquo;s Google Calendars into <code>events.json</code> &mdash;
+  neither needs updating by hand.
 </footer>
 
 </div>
@@ -290,12 +333,18 @@ q.addEventListener("input", () => {
     sec.hidden = visible === 0;
     shown += visible;
   });
-  /* Meals aren't tiles, so they match on their own text plus a few aliases. */
+  /* Meals and events aren't tiles, so they match on their own text plus a few aliases. */
   const mealHit = !term
     || "meals lunch breakfast menu food cafeteria".includes(term)
     || mealsSec.textContent.toLowerCase().includes(term);
   mealsSec.hidden = !mealHit;
   if (mealHit) shown++;
+
+  const weekHit = !term
+    || "this week calendar events schedule".includes(term)
+    || weekSec.textContent.toLowerCase().includes(term);
+  weekSec.hidden = !weekHit;
+  if (weekHit) shown++;
 
   noresults.hidden = shown > 0;
 });
@@ -494,6 +543,114 @@ getMenu(focusDay, focusDay)
     mealsNote.textContent = "";
     mealsToggle.hidden = true;
   })
+  .finally(() => q.dispatchEvent(new Event("input")));   // re-apply an active filter
+
+/* ============================================================
+   THIS WEEK — the school's three Google Calendars, Monday to Sunday.
+   Google's .ics feeds send no Access-Control-Allow-Origin, so the browser
+   can't read them the way it reads MealViewer. A nightly Action bakes them
+   into events.json (tools/build-events.py) and the page loads that
+   same-origin. Multi-day events show on every day they cover.
+   ============================================================ */
+const CALENDAR_PAGE = "https://sites.google.com/cps.edu/goetheelementaryschool/our-school/calendar-news";
+
+/* "Goethe Community" is the default voice of the section, so only the two
+   narrower calendars earn a tag. */
+const CAL_TAG = { sports: "Sports", ost: "After school" };
+
+const weekSec  = document.getElementById("week");
+const weekCard = document.getElementById("week-card");
+const weekNote = document.getElementById("week-note");
+
+const isoOf   = d => `${d.getUTCFullYear()}-${pad(d.getUTCMonth()+1)}-${pad(d.getUTCDate())}`;
+const shortDay  = d => new Intl.DateTimeFormat("en-US",{timeZone:"UTC",weekday:"short"}).format(d);
+const shortDate = d => new Intl.DateTimeFormat("en-US",{timeZone:"UTC",month:"short",day:"numeric"}).format(d);
+const dateOf  = s => new Date(`${s}T00:00:00Z`);
+const addDays = (d, n) => { const x = new Date(d); x.setUTCDate(d.getUTCDate() + n); return x; };
+
+/* "4pm", "6:30pm" — a round hour doesn't need the ":00". */
+function clock(hhmm){
+  const [h, m] = hhmm.split(":").map(Number);
+  return `${h % 12 || 12}${m ? ":" + pad(m) : ""}${h < 12 ? "am" : "pm"}`;
+}
+
+const lastDayOf = e => e.e || e.d;
+
+/* All-day items lead the day, then by start time — don't lean on the order
+   events.json happens to arrive in. */
+const byTime = (a, b) => (a.t || "").localeCompare(b.t || "");
+
+function eventHTML(e){
+  const tag = CAL_TAG[e.c] ? `<span class="tag">${esc(CAL_TAG[e.c])}</span>` : "";
+  return `<div class="evt">
+      <span class="evt-time">${e.t ? clock(e.t) : ""}</span>
+      <span><span class="evt-title">${esc(e.s)}</span>${tag}${
+        e.l ? `<div class="evt-where">${esc(e.l)}</div>` : ""}</span>
+    </div>`;
+}
+
+function rowHTML(label, dateLabel, events, extra){
+  return `<div class="evt-day${extra ? " " + extra : ""}">
+      <div class="when">${esc(label)}<span class="date">${esc(dateLabel)}</span></div>
+      <div class="evt-list">${events.map(eventHTML).join("")}</div>
+    </div>`;
+}
+
+function renderWeek(events){
+  const today    = chicagoToday();
+  const todayISO = isoOf(today);
+  const monday   = addDays(today, -((today.getUTCDay() + 6) % 7));   // Sun counts as day 7
+  const sunday   = isoOf(addDays(monday, 6));
+
+  const rows = [];
+  for (let i = 0; i < 7; i++){
+    const day = addDays(monday, i);
+    const key = isoOf(day);
+    const onDay = events.filter(e => key >= e.d && key <= lastDayOf(e)).sort(byTime);
+    if (!onDay.length) continue;
+    rows.push(rowHTML(
+      key === todayISO ? "Today" : shortDay(day),
+      shortDate(day),
+      onDay,
+      [key === todayISO && "today", key < todayISO && "past"].filter(Boolean).join(" ")
+    ));
+  }
+
+  /* Once the week is spent, point at whatever is actually next — an empty
+     card in August, when nothing is scheduled yet, tells a parent nothing. */
+  const stillComing = events.some(e => lastDayOf(e) >= todayISO && e.d <= sunday);
+  if (!stillComing){
+    const next = events.find(e => e.d > sunday);
+    if (next){
+      const when = dateOf(next.d);
+      rows.push(rowHTML("Next up", `${shortDay(when)} ${shortDate(when)}`,
+        events.filter(e => e.d === next.d).sort(byTime), "next"));
+    }
+  }
+
+  weekCard.innerHTML = rows.length ? rows.join("")
+    : '<div class="none">Nothing on the school calendar right now.</div>';
+}
+
+function weekFailed(){
+  weekCard.innerHTML = `<div class="none">Couldn't load the calendar &mdash;
+    <a href="${CALENDAR_PAGE}" target="_blank" rel="noopener">open it on the school site</a>.</div>`;
+  weekNote.textContent = "";
+}
+
+weekCard.innerHTML = '<div class="none">Loading&hellip;</div>';
+fetch("events.json")
+  .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+  .then(data => {
+    renderWeek(data.events || []);
+    const note = ["Goethe Community, sports, and after-school calendars, refreshed nightly."];
+    /* If the nightly job has been failing, say so rather than quietly showing
+       a calendar that has stopped moving. */
+    const age = (Date.now() - Date.parse(data.generated)) / 86400000;
+    if (age > 7) note.push(`Last synced ${shortDate(dateOf(data.generated.slice(0,10)))}.`);
+    weekNote.textContent = note.join(" ");
+  })
+  .catch(weekFailed)
   .finally(() => q.dispatchEvent(new Event("input")));   // re-apply an active filter
 
 </script>
