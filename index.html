@@ -423,10 +423,9 @@ function paint(days, solo, emptyMsg){
 
   const daily = new Set();
   days.forEach(d => [d.breakfast, d.lunch].forEach(m => m && m.daily.forEach(x => daily.add(x))));
-  const bits = [];
-  if (daily.size) bits.push(`Available every day: ${esc([...daily].join(", "))}.`);
-  bits.push("Milk is served with every meal.");
-  mealsNote.innerHTML = bits.join(" ");
+  mealsNote.innerHTML = daily.size
+    ? `Available every day: ${esc([...daily].join(", "))}.`
+    : "";
 }
 
 const mealsSec    = document.getElementById("meals");
