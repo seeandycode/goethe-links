@@ -35,6 +35,8 @@ body{
 
 /* ---------- Masthead ---------- */
 header{
+  display:flex;align-items:flex-end;justify-content:space-between;gap:18px 26px;
+  flex-wrap:wrap;
   border-bottom:2px solid var(--ink);
   margin-bottom:26px;
   padding-top:30px;
@@ -49,6 +51,20 @@ h1{
   margin:0 0 4px;
 }
 h1 .sub{display:block;font-size:0.3em;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-soft);margin-top:10px}
+
+/* ---------- Weather ---------- */
+.wx{display:flex;align-items:center;gap:12px;padding-bottom:5px}
+.wx[hidden]{display:none}
+.wx-icon{flex:none;color:var(--blue)}
+.wx-temp{
+  font-family:"Bricolage Grotesque",sans-serif;
+  font-weight:800;font-size:2rem;letter-spacing:-0.035em;line-height:0.9;
+}
+.wx-now{font-size:0.86rem;letter-spacing:-0.006em;margin-bottom:3px}
+.wx-meta{
+  font-family:"IBM Plex Mono",monospace;font-size:0.66rem;
+  color:var(--ink-soft);letter-spacing:0.02em;white-space:nowrap;
+}
 /* ---------- Search ---------- */
 .search-row{display:flex;gap:10px;align-items:center;margin:26px 0 8px}
 #q{
@@ -210,6 +226,8 @@ footer{
 
 @media (max-width:560px){
   .hint{display:none}
+  header{align-items:flex-start}
+  .wx-meta{white-space:normal}
   .grid{grid-template-columns:1fr}
   .meals{grid-template-columns:1fr}
   .day.solo .meals-inner{grid-template-columns:1fr}
@@ -228,6 +246,7 @@ footer{
 
 <header>
   <h1>Goethe<span class="sub">Parent links</span></h1>
+  <div class="wx" id="wx" hidden></div>
 </header>
 
 <div class="search-row">
@@ -254,7 +273,7 @@ footer{
   Edit the LINKS list near the top of this file's script to add, remove, or reorder anything.<br>
   Meals load live from MealViewer each time the page opens. Calendar events are refreshed
   nightly from the school&rsquo;s Google Calendars into <code>events.json</code> &mdash;
-  neither needs updating by hand.
+  neither needs updating by hand. The masthead weather is Open-Meteo's reading for 60647.
 </footer>
 
 </div>
@@ -652,6 +671,95 @@ fetch("events.json")
   })
   .catch(weekFailed)
   .finally(() => q.dispatchEvent(new Event("input")));   // re-apply an active filter
+
+/* ============================================================
+   WEATHER — Open-Meteo, keyless and CORS-open, for 60647
+   (Logan Square). One call gets the current reading and today's
+   high, low, and rain odds. It's decoration on a links page, so a
+   failed fetch just leaves the strip hidden rather than apologising.
+   ============================================================ */
+const WX_API = "https://api.open-meteo.com/v1/forecast?latitude=41.921&longitude=-87.701"
+  + "&current=temperature_2m,apparent_temperature,weather_code,is_day"
+  + "&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max"
+  + "&temperature_unit=fahrenheit&timezone=America%2FChicago&forecast_days=1";
+
+/* WMO codes, collapsed to the words a parent deciding on a coat needs. */
+const WX_CODE = {
+  0:["Clear","sun"],            1:["Mostly clear","sun-cloud"], 2:["Partly cloudy","sun-cloud"],
+  3:["Overcast","cloud"],       45:["Fog","fog"],               48:["Freezing fog","fog"],
+  51:["Light drizzle","rain"],  53:["Drizzle","rain"],          55:["Heavy drizzle","rain"],
+  56:["Freezing drizzle","rain"], 57:["Freezing drizzle","rain"],
+  61:["Light rain","rain"],     63:["Rain","rain"],             65:["Heavy rain","rain"],
+  66:["Freezing rain","rain"],  67:["Freezing rain","rain"],
+  71:["Light snow","snow"],     73:["Snow","snow"],             75:["Heavy snow","snow"],
+  77:["Snow grains","snow"],
+  80:["Showers","rain"],        81:["Showers","rain"],          82:["Heavy showers","rain"],
+  85:["Snow showers","snow"],   86:["Snow showers","snow"],
+  95:["Thunderstorms","storm"], 96:["Thunderstorms","storm"],   99:["Thunderstorms","storm"]
+};
+
+const CLOUD = 'M7.6 18.6h9.2a3.7 3.7 0 0 0 .4-7.4 5.2 5.2 0 0 0-10-1.2 3.2 3.2 0 0 0 .4 8.6z';
+const SUN_RAYS = [[12,1.6,12,3.9],[12,20.1,12,22.4],[3.4,12,5.7,12],[18.3,12,20.6,12],
+                  [5.9,5.9,7.5,7.5],[16.5,16.5,18.1,18.1],[18.1,5.9,16.5,7.5],[7.5,16.5,5.9,18.1]];
+const rays = SUN_RAYS.map(([x1,y1,x2,y2]) => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}"/>`).join("");
+const drops = y => [8.5,12,15.5]
+  .map(x => `<line x1="${x}" y1="${y}" x2="${x-1.3}" y2="${y+3.4}"/>`).join("");
+const flakes = y => [8.5,12,15.5]
+  .map(x => `<line x1="${x}" y1="${y+0.4}" x2="${x}" y2="${y+2.9}"/>`).join("");
+
+const WX_ICON = {
+  "sun":       `<circle cx="12" cy="12" r="4.2"/>${rays}`,
+  "moon":      `<path d="M20.4 14.9A8.6 8.6 0 0 1 9.4 3.7 7.9 7.9 0 1 0 20.4 15z"/>`,
+  "sun-cloud": `<circle cx="8.6" cy="7.6" r="3"/><line x1="8.6" y1="1.7" x2="8.6" y2="3.2"/>
+                <line x1="2.7" y1="7.6" x2="4.2" y2="7.6"/><line x1="4.4" y1="3.4" x2="5.5" y2="4.5"/>
+                <line x1="12.8" y1="3.4" x2="11.7" y2="4.5"/><path d="${CLOUD}"/>`,
+  "cloud":     `<path d="${CLOUD}"/>`,
+  "fog":       `<path d="M7.6 14.6h9.2a3.7 3.7 0 0 0 .4-7.4 5.2 5.2 0 0 0-10-1.2 3.2 3.2 0 0 0 .4 8.6z"/>
+                <line x1="5" y1="18.2" x2="19" y2="18.2"/><line x1="7.5" y1="21.4" x2="16.5" y2="21.4"/>`,
+  "rain":      `<path d="M7.6 14.6h9.2a3.7 3.7 0 0 0 .4-7.4 5.2 5.2 0 0 0-10-1.2 3.2 3.2 0 0 0 .4 8.6z"/>${drops(17.6)}`,
+  "snow":      `<path d="M7.6 14.6h9.2a3.7 3.7 0 0 0 .4-7.4 5.2 5.2 0 0 0-10-1.2 3.2 3.2 0 0 0 .4 8.6z"/>${flakes(17.6)}`,
+  "storm":     `<path d="M7.6 14.6h9.2a3.7 3.7 0 0 0 .4-7.4 5.2 5.2 0 0 0-10-1.2 3.2 3.2 0 0 0 .4 8.6z"/>
+                <path d="M12.9 16.4l-2.6 3.6h3l-1.2 2.6"/>`
+};
+
+function wxIcon(name){
+  return `<svg class="wx-icon" width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"
+     fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+     stroke-linejoin="round">${WX_ICON[name] || WX_ICON.cloud}</svg>`;
+}
+
+const wxBox = document.getElementById("wx");
+
+function paintWeather(data){
+  const now = data.current, day = data.daily;
+  const [word, glyph] = WX_CODE[now.weather_code] || ["", "cloud"];
+  /* A clear night still reads "Clear", but a sun on it would be a lie. */
+  const icon = (!now.is_day && (glyph === "sun" || glyph === "sun-cloud")) ? "moon" : glyph;
+
+  const round = n => Math.round(n);
+  const feels = Math.abs(now.apparent_temperature - now.temperature_2m) >= 4
+    ? `feels ${round(now.apparent_temperature)}°` : "";
+  const rain = day.precipitation_probability_max[0];
+
+  const meta = [
+    `H ${round(day.temperature_2m_max[0])}° · L ${round(day.temperature_2m_min[0])}°`,
+    rain >= 20 ? `${rain}% rain` : "",
+    feels
+  ].filter(Boolean).join(" · ");
+
+  wxBox.innerHTML = `${wxIcon(icon)}
+    <div class="wx-temp">${round(now.temperature_2m)}°</div>
+    <div>
+      <div class="wx-now">${esc(word)}</div>
+      <div class="wx-meta">${esc(meta)}</div>
+    </div>`;
+  wxBox.hidden = false;
+}
+
+fetch(WX_API)
+  .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+  .then(paintWeather)
+  .catch(() => {});   /* no weather is better than an error in the masthead */
 
 </script>
 </body>
