@@ -65,26 +65,6 @@ h1 .sub{display:block;font-size:0.3em;font-weight:600;letter-spacing:0.14em;text
   font-family:"IBM Plex Mono",monospace;font-size:0.66rem;
   color:var(--ink-soft);letter-spacing:0.02em;white-space:nowrap;
 }
-/* ---------- Search ---------- */
-.search-row{display:flex;gap:10px;align-items:center;margin:26px 0 8px}
-#q{
-  flex:1;min-width:0;
-  font-family:"Public Sans",sans-serif;font-size:1rem;
-  padding:12px 14px;
-  border:1.5px solid var(--line);border-radius:var(--radius);
-  background:var(--card);color:var(--ink);
-}
-#q::placeholder{color:#93A2B2}
-#q:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(27,127,184,.16)}
-.hint{
-  font-family:"IBM Plex Mono",monospace;font-size:0.7rem;color:var(--ink-soft);
-  white-space:nowrap;
-}
-.hint kbd{
-  font-family:inherit;border:1px solid var(--line);border-bottom-width:2px;
-  border-radius:4px;padding:1px 5px;background:var(--card);
-}
-
 /* ---------- Sections ---------- */
 section{margin-top:34px}
 .sec-head{display:flex;align-items:center;gap:9px;margin-bottom:14px}
@@ -128,16 +108,6 @@ a.tile:focus-visible{box-shadow:0 0 0 3px rgba(27,127,184,.28)}
 }
 .tile.todo{border-style:dashed;background:transparent}
 .tile.todo .name{color:var(--ink-soft)}
-
-.empty{
-  font-size:0.9rem;color:var(--ink-soft);
-  padding:26px 0;
-}
-footer{
-  margin-top:44px;padding-top:16px;border-top:1px solid var(--line);
-  font-family:"IBM Plex Mono",monospace;font-size:0.68rem;color:#93A2B2;
-  line-height:1.7;
-}
 
 /* ---------- Meals ---------- */
 .sec-head .more{
@@ -225,7 +195,6 @@ footer{
 @media (max-width:900px){.meals{grid-template-columns:repeat(2,1fr)}}
 
 @media (max-width:560px){
-  .hint{display:none}
   header{align-items:flex-start}
   .wx-meta{white-space:normal}
   .grid{grid-template-columns:1fr}
@@ -249,11 +218,6 @@ footer{
   <div class="wx" id="wx" hidden></div>
 </header>
 
-<div class="search-row">
-  <input id="q" type="search" placeholder="Filter links — try “lunch”, “absence”, “calendar”" autocomplete="off">
-  <span class="hint">press <kbd>/</kbd> to search</span>
-</div>
-
 <section id="meals">
   <div class="sec-head"><svg class="star" width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><path fill="#C8102E" d="M12 1.6l2.35 6.02 6.45.2-5.06 4-1.74 6.2L12 14.4 6 18.02l-1.74-6.2-5.06-4 6.45-.2z"/></svg><h2 id="meals-head">This week&rsquo;s meals</h2><div class="rule"></div><a class="more" href="https://schools.mealviewer.com/school/609942-51115" target="_blank" rel="noopener">full menu &#8599;</a></div>
   <div class="meals" id="meals-grid"></div>
@@ -268,13 +232,6 @@ footer{
 </section>
 
 <main id="board"></main>
-
-<footer>
-  Edit the LINKS list near the top of this file's script to add, remove, or reorder anything.<br>
-  Meals load live from MealViewer each time the page opens. Calendar events are refreshed
-  nightly from the school&rsquo;s Google Calendars into <code>events.json</code> &mdash;
-  neither needs updating by hand. The masthead weather is Open-Meteo's reading for 60647.
-</footer>
 
 </div>
 
@@ -320,58 +277,19 @@ function host(url){
 
 const board = document.getElementById("board");
 board.innerHTML = LINKS.map(g => `
-  <section data-group>
+  <section>
     <div class="sec-head">${STAR}<h2>${g.group}</h2><div class="rule"></div></div>
     <div class="grid">
       ${g.links.map(l => `
         <a class="tile${l.url ? "" : " todo"}"
            href="${l.url || "#"}"
-           ${l.url && !l.url.startsWith("tel:") ? 'target="_blank" rel="noopener"' : ""}
-           data-search="${(l.name + " " + l.desc + " " + g.group).toLowerCase()}">
+           ${l.url && !l.url.startsWith("tel:") ? 'target="_blank" rel="noopener"' : ""}>
           <div class="name">${l.name}</div>
           <div class="desc">${l.desc}</div>
           <div class="host">${host(l.url)}</div>
         </a>`).join("")}
     </div>
-  </section>`).join("") + '<div class="empty" id="noresults" hidden>Nothing matches that.</div>';
-
-/* ---------- filter ---------- */
-const q = document.getElementById("q");
-const noresults = document.getElementById("noresults");
-
-q.addEventListener("input", () => {
-  const term = q.value.trim().toLowerCase();
-  let shown = 0;
-  document.querySelectorAll("section[data-group]").forEach(sec => {
-    let visible = 0;
-    sec.querySelectorAll("a.tile").forEach(t => {
-      const hit = !term || t.dataset.search.includes(term);
-      t.hidden = !hit;
-      if (hit) visible++;
-    });
-    sec.hidden = visible === 0;
-    shown += visible;
-  });
-  /* Meals and events aren't tiles, so they match on their own text plus a few aliases. */
-  const mealHit = !term
-    || "meals lunch breakfast menu food cafeteria".includes(term)
-    || mealsSec.textContent.toLowerCase().includes(term);
-  mealsSec.hidden = !mealHit;
-  if (mealHit) shown++;
-
-  const weekHit = !term
-    || "this week calendar events schedule".includes(term)
-    || weekSec.textContent.toLowerCase().includes(term);
-  weekSec.hidden = !weekHit;
-  if (weekHit) shown++;
-
-  noresults.hidden = shown > 0;
-});
-
-document.addEventListener("keydown", e => {
-  if (e.key === "/" && document.activeElement !== q) { e.preventDefault(); q.focus(); }
-  if (e.key === "Escape" && document.activeElement === q) { q.value=""; q.dispatchEvent(new Event("input")); q.blur(); }
-});
+  </section>`).join("");
 
 /* ============================================================
    MEALS — pulled live from MealViewer's public API.
@@ -496,7 +414,6 @@ function paint(days, solo, emptyMsg){
     : "";
 }
 
-const mealsSec    = document.getElementById("meals");
 const mealsGrid   = document.getElementById("meals-grid");
 const mealsHead   = document.getElementById("meals-head");
 const mealsNote   = document.getElementById("meals-note");
@@ -539,14 +456,13 @@ function showWeek(){
 }
 
 mealsToggle.addEventListener("click", () => {
-  if (expanded)   { showOne();  q.dispatchEvent(new Event("input")); return; }
-  if (weekDays)   { showWeek(); q.dispatchEvent(new Event("input")); return; }
+  if (expanded)   { showOne();  return; }
+  if (weekDays)   { showWeek(); return; }
 
   mealsToggle.textContent = "Loading the week…";
   getMenu(week.monday, week.friday)
     .then(days => { weekDays = days; showWeek(); })
-    .catch(() => { mealsToggle.textContent = "Couldn't load the week — tap to retry"; })
-    .finally(() => q.dispatchEvent(new Event("input")));
+    .catch(() => { mealsToggle.textContent = "Couldn't load the week — tap to retry"; });
 });
 
 /* Only the focus day is fetched on load — the week costs ~5x and most
@@ -561,8 +477,7 @@ getMenu(focusDay, focusDay)
        <a href="${MEALVIEWER}" target="_blank" rel="noopener">open it on MealViewer</a>.</div></div>`;
     mealsNote.textContent = "";
     mealsToggle.hidden = true;
-  })
-  .finally(() => q.dispatchEvent(new Event("input")));   // re-apply an active filter
+  });
 
 /* ============================================================
    THIS WEEK — the school's three Google Calendars, Monday to Sunday.
@@ -577,7 +492,6 @@ const CALENDAR_PAGE = "https://sites.google.com/cps.edu/goetheelementaryschool/o
    narrower calendars earn a tag. */
 const CAL_TAG = { sports: "Sports", ost: "After school" };
 
-const weekSec  = document.getElementById("week");
 const weekCard = document.getElementById("week-card");
 const weekNote = document.getElementById("week-note");
 
@@ -669,8 +583,7 @@ fetch("events.json")
     if (age > 7) note.push(`Last synced ${shortDate(dateOf(data.generated.slice(0,10)))}.`);
     weekNote.textContent = note.join(" ");
   })
-  .catch(weekFailed)
-  .finally(() => q.dispatchEvent(new Event("input")));   // re-apply an active filter
+  .catch(weekFailed);
 
 /* ============================================================
    WEATHER — Open-Meteo, keyless and CORS-open, for 60647
