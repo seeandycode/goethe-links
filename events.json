@@ -1,13 +1,115 @@
 {
-"generated": "2026-08-19T09:50:42Z",
-"through": "2026-12-17",
+"generated": "2026-08-22T09:44:01Z",
+"through": "2026-12-20",
 "events": [
+{
+"c": "sports",
+"d": "2026-08-31",
+"s": "5th/6th Girls Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-01",
+"s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-02",
+"s": "7th/8th Girls Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-03",
+"s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
 {
 "c": "community",
 "d": "2026-09-03",
 "s": "LSC Meeting",
 "t": "18:00",
 "l": "Goethe Elementary School"
+},
+{
+"c": "sports",
+"d": "2026-09-04",
+"s": "7th/8th Girls Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-08",
+"s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-09",
+"s": "7th/8th Girls Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-10",
+"s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-10",
+"s": "Cross Country Team Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-11",
+"s": "7th/8th Girls Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-14",
+"s": "5th/6th Girls Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-14",
+"s": "Cross Country Team Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-15",
+"s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-16",
+"s": "7th/8th Girls Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-17",
+"s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-17",
+"s": "Cross Country Team Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-18",
+"s": "7th/8th Girls Volleyball Practice",
+"t": "14:45"
 },
 {
 "c": "sports",
@@ -25,6 +127,18 @@
 "s": "7th/8th Girls Volleyball Game"
 },
 {
+"c": "sports",
+"d": "2026-09-21",
+"s": "5th/6th Girls Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-21",
+"s": "Cross Country Team Practice",
+"t": "14:45"
+},
+{
 "c": "community",
 "d": "2026-09-22",
 "s": "Goethe School Tour (K-8)",
@@ -33,9 +147,33 @@
 {
 "c": "sports",
 "d": "2026-09-22",
+"s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-22",
 "s": "Chicago Park District Invitational Montrose Beach Networks 1-7",
 "t": "16:00",
 "l": "Montrose Beach"
+},
+{
+"c": "sports",
+"d": "2026-09-23",
+"s": "7th/8th Girls Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-24",
+"s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-24",
+"s": "Cross Country Team Practice",
+"t": "14:45"
 },
 {
 "c": "sports",
@@ -60,6 +198,48 @@
 },
 {
 "c": "sports",
+"d": "2026-09-28",
+"s": "5th/6th Girls Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-28",
+"s": "Cross Country Team Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-29",
+"s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-30",
+"s": "7th/8th Girls Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-10-01",
+"s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-10-01",
+"s": "Cross Country Team Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-10-02",
+"s": "7th/8th Girls Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
 "d": "2026-10-03",
 "s": "5th/6th Boys Soccer Game"
 },
@@ -87,6 +267,30 @@
 "c": "sports",
 "d": "2026-10-03",
 "s": "7th/8th Girls Volleyball Game"
+},
+{
+"c": "sports",
+"d": "2026-10-05",
+"s": "5th/6th Girls Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-10-06",
+"s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-10-07",
+"s": "7th/8th Girls Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-10-08",
+"s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
 },
 {
 "c": "community",
@@ -103,6 +307,12 @@
 },
 {
 "c": "sports",
+"d": "2026-10-09",
+"s": "7th/8th Girls Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
 "d": "2026-10-10",
 "s": "5th/6th Boys Soccer Game"
 },
@@ -133,6 +343,30 @@
 },
 {
 "c": "sports",
+"d": "2026-10-13",
+"s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-10-14",
+"s": "7th/8th Girls Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-10-15",
+"s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-10-16",
+"s": "7th/8th Girls Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
 "d": "2026-10-17",
 "s": "5th/6th Boys Soccer Game"
 },
@@ -160,12 +394,42 @@
 "c": "sports",
 "d": "2026-10-17",
 "s": "7th/8th Girls Volleyball Game"
+},
+{
+"c": "sports",
+"d": "2026-10-19",
+"s": "5th/6th Girls Volleyball Practice",
+"t": "14:45"
 },
 {
 "c": "community",
 "d": "2026-10-20",
 "s": "Goethe Tour (K-8)",
 "t": "09:00"
+},
+{
+"c": "sports",
+"d": "2026-10-20",
+"s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-10-21",
+"s": "7th/8th Girls Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-10-22",
+"s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-10-23",
+"s": "7th/8th Girls Volleyball Practice",
+"t": "14:45"
 },
 {
 "c": "sports",
@@ -205,6 +469,18 @@
 },
 {
 "c": "sports",
+"d": "2026-10-27",
+"s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-10-29",
+"s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
 "d": "2026-10-31",
 "s": "Cross Country Team Score City Championships (Washington Park)",
 "l": "Washington Park"
@@ -214,6 +490,24 @@
 "d": "2026-11-05",
 "s": "Goethe Tour (K-8)",
 "t": "09:00"
+},
+{
+"c": "sports",
+"d": "2026-11-05",
+"s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-11-10",
+"s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-11-12",
+"s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
 },
 {
 "c": "community",
