@@ -9,6 +9,11 @@
 <title>Goethe — Parent Links</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Both APIs are latency-bound, not payload-bound: the fetches don't start
+     until the script at the end of body runs, and most of their cost is the
+     TLS handshake. Warming the connections here overlaps that with parsing. -->
+<link rel="preconnect" href="https://api.open-meteo.com" crossorigin>
+<link rel="preconnect" href="https://api.mealviewer.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Public+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -301,17 +306,18 @@ a.tile:focus-visible{box-shadow:0 0 0 3px rgba(27,127,184,.28)}
   <a class="ps" href="https://www.parentsquare.com/signin" target="_blank" rel="noopener">Open ParentSquare &#8599;</a>
 </section>
 
+<section id="week">
+  <div class="sec-head"><svg class="star" width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><path fill="#C8102E" d="M12 1.6l2.35 6.02 6.45.2-5.06 4-1.74 6.2L12 14.4 6 18.02l-1.74-6.2-5.06-4 6.45-.2z"/></svg><h2 id="week-head">This week at school</h2><div class="rule"></div><a class="more" href="https://sites.google.com/cps.edu/goetheelementaryschool/our-school/calendar-news" target="_blank" rel="noopener">full calendar &#8599;</a></div>
+  <div class="week-card" id="week-card"></div>
+  <button class="meals-toggle" id="week-toggle" type="button" hidden aria-controls="week-card" aria-expanded="false">Show the next five days &#9662;</button>
+  <div class="meals-note" id="week-note"></div>
+</section>
+
 <section id="meals">
   <div class="sec-head"><svg class="star" width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><path fill="#C8102E" d="M12 1.6l2.35 6.02 6.45.2-5.06 4-1.74 6.2L12 14.4 6 18.02l-1.74-6.2-5.06-4 6.45-.2z"/></svg><h2 id="meals-head">This week&rsquo;s meals</h2><div class="rule"></div><a class="more" href="https://schools.mealviewer.com/school/609942-51115" target="_blank" rel="noopener">full menu &#8599;</a></div>
   <div class="meals" id="meals-grid"></div>
   <button class="meals-toggle" id="meals-toggle" type="button" hidden aria-controls="meals-grid" aria-expanded="false">Show the rest of the week &#9662;</button>
   <div class="meals-note" id="meals-note"></div>
-</section>
-
-<section id="week">
-  <div class="sec-head"><svg class="star" width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><path fill="#C8102E" d="M12 1.6l2.35 6.02 6.45.2-5.06 4-1.74 6.2L12 14.4 6 18.02l-1.74-6.2-5.06-4 6.45-.2z"/></svg><h2>This week at school</h2><div class="rule"></div><a class="more" href="https://sites.google.com/cps.edu/goetheelementaryschool/our-school/calendar-news" target="_blank" rel="noopener">full calendar &#8599;</a></div>
-  <div class="week-card" id="week-card"></div>
-  <div class="meals-note" id="week-note"></div>
 </section>
 
 <main id="board"></main>
@@ -612,46 +618,122 @@ function rowHTML(label, dateLabel, events, extra){
     </div>`;
 }
 
-function renderWeek(events){
-  const today    = chicagoToday();
-  const todayISO = isoOf(today);
-  const monday   = addDays(today, -((today.getUTCDay() + 6) % 7));   // Sun counts as day 7
-  const sunday   = isoOf(addDays(monday, 6));
+function dayRow(entry, todayISO){
+  return rowHTML(
+    entry.key === todayISO ? "Today" : shortDay(entry.day),
+    shortDate(entry.day),
+    entry.events,
+    [entry.key === todayISO && "today", entry.key < todayISO && "past"].filter(Boolean).join(" ")
+  );
+}
 
-  const rows = [];
+/* One entry per day that has something on it. Multi-day events cover every
+   day they span, so a day is matched by range, not by start date. */
+function eventsOn(events, key){
+  return events.filter(e => key >= e.d && key <= lastDayOf(e)).sort(byTime);
+}
+
+function weekEntries(events, monday){
+  const out = [];
   for (let i = 0; i < 7; i++){
     const day = addDays(monday, i);
-    const key = isoOf(day);
-    const onDay = events.filter(e => key >= e.d && key <= lastDayOf(e)).sort(byTime);
-    if (!onDay.length) continue;
-    rows.push(rowHTML(
-      key === todayISO ? "Today" : shortDay(day),
-      shortDate(day),
-      onDay,
-      [key === todayISO && "today", key < todayISO && "past"].filter(Boolean).join(" ")
-    ));
+    const onDay = eventsOn(events, isoOf(day));
+    if (onDay.length) out.push({ key: isoOf(day), day, events: onDay });
+  }
+  return out;
+}
+
+/* The school calendar is sparse — whole weeks go by with nothing on them — so
+   "the next five days" has to mean five days that actually have events, not
+   five squares of empty grid. events.json runs ~120 days out; scan a little
+   past that and stop early once five are found. */
+const SCAN_DAYS = 140;
+const NEXT_DAYS = 5;
+
+function nextEntries(events, startISO, limit){
+  const out = [];
+  let day = dateOf(startISO);
+  for (let i = 0; i < SCAN_DAYS && out.length < limit; i++, day = addDays(day, 1)){
+    const onDay = eventsOn(events, isoOf(day));
+    if (onDay.length) out.push({ key: isoOf(day), day, events: onDay });
+  }
+  return out;
+}
+
+/* Once the week is spent, point at whatever is actually next — an empty
+   card in August, when nothing is scheduled yet, tells a parent nothing. */
+function nextUp(events, todayISO, sundayISO){
+  if (events.some(e => lastDayOf(e) >= todayISO && e.d <= sundayISO)) return null;
+  return nextEntries(events, todayISO, 1)[0] || null;
+}
+
+const weekToggle = document.getElementById("week-toggle");
+const weekHead   = document.getElementById("week-head");
+
+const CAL_HEAD_WEEK = "This week at school";
+const CAL_HEAD_NEXT = "Coming up at school";
+const EMPTY_CARD = '<div class="none">Nothing on the school calendar right now.</div>';
+
+let calEvents   = [];
+let calExpanded = false;
+let calToday    = "";
+let calMonday   = null;
+let calSunday   = "";
+
+function showThisWeek(){
+  calExpanded = false;
+  weekHead.textContent = CAL_HEAD_WEEK;
+
+  const rows = weekEntries(calEvents, calMonday).map(e => dayRow(e, calToday));
+  const soon = nextUp(calEvents, calToday, calSunday);
+  if (soon){
+    rows.push(rowHTML("Next up", `${shortDay(soon.day)} ${shortDate(soon.day)}`,
+      soon.events, "next"));
   }
 
-  /* Once the week is spent, point at whatever is actually next — an empty
-     card in August, when nothing is scheduled yet, tells a parent nothing. */
-  const stillComing = events.some(e => lastDayOf(e) >= todayISO && e.d <= sunday);
-  if (!stillComing){
-    const next = events.find(e => e.d > sunday);
-    if (next){
-      const when = dateOf(next.d);
-      rows.push(rowHTML("Next up", `${shortDay(when)} ${shortDate(when)}`,
-        events.filter(e => e.d === next.d).sort(byTime), "next"));
-    }
-  }
+  weekCard.innerHTML = rows.length ? rows.join("") : EMPTY_CARD;
+  weekToggle.textContent = "Show the next five days \u25BE";
+  weekToggle.setAttribute("aria-expanded", "false");
+}
 
-  weekCard.innerHTML = rows.length ? rows.join("")
-    : '<div class="none">Nothing on the school calendar right now.</div>';
+function showNextDays(){
+  calExpanded = true;
+  weekHead.textContent = CAL_HEAD_NEXT;
+
+  const entries = nextEntries(calEvents, calToday, NEXT_DAYS);
+  weekCard.innerHTML = entries.length
+    ? entries.map(e => dayRow(e, calToday)).join("")
+    : EMPTY_CARD;
+  weekToggle.textContent = "Show just this week \u25B4";
+  weekToggle.setAttribute("aria-expanded", "true");
+}
+
+weekToggle.addEventListener("click", () => {
+  (calExpanded ? showThisWeek : showNextDays)();
+});
+
+function renderWeek(events){
+  const today = chicagoToday();
+  calEvents = events;
+  calToday  = isoOf(today);
+  calMonday = addDays(today, -((today.getUTCDay() + 6) % 7));   // Sun counts as day 7
+  calSunday = isoOf(addDays(calMonday, 6));
+
+  showThisWeek();
+
+  /* Nothing to expand into if the week view already shows every day the next
+     five would. */
+  const shown = new Set(weekEntries(events, calMonday).map(e => e.key));
+  const soon = nextUp(events, calToday, calSunday);
+  if (soon) shown.add(soon.key);
+  weekToggle.hidden = !nextEntries(events, calToday, NEXT_DAYS).some(e => !shown.has(e.key));
 }
 
 function weekFailed(){
   weekCard.innerHTML = `<div class="none">Couldn't load the calendar &mdash;
     <a href="${CALENDAR_PAGE}" target="_blank" rel="noopener">open it on the school site</a>.</div>`;
   weekNote.textContent = "";
+  weekToggle.hidden = true;
 }
 
 weekCard.innerHTML = '<div class="none">Loading&hellip;</div>';
