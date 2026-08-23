@@ -65,6 +65,57 @@ h1 .sub{display:block;font-size:0.3em;font-weight:600;letter-spacing:0.14em;text
   font-family:"IBM Plex Mono",monospace;font-size:0.66rem;
   color:var(--ink-soft);letter-spacing:0.02em;white-space:nowrap;
 }
+/* ---------- Classroom ---------- */
+.class-card{
+  display:flex;flex-wrap:wrap;align-items:center;gap:18px 30px;
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:15px 17px;
+  margin-top:0;
+}
+.class-label{
+  font-family:"IBM Plex Mono",monospace;font-size:0.62rem;
+  letter-spacing:0.13em;text-transform:uppercase;
+  color:#93A2B2;margin-bottom:4px;
+}
+.class-who{flex:0 0 auto;min-width:0}
+.class-teacher{
+  font-family:"Bricolage Grotesque",sans-serif;
+  font-weight:600;font-size:1.14rem;letter-spacing:-0.014em;line-height:1.2;
+}
+.class-teacher .room{
+  font-family:"Public Sans",sans-serif;
+  font-weight:400;font-size:0.83rem;color:var(--ink-soft);
+  letter-spacing:0;margin-left:9px;
+}
+.class-times{
+  flex:1 1 340px;
+  display:flex;flex-wrap:wrap;gap:14px 26px;
+  padding-left:30px;border-left:1px solid var(--line);
+}
+.tm-label{
+  font-family:"IBM Plex Mono",monospace;font-size:0.62rem;
+  letter-spacing:0.11em;text-transform:uppercase;
+  color:#93A2B2;margin-bottom:2px;
+}
+.tm-time{
+  font-family:"Bricolage Grotesque",sans-serif;
+  font-weight:700;font-size:1rem;letter-spacing:-0.02em;line-height:1.1;
+}
+.tm-where{font-size:0.73rem;color:var(--ink-soft);margin-top:1px}
+.ps{
+  flex:0 0 auto;
+  display:inline-flex;align-items:center;gap:7px;
+  background:var(--blue);color:#fff;text-decoration:none;
+  border-radius:7px;padding:10px 14px;
+  font-family:"Bricolage Grotesque",sans-serif;
+  font-weight:600;font-size:0.9rem;letter-spacing:-0.008em;
+  transition:background .13s ease;
+}
+.ps:hover,.ps:focus-visible{background:#15688F;outline:none}
+.ps:focus-visible{box-shadow:0 0 0 3px rgba(27,127,184,.32)}
+
 /* ---------- Sections ---------- */
 section{margin-top:34px}
 .sec-head{display:flex;align-items:center;gap:9px;margin-bottom:14px}
@@ -194,8 +245,15 @@ a.tile:focus-visible{box-shadow:0 0 0 3px rgba(27,127,184,.28)}
 
 @media (max-width:900px){.meals{grid-template-columns:repeat(2,1fr)}}
 
+@media (max-width:760px){
+  .class-times{padding-left:0;border-left:0;flex-basis:100%}
+}
+
 @media (max-width:560px){
   header{align-items:flex-start}
+  .class-card{gap:14px 22px}
+  .class-times{gap:12px 22px}
+  .ps{width:100%;justify-content:center}
   .wx-meta{white-space:normal}
   .grid{grid-template-columns:1fr}
   .meals{grid-template-columns:1fr}
@@ -217,6 +275,31 @@ a.tile:focus-visible{box-shadow:0 0 0 3px rgba(27,127,184,.28)}
   <h1>Goethe<span class="sub">Parent links</span></h1>
   <div class="wx" id="wx" hidden></div>
 </header>
+
+<!-- Classroom details. Edit the names, times and doors right here. -->
+<section id="class" class="class-card">
+  <div class="class-who">
+    <div class="class-label">Classroom</div>
+    <div class="class-teacher">Ms. Lopez<span class="room">Room B106</span></div>
+  </div>
+  <div class="class-times">
+    <div class="tm">
+      <div class="tm-label">Drop-off</div>
+      <div class="tm-time">7:30 AM</div>
+      <div class="tm-where">Door 3</div>
+    </div>
+    <div class="tm">
+      <div class="tm-label">Class starts</div>
+      <div class="tm-time">7:45 AM</div>
+    </div>
+    <div class="tm">
+      <div class="tm-label">Dismissal</div>
+      <div class="tm-time">2:45 PM</div>
+      <div class="tm-where">Door 3</div>
+    </div>
+  </div>
+  <a class="ps" href="https://www.parentsquare.com/signin" target="_blank" rel="noopener">Open ParentSquare &#8599;</a>
+</section>
 
 <section id="meals">
   <div class="sec-head"><svg class="star" width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><path fill="#C8102E" d="M12 1.6l2.35 6.02 6.45.2-5.06 4-1.74 6.2L12 14.4 6 18.02l-1.74-6.2-5.06-4 6.45-.2z"/></svg><h2 id="meals-head">This week&rsquo;s meals</h2><div class="rule"></div><a class="more" href="https://schools.mealviewer.com/school/609942-51115" target="_blank" rel="noopener">full menu &#8599;</a></div>
