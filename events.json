@@ -1,12 +1,18 @@
 {
-"generated": "2026-08-22T09:44:01Z",
-"through": "2026-12-20",
+"generated": "2026-08-26T09:58:48Z",
+"through": "2026-12-24",
 "events": [
 {
 "c": "sports",
 "d": "2026-08-31",
 "s": "5th/6th Girls Volleyball Practice",
 "t": "14:45"
+},
+{
+"c": "community",
+"d": "2026-08-31",
+"s": "FOGS Kickoff Meeting - 6:30pm Goethe Cafeteria (in English & Spanish)",
+"t": "18:30"
 },
 {
 "c": "sports",
@@ -104,6 +110,12 @@
 "d": "2026-09-17",
 "s": "Cross Country Team Practice",
 "t": "14:45"
+},
+{
+"c": "community",
+"d": "2026-09-18",
+"s": "Goethe Fest",
+"t": "14:00"
 },
 {
 "c": "sports",
@@ -275,6 +287,12 @@
 "t": "14:45"
 },
 {
+"c": "community",
+"d": "2026-10-05",
+"s": "FOGS General Meeting - 6:30pm Goethe Cafeteria",
+"t": "18:30"
+},
+{
 "c": "sports",
 "d": "2026-10-06",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
@@ -297,6 +315,13 @@
 "d": "2026-10-08",
 "s": "Goethe Tour (K-8)",
 "t": "16:30"
+},
+{
+"c": "community",
+"d": "2026-10-08",
+"s": "Restaurant Night - 5-8pm Portillo's Kimball & Addison",
+"t": "17:00",
+"l": "Portillo's Chicago - Addison"
 },
 {
 "c": "community",
@@ -515,6 +540,19 @@
 "s": "LSC Meeting",
 "t": "18:00",
 "l": "Goethe Elementary School"
+},
+{
+"c": "community",
+"d": "2026-11-15",
+"s": "Chicago Wolves Game w/ the Choir - 3pm Allstate Arena",
+"t": "15:00",
+"l": "Allstate Arena"
+},
+{
+"c": "community",
+"d": "2026-12-07",
+"s": "FOGS General Meeting - 6:30pm Goethe Cafeteria",
+"t": "18:30"
 },
 {
 "c": "community",
