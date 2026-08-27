@@ -1,6 +1,6 @@
 {
-"generated": "2026-08-26T09:58:48Z",
-"through": "2026-12-24",
+"generated": "2026-08-27T19:51:39Z",
+"through": "2026-12-25",
 "events": [
 {
 "c": "sports",
@@ -23,6 +23,12 @@
 {
 "c": "sports",
 "d": "2026-09-02",
+"s": "7th/8th Boys Soccer Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-02",
 "s": "7th/8th Girls Volleyball Practice",
 "t": "14:45"
 },
@@ -33,11 +39,23 @@
 "t": "14:45"
 },
 {
+"c": "sports",
+"d": "2026-09-03",
+"s": "7th/8th Boys Soccer Practice",
+"t": "14:45"
+},
+{
 "c": "community",
 "d": "2026-09-03",
 "s": "LSC Meeting",
 "t": "18:00",
 "l": "Goethe Elementary School"
+},
+{
+"c": "community",
+"d": "2026-09-04",
+"s": "Faces of Goethe SY27!",
+"t": "14:00"
 },
 {
 "c": "sports",
@@ -49,6 +67,12 @@
 "c": "sports",
 "d": "2026-09-08",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-09",
+"s": "7th/8th Boys Soccer Practice",
 "t": "14:45"
 },
 {
@@ -66,8 +90,20 @@
 {
 "c": "sports",
 "d": "2026-09-10",
-"s": "Cross Country Team Practice",
+"s": "7th/8th Boys Soccer Practice",
 "t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-10",
+"s": "Cross Country Team Meeting",
+"t": "14:45"
+},
+{
+"c": "community",
+"d": "2026-09-10",
+"s": "Goethe curriculum night",
+"t": "15:00"
 },
 {
 "c": "sports",
@@ -79,6 +115,12 @@
 "c": "sports",
 "d": "2026-09-14",
 "s": "5th/6th Girls Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-14",
+"s": "7th/8th Boys Soccer Practice",
 "t": "14:45"
 },
 {
@@ -96,6 +138,12 @@
 {
 "c": "sports",
 "d": "2026-09-16",
+"s": "7th/8th Boys Soccer Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-16",
 "s": "7th/8th Girls Volleyball Practice",
 "t": "14:45"
 },
@@ -103,6 +151,12 @@
 "c": "sports",
 "d": "2026-09-17",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-17",
+"s": "7th/8th Boys Soccer Practice",
 "t": "14:45"
 },
 {
@@ -147,6 +201,12 @@
 {
 "c": "sports",
 "d": "2026-09-21",
+"s": "7th/8th Boys Soccer Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-21",
 "s": "Cross Country Team Practice",
 "t": "14:45"
 },
@@ -165,9 +225,21 @@
 {
 "c": "sports",
 "d": "2026-09-22",
+"s": "5th/6th Boys Soccer Practice",
+"t": "15:00"
+},
+{
+"c": "sports",
+"d": "2026-09-22",
 "s": "Chicago Park District Invitational Montrose Beach Networks 1-7",
 "t": "16:00",
 "l": "Montrose Beach"
+},
+{
+"c": "sports",
+"d": "2026-09-23",
+"s": "7th/8th Boys Soccer Practice",
+"t": "14:45"
 },
 {
 "c": "sports",
@@ -179,6 +251,12 @@
 "c": "sports",
 "d": "2026-09-24",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-24",
+"s": "7th/8th Boys Soccer Practice",
 "t": "14:45"
 },
 {
@@ -217,6 +295,12 @@
 {
 "c": "sports",
 "d": "2026-09-28",
+"s": "7th/8th Boys Soccer Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-28",
 "s": "Cross Country Team Practice",
 "t": "14:45"
 },
@@ -224,6 +308,18 @@
 "c": "sports",
 "d": "2026-09-29",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-09-29",
+"s": "5th/6th Boys Soccer Practice",
+"t": "15:00"
+},
+{
+"c": "sports",
+"d": "2026-09-30",
+"s": "7th/8th Boys Soccer Practice",
 "t": "14:45"
 },
 {
@@ -236,6 +332,12 @@
 "c": "sports",
 "d": "2026-10-01",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-10-01",
+"s": "7th/8th Boys Soccer Practice",
 "t": "14:45"
 },
 {
@@ -287,6 +389,12 @@
 "t": "14:45"
 },
 {
+"c": "sports",
+"d": "2026-10-05",
+"s": "7th/8th Boys Soccer Practice",
+"t": "14:45"
+},
+{
 "c": "community",
 "d": "2026-10-05",
 "s": "FOGS General Meeting - 6:30pm Goethe Cafeteria",
@@ -300,6 +408,18 @@
 },
 {
 "c": "sports",
+"d": "2026-10-06",
+"s": "5th/6th Boys Soccer Practice",
+"t": "15:00"
+},
+{
+"c": "sports",
+"d": "2026-10-07",
+"s": "7th/8th Boys Soccer Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
 "d": "2026-10-07",
 "s": "7th/8th Girls Volleyball Practice",
 "t": "14:45"
@@ -308,6 +428,12 @@
 "c": "sports",
 "d": "2026-10-08",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-10-08",
+"s": "7th/8th Boys Soccer Practice",
 "t": "14:45"
 },
 {
@@ -368,8 +494,26 @@
 },
 {
 "c": "sports",
+"d": "2026-10-12",
+"s": "7th/8th Boys Soccer Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
 "d": "2026-10-13",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-10-13",
+"s": "5th/6th Boys Soccer Practice",
+"t": "15:00"
+},
+{
+"c": "sports",
+"d": "2026-10-14",
+"s": "7th/8th Boys Soccer Practice",
 "t": "14:45"
 },
 {
@@ -382,6 +526,12 @@
 "c": "sports",
 "d": "2026-10-15",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-10-15",
+"s": "7th/8th Boys Soccer Practice",
 "t": "14:45"
 },
 {
@@ -427,6 +577,12 @@
 "t": "14:45"
 },
 {
+"c": "sports",
+"d": "2026-10-19",
+"s": "7th/8th Boys Soccer Practice",
+"t": "14:45"
+},
+{
 "c": "community",
 "d": "2026-10-20",
 "s": "Goethe Tour (K-8)",
@@ -440,6 +596,18 @@
 },
 {
 "c": "sports",
+"d": "2026-10-20",
+"s": "5th/6th Boys Soccer Practice",
+"t": "15:00"
+},
+{
+"c": "sports",
+"d": "2026-10-21",
+"s": "7th/8th Boys Soccer Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
 "d": "2026-10-21",
 "s": "7th/8th Girls Volleyball Practice",
 "t": "14:45"
@@ -448,6 +616,12 @@
 "c": "sports",
 "d": "2026-10-22",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-10-22",
+"s": "7th/8th Boys Soccer Practice",
 "t": "14:45"
 },
 {
@@ -494,14 +668,32 @@
 },
 {
 "c": "sports",
+"d": "2026-10-26",
+"s": "7th/8th Boys Soccer Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
 "d": "2026-10-27",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
 "t": "14:45"
 },
 {
 "c": "sports",
+"d": "2026-10-28",
+"s": "7th/8th Boys Soccer Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
 "d": "2026-10-29",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-10-29",
+"s": "7th/8th Boys Soccer Practice",
 "t": "14:45"
 },
 {
