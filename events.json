@@ -1,6 +1,6 @@
 {
-"generated": "2026-08-27T19:51:39Z",
-"through": "2026-12-25",
+"generated": "2026-08-28T20:55:35Z",
+"through": "2026-12-26",
 "events": [
 {
 "c": "sports",
@@ -134,6 +134,12 @@
 "d": "2026-09-15",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
 "t": "14:45"
+},
+{
+"c": "community",
+"d": "2026-09-16",
+"s": "BAC and PAC Inaugural Meeting",
+"t": "08:00"
 },
 {
 "c": "sports",
