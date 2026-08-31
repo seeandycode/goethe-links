@@ -1,6 +1,6 @@
 {
-"generated": "2026-08-28T20:55:35Z",
-"through": "2026-12-26",
+"generated": "2026-08-31T17:05:05Z",
+"through": "2026-12-29",
 "events": [
 {
 "c": "sports",
@@ -102,6 +102,12 @@
 {
 "c": "community",
 "d": "2026-09-10",
+"s": "BAC & PAC info session",
+"t": "15:00"
+},
+{
+"c": "community",
+"d": "2026-09-10",
 "s": "Goethe curriculum night",
 "t": "15:00"
 },
@@ -138,7 +144,7 @@
 {
 "c": "community",
 "d": "2026-09-16",
-"s": "BAC and PAC Inaugural Meeting",
+"s": "BAC & PAC election & inaugural meeting",
 "t": "08:00"
 },
 {
