@@ -1,6 +1,6 @@
 {
-"generated": "2026-08-31T17:05:05Z",
-"through": "2026-12-29",
+"generated": "2026-09-02T13:42:00Z",
+"through": "2026-12-31",
 "events": [
 {
 "c": "sports",
@@ -79,12 +79,6 @@
 "c": "sports",
 "d": "2026-09-09",
 "s": "7th/8th Girls Volleyball Practice",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-09-10",
-"s": "5th/6th/7th/8th Boys Volleyball Practice",
 "t": "14:45"
 },
 {
