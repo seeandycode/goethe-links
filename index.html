@@ -240,7 +240,6 @@ a.tile:focus-visible{box-shadow:0 0 0 3px rgba(27,127,184,.28)}
 }
 .evt-day{display:flex;gap:16px;padding:12px 0;border-top:1px solid var(--line)}
 .evt-day:first-child{border-top:0}
-.evt-day.past{opacity:.45}
 .when{
   flex:0 0 96px;
   font-family:"IBM Plex Mono",monospace;font-size:0.65rem;
@@ -643,7 +642,7 @@ function dayRow(entry, todayISO){
     entry.key === todayISO ? "Today" : shortDay(entry.day),
     shortDate(entry.day),
     entry.events,
-    [entry.key === todayISO && "today", entry.key < todayISO && "past"].filter(Boolean).join(" ")
+    entry.key === todayISO ? "today" : ""
   );
 }
 
@@ -653,10 +652,12 @@ function eventsOn(events, key){
   return events.filter(e => key >= e.d && key <= lastDayOf(e)).sort(byTime);
 }
 
-function weekEntries(events, monday){
+/* Today through Sunday. Monday's practice is no use to a parent opening this
+   on Thursday, so the days already spent are left out rather than dimmed —
+   today leads the card, and the toggle is what reaches past this week. */
+function weekEntries(events, from, throughISO){
   const out = [];
-  for (let i = 0; i < 7; i++){
-    const day = addDays(monday, i);
+  for (let day = from; isoOf(day) <= throughISO; day = addDays(day, 1)){
     const onDay = eventsOn(events, isoOf(day));
     if (onDay.length) out.push({ key: isoOf(day), day, events: onDay });
   }
@@ -697,14 +698,13 @@ const EMPTY_CARD = '<div class="none">Nothing on the school calendar right now.<
 let calEvents   = [];
 let calExpanded = false;
 let calToday    = "";
-let calMonday   = null;
 let calSunday   = "";
 
 function showThisWeek(){
   calExpanded = false;
   weekHead.textContent = CAL_HEAD_WEEK;
 
-  const rows = weekEntries(calEvents, calMonday).map(e => dayRow(e, calToday));
+  const rows = weekEntries(calEvents, dateOf(calToday), calSunday).map(e => dayRow(e, calToday));
   const soon = nextUp(calEvents, calToday, calSunday);
   if (soon){
     rows.push(rowHTML("Next up", `${shortDay(soon.day)} ${shortDate(soon.day)}`,
@@ -736,14 +736,13 @@ function renderWeek(events){
   const today = chicagoToday();
   calEvents = events;
   calToday  = isoOf(today);
-  calMonday = addDays(today, -((today.getUTCDay() + 6) % 7));   // Sun counts as day 7
-  calSunday = isoOf(addDays(calMonday, 6));
+  calSunday = isoOf(addDays(today, 6 - ((today.getUTCDay() + 6) % 7)));  // Sun ends the week
 
   showThisWeek();
 
   /* Nothing to expand into if the week view already shows every day the next
      five would. */
-  const shown = new Set(weekEntries(events, calMonday).map(e => e.key));
+  const shown = new Set(weekEntries(events, today, calSunday).map(e => e.key));
   const soon = nextUp(events, calToday, calSunday);
   if (soon) shown.add(soon.key);
   weekToggle.hidden = !nextEntries(events, calToday, NEXT_DAYS).some(e => !shown.has(e.key));
