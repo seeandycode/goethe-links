@@ -110,6 +110,20 @@ h1 .sub{display:block;font-size:0.3em;font-weight:600;letter-spacing:0.14em;text
   font-weight:700;font-size:1rem;letter-spacing:-0.02em;line-height:1.1;
 }
 .tm-where{font-size:0.73rem;color:var(--ink-soft);margin-top:1px}
+
+/* A muted pill per prep class, so the rotation is recognisable at a glance
+   rather than something you have to stop and read. */
+.prep{
+  display:inline-block;
+  border-radius:999px;padding:2px 11px 3px;
+  background:var(--prep-bg);color:var(--prep-ink);
+  box-shadow:inset 0 0 0 1px var(--prep-line);
+  font-family:"Bricolage Grotesque",sans-serif;
+  font-weight:700;font-size:0.95rem;letter-spacing:-0.018em;line-height:1.25;
+}
+.prep.music  {--prep-bg:#F7E7EA;--prep-ink:#8E2436;--prep-line:#EFD2D9}
+.prep.pe     {--prep-bg:#E5F0E9;--prep-ink:#256B4C;--prep-line:#CCE2D6}
+.prep.library{--prep-bg:#E4EDF6;--prep-ink:#1A5A80;--prep-line:#C9DCEC}
 .ps{
   flex:0 0 auto;
   display:inline-flex;align-items:center;gap:7px;
@@ -302,6 +316,11 @@ a.tile:focus-visible{box-shadow:0 0 0 3px rgba(27,127,184,.28)}
       <div class="tm-label">Dismissal</div>
       <div class="tm-time">2:45 PM</div>
       <div class="tm-where">Door 3</div>
+    </div>
+    <div class="tm" id="prep" hidden>
+      <div class="tm-label" id="prep-label">Today&rsquo;s prep</div>
+      <div id="prep-pill"></div>
+      <div class="tm-where" id="prep-who"></div>
     </div>
   </div>
   <a class="ps" href="https://www.parentsquare.com/signin" target="_blank" rel="noopener">Open ParentSquare &#8599;</a>
@@ -750,6 +769,67 @@ fetch("events.json")
     weekNote.textContent = note.join(" ");
   })
   .catch(weekFailed);
+
+/* ============================================================
+   PREP CLASS — music, gym and library run on a six-day rotation that
+   skips weekends and days off, so the date alone doesn't tell you which
+   one it is. The year's schedule is fixed, so it rides along in the page
+   instead of costing a third fetch at the top of the load.
+   Rebuild it from the district schedule with tools/build-prep.py.
+   ============================================================ */
+/* PREP_DAYS start */
+const PREP_DAYS = {
+  "2026-08": "24M 25P 26L 27M 28P 31L",
+  "2026-09": "1M 2P 3L 4M 8P 9L 10M 11P 14L 15M 16P 17L 18M 21P 22L 23M 24P 28L 29M 30P",
+  "2026-10": "1L 2M 5P 6L 7M 8P 9L 13M 14P 15L 16M 19P 20L 21M 22P 23L 26M 27P 28L 29M 30P",
+  "2026-11": "4L 5M 6P 9L 10M 12P 13L 16M 17P 18L 19M 20P 30L",
+  "2026-12": "1M 2P 3L 4M 7P 8L 9M 10P 11L 14M 15P 16L 17M 18P",
+  "2027-01": "5L 6M 7P 8L 11M 12P 13L 14M 15P 19L 20M 21P 22L 25M 26P 27L 28M",
+  "2027-02": "1P 2L 3M 4P 5L 8M 9P 10L 11M 12P 16L 17M 18P 19L 22M 24P 25L 26M",
+  "2027-03": "1P 2L 3M 4P 5L 8M 9P 10L 11M 12P 15L 16M 17P 18L 19M 29P 30L 31M",
+  "2027-04": "1P 2L 5M 7P 8L 9M 13P 14L 15M 16P 19L 20M 21P 22L 23M 26P 27L 28M 29P 30L",
+  "2027-05": "3M 4P 5L 6M 7P 10L 11M 12P 13L 14M 17P 18L 19M 20P 21L 24M 25P 26L 27M 28P",
+  "2027-06": "1L 2M 3P 4L 7M 8P 9L 10M 11P",
+};
+/* PREP_DAYS end */
+
+const PREP = {
+  M: { es:"M\u00fasica",           en:"Music",   who:"Mr. Distel", cls:"music"   },
+  P: { es:"Educaci\u00f3n F\u00edsica", en:"P.E.",    who:"Mr. E",      cls:"pe"      },
+  L: { es:"Biblioteca",         en:"Library", who:"Ms. Ali",    cls:"library" }
+};
+
+function prepOn(day){
+  const month = PREP_DAYS[isoOf(day).slice(0, 7)];
+  if (!month) return null;
+  const hit = new RegExp(`(?:^| )${day.getUTCDate()}([MPL])`).exec(month);
+  return hit ? PREP[hit[1]] : null;
+}
+
+/* On a day with no prep — a weekend, a holiday, the middle of winter break —
+   point at the next one rather than leaving a hole in the card. Past the end
+   of the schedule nothing is found and the cell stays hidden. */
+function nextPrep(){
+  let day = chicagoToday();
+  for (let out = 0; out < 30; out++, day = addDays(day, 1)){
+    const prep = prepOn(day);
+    if (prep) return { prep, day, out };
+  }
+  return null;
+}
+
+const prepFound = nextPrep();
+if (prepFound){
+  const { prep, day, out } = prepFound;
+  document.getElementById("prep-label").textContent =
+    out === 0 ? "Today's prep"
+    : out <= 7 ? `${dayName(day)}'s prep`
+    : `Prep on ${shortDate(day)}`;
+  document.getElementById("prep-pill").innerHTML =
+    `<span class="prep ${prep.cls}">${esc(prep.es)}</span>`;
+  document.getElementById("prep-who").textContent = `${prep.en} \u00b7 ${prep.who}`;
+  document.getElementById("prep").hidden = false;
+}
 
 /* ============================================================
    WEATHER — Open-Meteo, keyless and CORS-open, for 60647

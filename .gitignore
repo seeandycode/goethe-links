@@ -1,1 +1,4 @@
 .claude/
+
+# The district prep schedule stays local — the page carries a baked copy.
+goethe_k106_prep_schedule_*.json
