@@ -1,6 +1,6 @@
 {
-"generated": "2026-09-02T13:42:00Z",
-"through": "2026-12-31",
+"generated": "2026-09-04T13:33:08Z",
+"through": "2027-01-02",
 "events": [
 {
 "c": "sports",
@@ -36,12 +36,6 @@
 "c": "sports",
 "d": "2026-09-03",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-09-03",
-"s": "7th/8th Boys Soccer Practice",
 "t": "14:45"
 },
 {
@@ -186,17 +180,27 @@
 {
 "c": "sports",
 "d": "2026-09-19",
-"s": "7th/8th Boys Soccer Game"
+"s": "7th/8th Boys Soccer Game",
+"l": "Hanson Park"
 },
 {
 "c": "sports",
 "d": "2026-09-19",
-"s": "7th/8th Boys Volleyball Game"
+"s": "7th/8th Boys Volleyball Game",
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
 "c": "sports",
 "d": "2026-09-19",
-"s": "7th/8th Girls Volleyball Game"
+"s": "7th/8th Girls Volleyball Game",
+"l": "Roberto Clemente Community Academy"
+},
+{
+"c": "sports",
+"d": "2026-09-19",
+"s": "7th/8th Boys Soccer Game",
+"t": "14:00",
+"l": "Hanson Park"
 },
 {
 "c": "sports",
@@ -274,23 +278,27 @@
 {
 "c": "sports",
 "d": "2026-09-26",
-"s": "7th/8th Boys Soccer Game"
+"s": "7th/8th Boys Soccer Game",
+"l": "Hanson Park"
 },
 {
 "c": "sports",
 "d": "2026-09-26",
-"s": "7th/8th Boys Volleyball Game"
+"s": "7th/8th Boys Volleyball Game",
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
 "c": "sports",
 "d": "2026-09-26",
-"s": "7th/8th Girls Volleyball Game"
+"s": "7th/8th Girls Volleyball Game",
+"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
 "d": "2026-09-26",
-"s": "Cross Country Team: Network Regional Qualifier at Riis Park",
-"l": "Riis Park"
+"s": "7th/8th Boys Soccer Game",
+"t": "11:00",
+"l": "Hanson Park"
 },
 {
 "c": "sports",
@@ -359,6 +367,12 @@
 "t": "14:45"
 },
 {
+"c": "community",
+"d": "2026-10-02",
+"s": "Goethe Movie Night",
+"t": "17:00"
+},
+{
 "c": "sports",
 "d": "2026-10-03",
 "s": "5th/6th Boys Soccer Game"
@@ -366,7 +380,8 @@
 {
 "c": "sports",
 "d": "2026-10-03",
-"s": "5th/6th Boys Volleyball Game"
+"s": "5th/6th Boys Volleyball Game",
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
 "c": "sports",
@@ -376,17 +391,41 @@
 {
 "c": "sports",
 "d": "2026-10-03",
-"s": "7th/8th Boys Soccer Game"
+"s": "7th/8th Boys Soccer Game",
+"l": "Hanson Park"
 },
 {
 "c": "sports",
 "d": "2026-10-03",
-"s": "7th/8th Boys Volleyball Game"
+"s": "7th/8th Boys Volleyball Game",
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
 "c": "sports",
 "d": "2026-10-03",
-"s": "7th/8th Girls Volleyball Game"
+"s": "7th/8th Girls Volleyball Game",
+"l": "Roberto Clemente Community Academy"
+},
+{
+"c": "sports",
+"d": "2026-10-03",
+"s": "Cross Country Team: Network Regional Qualifier at Riis Park",
+"t": "08:00",
+"l": "Riis Park"
+},
+{
+"c": "sports",
+"d": "2026-10-03",
+"s": "5th/6th Girls Volleyball Game",
+"t": "13:30",
+"l": "Roberto Clemente Community Academy"
+},
+{
+"c": "sports",
+"d": "2026-10-03",
+"s": "5th/6th Boys Volleyball Game",
+"t": "15:45",
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
 "c": "sports",
@@ -476,7 +515,8 @@
 {
 "c": "sports",
 "d": "2026-10-10",
-"s": "5th/6th Boys Volleyball Game"
+"s": "5th/6th Boys Volleyball Game",
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
 "c": "sports",
@@ -486,23 +526,21 @@
 {
 "c": "sports",
 "d": "2026-10-10",
-"s": "7th/8th Boys Soccer Game"
+"s": "7th/8th Boys Volleyball Game",
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
 "c": "sports",
 "d": "2026-10-10",
-"s": "7th/8th Boys Volleyball Game"
+"s": "7th/8th Girls Volleyball Game",
+"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
 "d": "2026-10-10",
-"s": "7th/8th Girls Volleyball Game"
-},
-{
-"c": "sports",
-"d": "2026-10-12",
-"s": "7th/8th Boys Soccer Practice",
-"t": "14:45"
+"s": "7th/8th Girls Volleyball Game",
+"t": "12:45",
+"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
@@ -554,27 +592,54 @@
 {
 "c": "sports",
 "d": "2026-10-17",
-"s": "5th/6th Boys Volleyball Game"
+"s": "5th/6th Boys Volleyball Game",
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
 "c": "sports",
 "d": "2026-10-17",
-"s": "5th/6th Girls Volleyball Game"
+"s": "7th/8th Boys Soccer Game",
+"l": "Hanson Park"
 },
 {
 "c": "sports",
 "d": "2026-10-17",
-"s": "7th/8th Boys Soccer Game"
+"s": "7th/8th Boys Volleyball Game",
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
 "c": "sports",
 "d": "2026-10-17",
-"s": "7th/8th Boys Volleyball Game"
+"s": "7th/8th Girls Volleyball Game",
+"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
 "d": "2026-10-17",
-"s": "7th/8th Girls Volleyball Game"
+"s": "7th/8th Boys Volleyball Game",
+"t": "09:45",
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
+},
+{
+"c": "sports",
+"d": "2026-10-17",
+"s": "5th/6th Girls Volleyball Game",
+"t": "11:15",
+"l": "Roberto Clemente Community Academy"
+},
+{
+"c": "sports",
+"d": "2026-10-17",
+"s": "Cross Country: North Regional- Afternoon Session 1 (Regional qualifiers only)",
+"t": "11:30",
+"l": "Humboldt Park"
+},
+{
+"c": "sports",
+"d": "2026-10-17",
+"s": "5th/6th Girls Volleyball Game",
+"t": "12:45",
+"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
@@ -644,33 +709,33 @@
 {
 "c": "sports",
 "d": "2026-10-24",
-"s": "5th/6th Boys Volleyball Game"
+"s": "5th/6th Boys Volleyball Game",
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
 "c": "sports",
 "d": "2026-10-24",
-"s": "5th/6th Girls Volleyball Game"
+"s": "7th/8th Boys Soccer Game",
+"l": "Hanson Park"
 },
 {
 "c": "sports",
 "d": "2026-10-24",
-"s": "7th/8th Boys Soccer Game"
+"s": "7th/8th Boys Volleyball Game",
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
 "c": "sports",
 "d": "2026-10-24",
-"s": "7th/8th Boys Volleyball Game"
+"s": "7th/8th Girls Volleyball Game",
+"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
 "d": "2026-10-24",
-"s": "7th/8th Girls Volleyball Game"
-},
-{
-"c": "sports",
-"d": "2026-10-24",
-"s": "Cross Country Team: North Regional Networks 1-7",
-"l": "Humboldt Park"
+"s": "5th/6th Girls Volleyball Game",
+"t": "15:00",
+"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
@@ -706,7 +771,7 @@
 "c": "sports",
 "d": "2026-10-31",
 "s": "Cross Country Team Score City Championships (Washington Park)",
-"l": "Washington Park"
+"t": "08:00"
 },
 {
 "c": "community",
