@@ -113,6 +113,12 @@ h1 .sub{display:block;font-size:0.3em;font-weight:600;letter-spacing:0.14em;text
 
 /* A muted pill per prep class, so the rotation is recognisable at a glance
    rather than something you have to stop and read. */
+/* Top of the card, hard right — the pill rides the same line as the
+   CLASSROOM label rather than sitting in with the times. */
+.prep-cell{flex:0 0 auto;margin-left:auto;align-self:flex-start}
+.prep-cell[hidden]{display:none}
+.prep-cell .tm-where{margin-top:3px}
+
 .prep{
   display:inline-block;
   border-radius:999px;padding:2px 11px 3px;
@@ -266,6 +272,9 @@ a.tile:focus-visible{box-shadow:0 0 0 3px rgba(27,127,184,.28)}
 
 @media (max-width:760px){
   .class-times{padding-left:0;border-left:0;flex-basis:100%}
+  /* Stacked, the card reads down a single left edge — don't strand the
+     pill against the right margin. */
+  .prep-cell{margin-left:0}
 }
 
 @media (max-width:560px){
@@ -316,11 +325,10 @@ a.tile:focus-visible{box-shadow:0 0 0 3px rgba(27,127,184,.28)}
       <div class="tm-time">2:45 PM</div>
       <div class="tm-where">Door 3</div>
     </div>
-    <div class="tm" id="prep" hidden>
-      <div class="tm-label" id="prep-label">Today&rsquo;s prep</div>
-      <div id="prep-pill"></div>
-      <div class="tm-where" id="prep-who"></div>
-    </div>
+  </div>
+  <div class="prep-cell" id="prep" hidden>
+    <div id="prep-pill"></div>
+    <div class="tm-where" id="prep-who"></div>
   </div>
   <a class="ps" href="https://www.parentsquare.com/signin" target="_blank" rel="noopener">Open ParentSquare &#8599;</a>
 </section>
@@ -820,13 +828,11 @@ function nextPrep(){
 const prepFound = nextPrep();
 if (prepFound){
   const { prep, day, out } = prepFound;
-  document.getElementById("prep-label").textContent =
-    out === 0 ? "Today's prep"
-    : out <= 7 ? `${dayName(day)}'s prep`
-    : `Prep on ${shortDate(day)}`;
+  /* No label above the pill, so a rolled-forward day has to say so here. */
+  const when = out === 0 ? "" : (out <= 7 ? shortDay(day) : shortDate(day)) + " \u00b7 ";
   document.getElementById("prep-pill").innerHTML =
     `<span class="prep ${prep.cls}">${esc(prep.es)}</span>`;
-  document.getElementById("prep-who").textContent = `${prep.en} \u00b7 ${prep.who}`;
+  document.getElementById("prep-who").textContent = `${when}${prep.en} \u00b7 ${prep.who}`;
   document.getElementById("prep").hidden = false;
 }
 
