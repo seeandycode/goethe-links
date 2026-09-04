@@ -91,9 +91,10 @@ h1 .sub{display:block;font-size:0.3em;font-weight:600;letter-spacing:0.14em;text
   font-weight:600;font-size:1.14rem;letter-spacing:-0.014em;line-height:1.2;
 }
 .class-teacher .room{
+  display:block;
   font-family:"Public Sans",sans-serif;
   font-weight:400;font-size:0.83rem;color:var(--ink-soft);
-  letter-spacing:0;margin-left:9px;
+  letter-spacing:0;line-height:1.35;margin-top:1px;
 }
 .class-times{
   flex:1 1 340px;
@@ -113,9 +114,9 @@ h1 .sub{display:block;font-size:0.3em;font-weight:600;letter-spacing:0.14em;text
 
 /* A muted pill per prep class, so the rotation is recognisable at a glance
    rather than something you have to stop and read. */
-/* Top of the card, hard right — the pill rides the same line as the
-   CLASSROOM label rather than sitting in with the times. */
-.prep-cell{flex:0 0 auto;margin-left:auto;align-self:flex-start}
+/* The mirror of .class-who at the other end of the card: label, the thing
+   itself, then the detail — three rows reading against the right edge. */
+.prep-cell{flex:0 0 auto;margin-left:auto;align-self:flex-start;text-align:right}
 .prep-cell[hidden]{display:none}
 .prep-cell .tm-where{margin-top:3px}
 
@@ -273,8 +274,8 @@ a.tile:focus-visible{box-shadow:0 0 0 3px rgba(27,127,184,.28)}
 @media (max-width:760px){
   .class-times{padding-left:0;border-left:0;flex-basis:100%}
   /* Stacked, the card reads down a single left edge — don't strand the
-     pill against the right margin. */
-  .prep-cell{margin-left:0}
+     pill against the right margin or hang its rows off it. */
+  .prep-cell{margin-left:0;text-align:left}
 }
 
 @media (max-width:560px){
@@ -327,6 +328,7 @@ a.tile:focus-visible{box-shadow:0 0 0 3px rgba(27,127,184,.28)}
     </div>
   </div>
   <div class="prep-cell" id="prep" hidden>
+    <div class="class-label">Prep</div>
     <div id="prep-pill"></div>
     <div class="tm-where" id="prep-who"></div>
   </div>
