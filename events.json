@@ -1,6 +1,6 @@
 {
-"generated": "2026-09-04T13:33:08Z",
-"through": "2027-01-02",
+"generated": "2026-09-05T12:44:33Z",
+"through": "2027-01-03",
 "events": [
 {
 "c": "sports",
@@ -193,6 +193,13 @@
 "c": "sports",
 "d": "2026-09-19",
 "s": "7th/8th Girls Volleyball Game",
+"l": "Roberto Clemente Community Academy"
+},
+{
+"c": "sports",
+"d": "2026-09-19",
+"s": "7th/8th Girls Volleyball Game",
+"t": "12:00",
 "l": "Roberto Clemente Community Academy"
 },
 {
@@ -416,13 +423,6 @@
 {
 "c": "sports",
 "d": "2026-10-03",
-"s": "5th/6th Girls Volleyball Game",
-"t": "13:30",
-"l": "Roberto Clemente Community Academy"
-},
-{
-"c": "sports",
-"d": "2026-10-03",
 "s": "5th/6th Boys Volleyball Game",
 "t": "15:45",
 "l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
@@ -538,8 +538,8 @@
 {
 "c": "sports",
 "d": "2026-10-10",
-"s": "7th/8th Girls Volleyball Game",
-"t": "12:45",
+"s": "5th/6th Girls Volleyball Game",
+"t": "13:30",
 "l": "Roberto Clemente Community Academy"
 },
 {
