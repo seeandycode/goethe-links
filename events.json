@@ -1,19 +1,7 @@
 {
-"generated": "2026-09-07T15:04:00Z",
-"through": "2027-01-05",
+"generated": "2026-09-08T13:39:12Z",
+"through": "2027-01-06",
 "events": [
-{
-"c": "sports",
-"d": "2026-08-31",
-"s": "5th/6th Girls Volleyball Practice",
-"t": "14:45"
-},
-{
-"c": "community",
-"d": "2026-08-31",
-"s": "FOGS Kickoff Meeting - 6:30pm Goethe Cafeteria (in English & Spanish)",
-"t": "18:30"
-},
 {
 "c": "sports",
 "d": "2026-09-01",
@@ -429,13 +417,6 @@
 },
 {
 "c": "sports",
-"d": "2026-10-03",
-"s": "5th/6th Boys Volleyball Game",
-"t": "15:45",
-"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
-},
-{
-"c": "sports",
 "d": "2026-10-05",
 "s": "5th/6th Girls Volleyball Practice",
 "t": "14:45"
@@ -729,6 +710,13 @@
 "d": "2026-10-24",
 "s": "7th/8th Girls Volleyball Game",
 "l": "Roberto Clemente Community Academy"
+},
+{
+"c": "sports",
+"d": "2026-10-24",
+"s": "5th/6th Boys Volleyball Game",
+"t": "14:15",
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
 "c": "sports",
