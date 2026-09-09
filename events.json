@@ -1,13 +1,7 @@
 {
-"generated": "2026-09-08T13:39:12Z",
-"through": "2027-01-06",
+"generated": "2026-09-09T13:44:51Z",
+"through": "2027-01-07",
 "events": [
-{
-"c": "sports",
-"d": "2026-09-01",
-"s": "5th/6th/7th/8th Boys Volleyball Practice",
-"t": "14:45"
-},
 {
 "c": "sports",
 "d": "2026-09-02",
@@ -76,6 +70,12 @@
 "t": "14:45"
 },
 {
+"c": "ost",
+"d": "2026-09-10",
+"s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
 "c": "community",
 "d": "2026-09-10",
 "s": "BAC & PAC info session",
@@ -112,9 +112,21 @@
 "t": "14:45"
 },
 {
+"c": "ost",
+"d": "2026-09-14",
+"s": "Goethe – Chess Club (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
 "c": "sports",
 "d": "2026-09-15",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-09-15",
+"s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
 "t": "14:45"
 },
 {
@@ -136,6 +148,12 @@
 "t": "14:45"
 },
 {
+"c": "ost",
+"d": "2026-09-16",
+"s": "Young Rembrandts - Artistic Explorers (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
 "c": "sports",
 "d": "2026-09-17",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
@@ -154,6 +172,12 @@
 "t": "14:45"
 },
 {
+"c": "ost",
+"d": "2026-09-17",
+"s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
 "c": "community",
 "d": "2026-09-18",
 "s": "Goethe Fest",
@@ -164,12 +188,6 @@
 "d": "2026-09-18",
 "s": "7th/8th Girls Volleyball Practice",
 "t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-09-19",
-"s": "7th/8th Boys Soccer Game",
-"l": "Hanson Park"
 },
 {
 "c": "sports",
@@ -199,13 +217,6 @@
 },
 {
 "c": "sports",
-"d": "2026-09-19",
-"s": "7th/8th Boys Soccer Game",
-"t": "16:00",
-"l": "Hanson Park"
-},
-{
-"c": "sports",
 "d": "2026-09-21",
 "s": "5th/6th Girls Volleyball Practice",
 "t": "14:45"
@@ -223,6 +234,12 @@
 "t": "14:45"
 },
 {
+"c": "ost",
+"d": "2026-09-21",
+"s": "Goethe – Chess Club (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
 "c": "community",
 "d": "2026-09-22",
 "s": "Goethe School Tour (K-8)",
@@ -232,6 +249,12 @@
 "c": "sports",
 "d": "2026-09-22",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-09-22",
+"s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
 "t": "14:45"
 },
 {
@@ -260,6 +283,12 @@
 "t": "14:45"
 },
 {
+"c": "ost",
+"d": "2026-09-23",
+"s": "Young Rembrandts - Artistic Explorers (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
 "c": "sports",
 "d": "2026-09-24",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
@@ -275,6 +304,12 @@
 "c": "sports",
 "d": "2026-09-24",
 "s": "Cross Country Team Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-09-24",
+"s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
 "t": "14:45"
 },
 {
@@ -314,9 +349,21 @@
 "t": "14:45"
 },
 {
+"c": "ost",
+"d": "2026-09-28",
+"s": "Goethe – Chess Club (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
 "c": "sports",
 "d": "2026-09-29",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-09-29",
+"s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
 "t": "14:45"
 },
 {
@@ -338,6 +385,12 @@
 "t": "14:45"
 },
 {
+"c": "ost",
+"d": "2026-09-30",
+"s": "Young Rembrandts - Artistic Explorers (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
 "c": "sports",
 "d": "2026-10-01",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
@@ -353,6 +406,12 @@
 "c": "sports",
 "d": "2026-10-01",
 "s": "Cross Country Team Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-10-01",
+"s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
 "t": "14:45"
 },
 {
@@ -428,6 +487,12 @@
 "t": "14:45"
 },
 {
+"c": "ost",
+"d": "2026-10-05",
+"s": "Goethe – Chess Club (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
 "c": "community",
 "d": "2026-10-05",
 "s": "FOGS General Meeting - 6:30pm Goethe Cafeteria",
@@ -437,6 +502,12 @@
 "c": "sports",
 "d": "2026-10-06",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-10-06",
+"s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
 "t": "14:45"
 },
 {
@@ -458,6 +529,12 @@
 "t": "14:45"
 },
 {
+"c": "ost",
+"d": "2026-10-07",
+"s": "Young Rembrandts - Artistic Explorers (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
 "c": "sports",
 "d": "2026-10-08",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
@@ -467,6 +544,12 @@
 "c": "sports",
 "d": "2026-10-08",
 "s": "7th/8th Boys Soccer Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-10-08",
+"s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
 "t": "14:45"
 },
 {
@@ -525,8 +608,28 @@
 },
 {
 "c": "sports",
+"d": "2026-10-10",
+"s": "7th/8th Boys Soccer Game",
+"t": "10:00",
+"l": "Hanson Park"
+},
+{
+"c": "sports",
+"d": "2026-10-10",
+"s": "5th/6th Boys Volleyball Game",
+"t": "13:30",
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
+},
+{
+"c": "sports",
 "d": "2026-10-13",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-10-13",
+"s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
 "t": "14:45"
 },
 {
@@ -548,6 +651,12 @@
 "t": "14:45"
 },
 {
+"c": "ost",
+"d": "2026-10-14",
+"s": "Young Rembrandts - Artistic Explorers (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
 "c": "sports",
 "d": "2026-10-15",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
@@ -557,6 +666,12 @@
 "c": "sports",
 "d": "2026-10-15",
 "s": "7th/8th Boys Soccer Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-10-15",
+"s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
 "t": "14:45"
 },
 {
@@ -593,6 +708,13 @@
 "d": "2026-10-17",
 "s": "7th/8th Girls Volleyball Game",
 "l": "Roberto Clemente Community Academy"
+},
+{
+"c": "sports",
+"d": "2026-10-17",
+"s": "7th/8th Boys Soccer Game",
+"t": "09:00",
+"l": "Hanson Park"
 },
 {
 "c": "sports",
@@ -635,6 +757,12 @@
 "t": "14:45"
 },
 {
+"c": "ost",
+"d": "2026-10-19",
+"s": "Goethe – Chess Club (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
 "c": "community",
 "d": "2026-10-20",
 "s": "Goethe Tour (K-8)",
@@ -644,6 +772,12 @@
 "c": "sports",
 "d": "2026-10-20",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-10-20",
+"s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
 "t": "14:45"
 },
 {
@@ -665,6 +799,12 @@
 "t": "14:45"
 },
 {
+"c": "ost",
+"d": "2026-10-21",
+"s": "Young Rembrandts - Artistic Explorers (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
 "c": "sports",
 "d": "2026-10-22",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
@@ -674,6 +814,12 @@
 "c": "sports",
 "d": "2026-10-22",
 "s": "7th/8th Boys Soccer Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-10-22",
+"s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
 "t": "14:45"
 },
 {
@@ -714,13 +860,6 @@
 {
 "c": "sports",
 "d": "2026-10-24",
-"s": "5th/6th Boys Volleyball Game",
-"t": "14:15",
-"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
-},
-{
-"c": "sports",
-"d": "2026-10-24",
 "s": "5th/6th Girls Volleyball Game",
 "t": "15:00",
 "l": "Roberto Clemente Community Academy"
@@ -732,9 +871,21 @@
 "t": "14:45"
 },
 {
+"c": "ost",
+"d": "2026-10-26",
+"s": "Goethe – Chess Club (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
 "c": "sports",
 "d": "2026-10-27",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-10-27",
+"s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
 "t": "14:45"
 },
 {
@@ -744,6 +895,12 @@
 "t": "14:45"
 },
 {
+"c": "ost",
+"d": "2026-10-28",
+"s": "Young Rembrandts - Artistic Explorers (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
 "c": "sports",
 "d": "2026-10-29",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
@@ -756,10 +913,34 @@
 "t": "14:45"
 },
 {
+"c": "ost",
+"d": "2026-10-29",
+"s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
 "c": "sports",
 "d": "2026-10-31",
 "s": "Cross Country Team Score City Championships (Washington Park)",
 "t": "08:00"
+},
+{
+"c": "ost",
+"d": "2026-11-02",
+"s": "Goethe – Chess Club (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-03",
+"s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-04",
+"s": "Young Rembrandts - Artistic Explorers (Tuition-Based Vendor)",
+"t": "14:45"
 },
 {
 "c": "community",
@@ -774,15 +955,39 @@
 "t": "14:45"
 },
 {
+"c": "ost",
+"d": "2026-11-05",
+"s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-09",
+"s": "Goethe – Chess Club (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
 "c": "sports",
 "d": "2026-11-10",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
 "t": "14:45"
 },
 {
+"c": "ost",
+"d": "2026-11-10",
+"s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
 "c": "sports",
 "d": "2026-11-12",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-12",
+"s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
 "t": "14:45"
 },
 {
@@ -800,10 +1005,82 @@
 "l": "Allstate Arena"
 },
 {
+"c": "ost",
+"d": "2026-11-16",
+"s": "Goethe – Chess Club (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-17",
+"s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-18",
+"s": "Young Rembrandts - Artistic Explorers (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-19",
+"s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-30",
+"s": "Goethe – Chess Club (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-01",
+"s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-02",
+"s": "Young Rembrandts - Artistic Explorers (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-03",
+"s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-07",
+"s": "Goethe – Chess Club (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
 "c": "community",
 "d": "2026-12-07",
 "s": "FOGS General Meeting - 6:30pm Goethe Cafeteria",
 "t": "18:30"
+},
+{
+"c": "ost",
+"d": "2026-12-08",
+"s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-09",
+"s": "Young Rembrandts - Artistic Explorers (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-10",
+"s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
+"t": "14:45"
 },
 {
 "c": "community",
@@ -811,6 +1088,24 @@
 "s": "LSC Meeting",
 "t": "18:00",
 "l": "Goethe Elementary School"
+},
+{
+"c": "ost",
+"d": "2026-12-14",
+"s": "Goethe – Chess Club (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-15",
+"s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-17",
+"s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
+"t": "14:45"
 }
 ]
 }
