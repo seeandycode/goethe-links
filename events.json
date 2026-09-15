@@ -1,6 +1,6 @@
 {
-"generated": "2026-09-14T15:54:20Z",
-"through": "2027-01-12",
+"generated": "2026-09-15T14:20:41Z",
+"through": "2027-01-13",
 "events": [
 {
 "c": "sports",
@@ -445,6 +445,13 @@
 },
 {
 "c": "sports",
+"d": "2026-10-03",
+"s": "5th/6th Boys Volleyball Game",
+"t": "15:45",
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
+},
+{
+"c": "sports",
 "d": "2026-10-05",
 "s": "5th/6th Girls Volleyball Practice",
 "t": "14:45"
@@ -584,13 +591,6 @@
 },
 {
 "c": "sports",
-"d": "2026-10-10",
-"s": "7th/8th Girls Volleyball Game",
-"t": "12:45",
-"l": "Roberto Clemente Community Academy"
-},
-{
-"c": "sports",
 "d": "2026-10-13",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
 "t": "14:45"
@@ -681,13 +681,6 @@
 {
 "c": "sports",
 "d": "2026-10-17",
-"s": "5th/6th Boys Volleyball Game",
-"t": "09:00",
-"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
-},
-{
-"c": "sports",
-"d": "2026-10-17",
 "s": "7th/8th Boys Volleyball Game",
 "t": "09:45",
 "l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
@@ -774,6 +767,11 @@
 "t": "14:45"
 },
 {
+"c": "community",
+"d": "2026-10-22",
+"s": "Fall Picture Day"
+},
+{
 "c": "sports",
 "d": "2026-10-22",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
@@ -831,6 +829,13 @@
 "d": "2026-10-24",
 "s": "5th/6th Girls Volleyball Game",
 "t": "15:00",
+"l": "Roberto Clemente Community Academy"
+},
+{
+"c": "sports",
+"d": "2026-10-24",
+"s": "7th/8th Girls Volleyball Game",
+"t": "15:45",
 "l": "Roberto Clemente Community Academy"
 },
 {
@@ -1044,6 +1049,11 @@
 "d": "2026-12-09",
 "s": "Young Rembrandts - Artistic Explorers (Tuition-Based Vendor)",
 "t": "14:45"
+},
+{
+"c": "community",
+"d": "2026-12-10",
+"s": "Fall Picture Retakes"
 },
 {
 "c": "ost",
