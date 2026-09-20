@@ -1,6 +1,6 @@
 {
-"generated": "2026-09-19T13:11:09Z",
-"through": "2027-01-17",
+"generated": "2026-09-20T13:35:29Z",
+"through": "2027-01-18",
 "events": [
 {
 "c": "sports",
@@ -378,13 +378,6 @@
 },
 {
 "c": "sports",
-"d": "2026-10-03",
-"s": "5th/6th Boys Volleyball Game",
-"t": "15:45",
-"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
-},
-{
-"c": "sports",
 "d": "2026-10-05",
 "s": "5th/6th Girls Volleyball Practice",
 "t": "14:45"
@@ -614,6 +607,13 @@
 {
 "c": "sports",
 "d": "2026-10-17",
+"s": "7th/8th Boys Soccer Game",
+"t": "09:00",
+"l": "Hanson Park"
+},
+{
+"c": "sports",
+"d": "2026-10-17",
 "s": "7th/8th Boys Volleyball Game",
 "t": "09:45",
 "l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
@@ -767,9 +767,9 @@
 {
 "c": "sports",
 "d": "2026-10-24",
-"s": "7th/8th Boys Soccer Game",
-"t": "09:00",
-"l": "Hanson Park"
+"s": "5th/6th Boys Volleyball Game",
+"t": "14:15",
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
 "c": "sports",
