@@ -1,31 +1,7 @@
 {
-"generated": "2026-09-21T15:54:27Z",
-"through": "2027-01-19",
+"generated": "2026-09-22T14:03:10Z",
+"through": "2027-01-20",
 "events": [
-{
-"c": "sports",
-"d": "2026-09-14",
-"s": "5th/6th Girls Volleyball Practice",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-09-14",
-"s": "7th/8th Boys Soccer Practice",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-09-14",
-"s": "Cross Country Team Practice",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-09-14",
-"s": "Goethe – Chess Club (Tuition-Based Vendor)",
-"t": "14:45"
-},
 {
 "c": "sports",
 "d": "2026-09-15",
@@ -275,6 +251,12 @@
 "t": "15:00"
 },
 {
+"c": "community",
+"d": "2026-09-29",
+"s": "Class of 2027 8th Grade Overnight Trip Virtual Meeting",
+"t": "18:00"
+},
+{
 "c": "sports",
 "d": "2026-09-30",
 "s": "7th/8th Boys Soccer Practice",
@@ -323,12 +305,6 @@
 "t": "14:45"
 },
 {
-"c": "community",
-"d": "2026-10-02",
-"s": "Goethe Movie Night",
-"t": "17:45"
-},
-{
 "c": "sports",
 "d": "2026-10-03",
 "s": "5th/6th Boys Soccer Game"
@@ -368,13 +344,6 @@
 "s": "Cross Country Team: Network Regional Qualifier at Riis Park",
 "t": "08:00",
 "l": "Riis Park"
-},
-{
-"c": "sports",
-"d": "2026-10-03",
-"s": "5th/6th Girls Volleyball Game",
-"t": "13:30",
-"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
@@ -481,6 +450,12 @@
 "t": "14:45"
 },
 {
+"c": "community",
+"d": "2026-10-09",
+"s": "Goethe Movie Night",
+"t": "17:30"
+},
+{
 "c": "sports",
 "d": "2026-10-10",
 "s": "5th/6th Boys Soccer Game"
@@ -518,8 +493,22 @@
 {
 "c": "sports",
 "d": "2026-10-10",
+"s": "5th/6th Boys Soccer Game",
+"t": "12:00",
+"l": "Riis Park"
+},
+{
+"c": "sports",
+"d": "2026-10-10",
 "s": "7th/8th Girls Volleyball Game",
 "t": "12:45",
+"l": "Roberto Clemente Community Academy"
+},
+{
+"c": "sports",
+"d": "2026-10-10",
+"s": "5th/6th Girls Volleyball Game",
+"t": "13:30",
 "l": "Roberto Clemente Community Academy"
 },
 {
@@ -617,6 +606,13 @@
 "s": "5th/6th Boys Volleyball Game",
 "t": "09:00",
 "l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
+},
+{
+"c": "sports",
+"d": "2026-10-17",
+"s": "7th/8th Boys Soccer Game",
+"t": "09:00",
+"l": "Hanson Park"
 },
 {
 "c": "sports",
@@ -763,13 +759,6 @@
 "d": "2026-10-24",
 "s": "7th/8th Girls Volleyball Game",
 "l": "Roberto Clemente Community Academy"
-},
-{
-"c": "sports",
-"d": "2026-10-24",
-"s": "7th/8th Boys Soccer Game",
-"t": "09:00",
-"l": "Hanson Park"
 },
 {
 "c": "sports",
