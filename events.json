@@ -1,19 +1,7 @@
 {
-"generated": "2026-09-22T14:03:10Z",
-"through": "2027-01-20",
+"generated": "2026-09-23T14:14:55Z",
+"through": "2027-01-21",
 "events": [
-{
-"c": "sports",
-"d": "2026-09-15",
-"s": "5th/6th/7th/8th Boys Volleyball Practice",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-09-15",
-"s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
-"t": "14:45"
-},
 {
 "c": "sports",
 "d": "2026-09-16",
@@ -347,6 +335,13 @@
 },
 {
 "c": "sports",
+"d": "2026-10-03",
+"s": "5th/6th Girls Volleyball Game",
+"t": "13:30",
+"l": "Roberto Clemente Community Academy"
+},
+{
+"c": "sports",
 "d": "2026-10-05",
 "s": "5th/6th Girls Volleyball Practice",
 "t": "14:45"
@@ -499,20 +494,6 @@
 },
 {
 "c": "sports",
-"d": "2026-10-10",
-"s": "7th/8th Girls Volleyball Game",
-"t": "12:45",
-"l": "Roberto Clemente Community Academy"
-},
-{
-"c": "sports",
-"d": "2026-10-10",
-"s": "5th/6th Girls Volleyball Game",
-"t": "13:30",
-"l": "Roberto Clemente Community Academy"
-},
-{
-"c": "sports",
 "d": "2026-10-13",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
 "t": "14:45"
@@ -599,20 +580,6 @@
 "d": "2026-10-17",
 "s": "7th/8th Girls Volleyball Game",
 "l": "Roberto Clemente Community Academy"
-},
-{
-"c": "sports",
-"d": "2026-10-17",
-"s": "5th/6th Boys Volleyball Game",
-"t": "09:00",
-"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
-},
-{
-"c": "sports",
-"d": "2026-10-17",
-"s": "7th/8th Boys Soccer Game",
-"t": "09:00",
-"l": "Hanson Park"
 },
 {
 "c": "sports",
@@ -763,8 +730,29 @@
 {
 "c": "sports",
 "d": "2026-10-24",
+"s": "7th/8th Boys Soccer Game",
+"t": "09:00",
+"l": "Hanson Park"
+},
+{
+"c": "sports",
+"d": "2026-10-24",
+"s": "5th/6th Boys Volleyball Game",
+"t": "14:15",
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
+},
+{
+"c": "sports",
+"d": "2026-10-24",
 "s": "5th/6th Girls Volleyball Game",
 "t": "15:00",
+"l": "Roberto Clemente Community Academy"
+},
+{
+"c": "sports",
+"d": "2026-10-24",
+"s": "7th/8th Girls Volleyball Game",
+"t": "15:45",
 "l": "Roberto Clemente Community Academy"
 },
 {
