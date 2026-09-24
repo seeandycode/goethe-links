@@ -1,25 +1,7 @@
 {
-"generated": "2026-09-23T14:14:55Z",
-"through": "2027-01-21",
+"generated": "2026-09-24T14:13:25Z",
+"through": "2027-01-22",
 "events": [
-{
-"c": "sports",
-"d": "2026-09-16",
-"s": "7th/8th Boys Soccer Practice",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-09-16",
-"s": "7th/8th Girls Volleyball Practice",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-09-16",
-"s": "Young Rembrandts - Artistic Explorers (Tuition-Based Vendor)",
-"t": "14:45"
-},
 {
 "c": "sports",
 "d": "2026-09-17",
@@ -198,6 +180,13 @@
 },
 {
 "c": "sports",
+"d": "2026-09-26",
+"s": "7th/8th Girls Volleyball Game",
+"t": "11:15",
+"l": "Roberto Clemente Community Academy"
+},
+{
+"c": "sports",
 "d": "2026-09-28",
 "s": "5th/6th Girls Volleyball Practice",
 "t": "14:45"
@@ -336,9 +325,9 @@
 {
 "c": "sports",
 "d": "2026-10-03",
-"s": "5th/6th Girls Volleyball Game",
-"t": "13:30",
-"l": "Roberto Clemente Community Academy"
+"s": "5th/6th Boys Volleyball Game",
+"t": "15:45",
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
 "c": "sports",
@@ -427,6 +416,12 @@
 {
 "c": "community",
 "d": "2026-10-08",
+"s": "6th Grade Band Showcase",
+"t": "17:00"
+},
+{
+"c": "community",
+"d": "2026-10-08",
 "s": "Restaurant Night - 5-8pm Portillo's Kimball & Addison",
 "t": "17:00",
 "l": "Portillo's Chicago - Addison"
@@ -488,9 +483,9 @@
 {
 "c": "sports",
 "d": "2026-10-10",
-"s": "5th/6th Boys Soccer Game",
-"t": "12:00",
-"l": "Riis Park"
+"s": "5th/6th Girls Volleyball Game",
+"t": "13:30",
+"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
@@ -737,22 +732,15 @@
 {
 "c": "sports",
 "d": "2026-10-24",
-"s": "5th/6th Boys Volleyball Game",
-"t": "14:15",
-"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
+"s": "5th/6th Boys Soccer Game",
+"t": "12:00",
+"l": "Riis Park"
 },
 {
 "c": "sports",
 "d": "2026-10-24",
 "s": "5th/6th Girls Volleyball Game",
 "t": "15:00",
-"l": "Roberto Clemente Community Academy"
-},
-{
-"c": "sports",
-"d": "2026-10-24",
-"s": "7th/8th Girls Volleyball Game",
-"t": "15:45",
 "l": "Roberto Clemente Community Academy"
 },
 {
