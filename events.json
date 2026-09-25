@@ -1,31 +1,7 @@
 {
-"generated": "2026-09-24T14:13:25Z",
-"through": "2027-01-22",
+"generated": "2026-09-25T14:37:01Z",
+"through": "2027-01-23",
 "events": [
-{
-"c": "sports",
-"d": "2026-09-17",
-"s": "5th/6th/7th/8th Boys Volleyball Practice",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-09-17",
-"s": "7th/8th Boys Soccer Practice",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-09-17",
-"s": "Cross Country Team Practice",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-09-17",
-"s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
-"t": "14:45"
-},
 {
 "c": "community",
 "d": "2026-09-18",
@@ -180,13 +156,6 @@
 },
 {
 "c": "sports",
-"d": "2026-09-26",
-"s": "7th/8th Girls Volleyball Game",
-"t": "11:15",
-"l": "Roberto Clemente Community Academy"
-},
-{
-"c": "sports",
 "d": "2026-09-28",
 "s": "5th/6th Girls Volleyball Practice",
 "t": "14:45"
@@ -325,9 +294,16 @@
 {
 "c": "sports",
 "d": "2026-10-03",
-"s": "5th/6th Boys Volleyball Game",
-"t": "15:45",
-"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
+"s": "7th/8th Boys Soccer Game",
+"t": "09:00",
+"l": "Hanson Park"
+},
+{
+"c": "sports",
+"d": "2026-10-03",
+"s": "7th/8th Girls Volleyball Game",
+"t": "14:15",
+"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
@@ -388,6 +364,13 @@
 "d": "2026-10-07",
 "s": "Young Rembrandts - Artistic Explorers (Tuition-Based Vendor)",
 "t": "14:45"
+},
+{
+"c": "community",
+"d": "2026-10-08",
+"s": "Goethe High School Fair (SY26-27)",
+"t": "09:00",
+"l": "2236 N Rockwell St"
 },
 {
 "c": "sports",
@@ -479,6 +462,20 @@
 "s": "7th/8th Boys Soccer Game",
 "t": "10:00",
 "l": "Hanson Park"
+},
+{
+"c": "sports",
+"d": "2026-10-10",
+"s": "5th/6th Boys Volleyball Game",
+"t": "12:45",
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
+},
+{
+"c": "sports",
+"d": "2026-10-10",
+"s": "5th/6th Boys Volleyball Game",
+"t": "13:30",
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
 "c": "sports",
@@ -721,13 +718,6 @@
 "d": "2026-10-24",
 "s": "7th/8th Girls Volleyball Game",
 "l": "Roberto Clemente Community Academy"
-},
-{
-"c": "sports",
-"d": "2026-10-24",
-"s": "7th/8th Boys Soccer Game",
-"t": "09:00",
-"l": "Hanson Park"
 },
 {
 "c": "sports",
