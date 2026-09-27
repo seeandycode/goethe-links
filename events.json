@@ -1,26 +1,7 @@
 {
-"generated": "2026-09-26T13:45:12Z",
-"through": "2027-01-24",
+"generated": "2026-09-27T14:42:10Z",
+"through": "2027-01-25",
 "events": [
-{
-"c": "sports",
-"d": "2026-09-19",
-"s": "7th/8th Boys Volleyball Game",
-"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
-},
-{
-"c": "sports",
-"d": "2026-09-19",
-"s": "7th/8th Girls Volleyball Game",
-"l": "Roberto Clemente Community Academy"
-},
-{
-"c": "sports",
-"d": "2026-09-19",
-"s": "7th/8th Boys Soccer Game",
-"t": "14:00",
-"l": "Hanson Park"
-},
 {
 "c": "sports",
 "d": "2026-09-21",
@@ -282,23 +263,9 @@
 {
 "c": "sports",
 "d": "2026-10-03",
-"s": "7th/8th Boys Soccer Game",
-"t": "09:00",
-"l": "Hanson Park"
-},
-{
-"c": "sports",
-"d": "2026-10-03",
 "s": "5th/6th Girls Volleyball Game",
 "t": "13:30",
 "l": "Roberto Clemente Community Academy"
-},
-{
-"c": "sports",
-"d": "2026-10-03",
-"s": "5th/6th Boys Volleyball Game",
-"t": "15:45",
-"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
 "c": "sports",
@@ -463,6 +430,13 @@
 "d": "2026-10-10",
 "s": "5th/6th Boys Volleyball Game",
 "t": "12:45",
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
+},
+{
+"c": "sports",
+"d": "2026-10-10",
+"s": "5th/6th Boys Volleyball Game",
+"t": "13:30",
 "l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
@@ -710,15 +684,15 @@
 {
 "c": "sports",
 "d": "2026-10-24",
-"s": "5th/6th Girls Volleyball Game",
-"t": "15:00",
-"l": "Roberto Clemente Community Academy"
+"s": "7th/8th Boys Soccer Game",
+"t": "09:00",
+"l": "Hanson Park"
 },
 {
 "c": "sports",
 "d": "2026-10-24",
-"s": "7th/8th Girls Volleyball Game",
-"t": "15:45",
+"s": "5th/6th Girls Volleyball Game",
+"t": "15:00",
 "l": "Roberto Clemente Community Academy"
 },
 {
