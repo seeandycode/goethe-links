@@ -1,32 +1,7 @@
 {
-"generated": "2026-10-03T14:19:28Z",
-"through": "2027-01-31",
+"generated": "2026-10-04T14:47:50Z",
+"through": "2027-02-01",
 "events": [
-{
-"c": "sports",
-"d": "2026-09-26",
-"s": "7th/8th Boys Soccer Game",
-"l": "Hanson Park"
-},
-{
-"c": "sports",
-"d": "2026-09-26",
-"s": "7th/8th Boys Volleyball Game",
-"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
-},
-{
-"c": "sports",
-"d": "2026-09-26",
-"s": "7th/8th Girls Volleyball Game",
-"l": "Roberto Clemente Community Academy"
-},
-{
-"c": "sports",
-"d": "2026-09-26",
-"s": "7th/8th Girls Volleyball Game",
-"t": "11:15",
-"l": "Roberto Clemente Community Academy"
-},
 {
 "c": "sports",
 "d": "2026-09-28",
@@ -163,6 +138,13 @@
 "s": "Cross Country Team: Network Regional Qualifier at Riis Park",
 "t": "08:00",
 "l": "Riis Park"
+},
+{
+"c": "sports",
+"d": "2026-10-03",
+"s": "7th/8th Boys Soccer Game",
+"t": "09:00",
+"l": "Hanson Park"
 },
 {
 "c": "sports",
@@ -598,13 +580,6 @@
 "d": "2026-10-24",
 "s": "7th/8th Girls Volleyball Game",
 "l": "Roberto Clemente Community Academy"
-},
-{
-"c": "sports",
-"d": "2026-10-24",
-"s": "7th/8th Boys Soccer Game",
-"t": "09:00",
-"l": "Hanson Park"
 },
 {
 "c": "sports",
