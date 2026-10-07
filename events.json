@@ -1,31 +1,7 @@
 {
-"generated": "2026-10-06T15:58:10Z",
-"through": "2027-02-03",
+"generated": "2026-10-07T16:31:07Z",
+"through": "2027-02-04",
 "events": [
-{
-"c": "sports",
-"d": "2026-09-29",
-"s": "5th/6th/7th/8th Boys Volleyball Practice",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-09-29",
-"s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-09-29",
-"s": "5th/6th Boys Soccer Practice",
-"t": "15:00"
-},
-{
-"c": "community",
-"d": "2026-09-29",
-"s": "Class of 2027 8th Grade Overnight Trip Virtual Meeting",
-"t": "18:00"
-},
 {
 "c": "sports",
 "d": "2026-09-30",
@@ -131,6 +107,13 @@
 },
 {
 "c": "sports",
+"d": "2026-10-03",
+"s": "7th/8th Girls Volleyball Game",
+"t": "14:15",
+"l": "Roberto Clemente Community Academy"
+},
+{
+"c": "sports",
 "d": "2026-10-05",
 "s": "5th/6th Girls Volleyball Practice",
 "t": "14:45"
@@ -139,6 +122,12 @@
 "c": "sports",
 "d": "2026-10-05",
 "s": "7th/8th Boys Soccer Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-10-05",
+"s": "Cross Country Team Practice",
 "t": "14:45"
 },
 {
@@ -209,6 +198,12 @@
 "t": "14:45"
 },
 {
+"c": "sports",
+"d": "2026-10-08",
+"s": "Cross Country Team Practice",
+"t": "14:45"
+},
+{
 "c": "ost",
 "d": "2026-10-08",
 "s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
@@ -266,19 +261,8 @@
 {
 "c": "sports",
 "d": "2026-10-10",
-"s": "5th/6th Girls Volleyball Game"
-},
-{
-"c": "sports",
-"d": "2026-10-10",
 "s": "7th/8th Boys Volleyball Game",
 "l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
-},
-{
-"c": "sports",
-"d": "2026-10-10",
-"s": "7th/8th Girls Volleyball Game",
-"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
@@ -297,9 +281,16 @@
 {
 "c": "sports",
 "d": "2026-10-10",
-"s": "5th/6th Boys Volleyball Game",
+"s": "7th/8th Girls Volleyball Game",
 "t": "12:00",
-"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
+"l": "1119 N Cleveland Ave"
+},
+{
+"c": "sports",
+"d": "2026-10-10",
+"s": "5th/6th Girls Volleyball Game",
+"t": "12:45",
+"l": "The Ogden International School of Chicago - Jenner Campus"
 },
 {
 "c": "sports",
@@ -307,13 +298,6 @@
 "s": "7th/8th Boys Volleyball Game",
 "t": "12:45",
 "l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
-},
-{
-"c": "sports",
-"d": "2026-10-10",
-"s": "5th/6th Girls Volleyball Game",
-"t": "13:30",
-"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
@@ -369,6 +353,12 @@
 "t": "14:45"
 },
 {
+"c": "sports",
+"d": "2026-10-15",
+"s": "Cross Country Team Practice",
+"t": "14:45"
+},
+{
 "c": "ost",
 "d": "2026-10-15",
 "s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
@@ -406,8 +396,9 @@
 {
 "c": "sports",
 "d": "2026-10-17",
-"s": "7th/8th Girls Volleyball Game",
-"l": "Roberto Clemente Community Academy"
+"s": "7th/8th Boys Soccer Game",
+"t": "09:00",
+"l": "Hanson Park"
 },
 {
 "c": "sports",
@@ -419,9 +410,23 @@
 {
 "c": "sports",
 "d": "2026-10-17",
+"s": "5th/6th Boys Volleyball Game",
+"t": "09:45",
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
+},
+{
+"c": "sports",
+"d": "2026-10-17",
+"s": "7th/8th Girls Volleyball Game",
+"t": "10:30",
+"l": "1119 N Cleveland Ave"
+},
+{
+"c": "sports",
+"d": "2026-10-17",
 "s": "5th/6th Girls Volleyball Game",
 "t": "11:15",
-"l": "Roberto Clemente Community Academy"
+"l": "The Ogden International School of Chicago - Jenner Campus"
 },
 {
 "c": "sports",
@@ -433,9 +438,9 @@
 {
 "c": "sports",
 "d": "2026-10-17",
-"s": "5th/6th Girls Volleyball Game",
-"t": "12:45",
-"l": "Roberto Clemente Community Academy"
+"s": "5th/6th Boys Soccer Game",
+"t": "12:00",
+"l": "Riis Park"
 },
 {
 "c": "sports",
@@ -447,6 +452,12 @@
 "c": "sports",
 "d": "2026-10-19",
 "s": "7th/8th Boys Soccer Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-10-19",
+"s": "Cross Country Team Practice",
 "t": "14:45"
 },
 {
@@ -515,6 +526,12 @@
 "t": "14:45"
 },
 {
+"c": "sports",
+"d": "2026-10-22",
+"s": "Cross Country Team: Intrasquad Meet @ Palmer Square Park",
+"t": "14:45"
+},
+{
 "c": "ost",
 "d": "2026-10-22",
 "s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
@@ -553,40 +570,26 @@
 "c": "sports",
 "d": "2026-10-24",
 "s": "7th/8th Girls Volleyball Game",
-"l": "Roberto Clemente Community Academy"
-},
-{
-"c": "sports",
-"d": "2026-10-24",
-"s": "7th/8th Boys Soccer Game",
-"t": "09:00",
-"l": "Hanson Park"
-},
-{
-"c": "sports",
-"d": "2026-10-24",
-"s": "5th/6th Boys Soccer Game",
-"t": "12:00",
-"l": "Riis Park"
+"t": "13:30",
+"l": "1119 N Cleveland Ave"
 },
 {
 "c": "sports",
 "d": "2026-10-24",
 "s": "5th/6th Girls Volleyball Game",
-"t": "15:00",
-"l": "Roberto Clemente Community Academy"
-},
-{
-"c": "sports",
-"d": "2026-10-24",
-"s": "7th/8th Girls Volleyball Game",
-"t": "15:45",
-"l": "Roberto Clemente Community Academy"
+"t": "14:15",
+"l": "The Ogden International School of Chicago - Jenner Campus"
 },
 {
 "c": "sports",
 "d": "2026-10-26",
 "s": "7th/8th Boys Soccer Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-10-26",
+"s": "Cross Country Team Practice",
 "t": "14:45"
 },
 {
@@ -629,6 +632,12 @@
 "c": "sports",
 "d": "2026-10-29",
 "s": "7th/8th Boys Soccer Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-10-29",
+"s": "Cross Country Team Practice",
 "t": "14:45"
 },
 {
