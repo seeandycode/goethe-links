@@ -1,25 +1,7 @@
 {
-"generated": "2026-10-07T16:31:07Z",
-"through": "2027-02-04",
+"generated": "2026-10-08T16:30:20Z",
+"through": "2027-02-05",
 "events": [
-{
-"c": "sports",
-"d": "2026-09-30",
-"s": "7th/8th Boys Soccer Practice",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-09-30",
-"s": "7th/8th Girls Volleyball Practice",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-09-30",
-"s": "Young Rembrandts - Artistic Explorers (Tuition-Based Vendor)",
-"t": "14:45"
-},
 {
 "c": "sports",
 "d": "2026-10-01",
@@ -104,13 +86,6 @@
 "s": "7th/8th Boys Volleyball Game",
 "t": "13:30",
 "l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
-},
-{
-"c": "sports",
-"d": "2026-10-03",
-"s": "7th/8th Girls Volleyball Game",
-"t": "14:15",
-"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
@@ -210,6 +185,12 @@
 "t": "14:45"
 },
 {
+"c": "ost",
+"d": "2026-10-08",
+"s": "Let's Play",
+"t": "14:45"
+},
+{
 "c": "community",
 "d": "2026-10-08",
 "s": "Goethe Tour (K-8)",
@@ -281,6 +262,13 @@
 {
 "c": "sports",
 "d": "2026-10-10",
+"s": "5th/6th Boys Volleyball Game",
+"t": "12:00",
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
+},
+{
+"c": "sports",
+"d": "2026-10-10",
 "s": "7th/8th Girls Volleyball Game",
 "t": "12:00",
 "l": "1119 N Cleveland Ave"
@@ -303,6 +291,12 @@
 "c": "sports",
 "d": "2026-10-13",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-10-13",
+"s": "Little Architects",
 "t": "14:45"
 },
 {
@@ -365,6 +359,12 @@
 "t": "14:45"
 },
 {
+"c": "ost",
+"d": "2026-10-15",
+"s": "Let's Play",
+"t": "14:45"
+},
+{
 "c": "sports",
 "d": "2026-10-16",
 "s": "7th/8th Girls Volleyball Practice",
@@ -405,13 +405,6 @@
 "d": "2026-10-17",
 "s": "7th/8th Boys Volleyball Game",
 "t": "09:00",
-"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
-},
-{
-"c": "sports",
-"d": "2026-10-17",
-"s": "5th/6th Boys Volleyball Game",
-"t": "09:45",
 "l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
@@ -481,6 +474,12 @@
 {
 "c": "ost",
 "d": "2026-10-20",
+"s": "Little Architects",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-10-20",
 "s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
 "t": "14:45"
 },
@@ -535,6 +534,12 @@
 "c": "ost",
 "d": "2026-10-22",
 "s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-10-22",
+"s": "Let's Play",
 "t": "14:45"
 },
 {
@@ -607,6 +612,12 @@
 {
 "c": "ost",
 "d": "2026-10-27",
+"s": "Little Architects",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-10-27",
 "s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
 "t": "14:45"
 },
@@ -644,6 +655,12 @@
 "c": "ost",
 "d": "2026-10-29",
 "s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-10-29",
+"s": "Let's Play",
 "t": "14:45"
 },
 {
@@ -690,6 +707,12 @@
 },
 {
 "c": "ost",
+"d": "2026-11-05",
+"s": "Let's Play",
+"t": "14:45"
+},
+{
+"c": "ost",
 "d": "2026-11-09",
 "s": "Goethe – Chess Club (Tuition-Based Vendor)",
 "t": "14:45"
@@ -716,6 +739,12 @@
 "c": "ost",
 "d": "2026-11-12",
 "s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-12",
+"s": "Let's Play",
 "t": "14:45"
 },
 {
@@ -758,6 +787,18 @@
 },
 {
 "c": "ost",
+"d": "2026-11-19",
+"s": "Let's Play",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-26",
+"s": "Let's Play",
+"t": "14:45"
+},
+{
+"c": "ost",
 "d": "2026-11-30",
 "s": "Goethe – Chess Club (Tuition-Based Vendor)",
 "t": "14:45"
@@ -778,6 +819,12 @@
 "c": "ost",
 "d": "2026-12-03",
 "s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-03",
+"s": "Let's Play",
 "t": "14:45"
 },
 {
@@ -810,14 +857,15 @@
 "s": "Fall Picture Retakes"
 },
 {
-"c": "community",
+"c": "ost",
 "d": "2026-12-10",
-"s": "Winter Concert (Kdg, 4th, 5th, 7th and Choir)"
+"s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
+"t": "14:45"
 },
 {
 "c": "ost",
 "d": "2026-12-10",
-"s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
+"s": "Let's Play",
 "t": "14:45"
 },
 {
@@ -834,6 +882,11 @@
 "t": "14:45"
 },
 {
+"c": "community",
+"d": "2026-12-15",
+"s": "Winter Concert (Kdg, 4th, 5th, 7th and Choir)"
+},
+{
 "c": "ost",
 "d": "2026-12-15",
 "s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
@@ -846,11 +899,53 @@
 "t": "14:45"
 },
 {
+"c": "ost",
+"d": "2026-12-17",
+"s": "Let's Play",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-24",
+"s": "Let's Play",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-31",
+"s": "Let's Play",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-01-07",
+"s": "Let's Play",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-01-14",
+"s": "Let's Play",
+"t": "14:45"
+},
+{
 "c": "community",
 "d": "2027-01-14",
 "s": "LSC Meeting",
 "t": "18:00",
 "l": "Goethe Elementary School"
+},
+{
+"c": "ost",
+"d": "2027-01-21",
+"s": "Let's Play",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-01-28",
+"s": "Let's Play",
+"t": "14:45"
 }
 ]
 }
