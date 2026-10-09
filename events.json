@@ -1,31 +1,7 @@
 {
-"generated": "2026-10-08T16:30:20Z",
-"through": "2027-02-05",
+"generated": "2026-10-09T16:14:40Z",
+"through": "2027-02-06",
 "events": [
-{
-"c": "sports",
-"d": "2026-10-01",
-"s": "5th/6th/7th/8th Boys Volleyball Practice",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-10-01",
-"s": "7th/8th Boys Soccer Practice",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-10-01",
-"s": "Cross Country Team Practice",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-10-01",
-"s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
-"t": "14:45"
-},
 {
 "c": "sports",
 "d": "2026-10-02",
@@ -72,6 +48,13 @@
 "s": "Cross Country Team: Network Regional Qualifier at Riis Park",
 "t": "08:00",
 "l": "Riis Park"
+},
+{
+"c": "sports",
+"d": "2026-10-03",
+"s": "5th/6th Boys Soccer Game",
+"t": "12:00",
+"l": "Hanson Park"
 },
 {
 "c": "sports",
@@ -262,13 +245,6 @@
 {
 "c": "sports",
 "d": "2026-10-10",
-"s": "5th/6th Boys Volleyball Game",
-"t": "12:00",
-"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
-},
-{
-"c": "sports",
-"d": "2026-10-10",
 "s": "7th/8th Girls Volleyball Game",
 "t": "12:00",
 "l": "1119 N Cleveland Ave"
@@ -286,6 +262,12 @@
 "s": "7th/8th Boys Volleyball Game",
 "t": "12:45",
 "l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
+},
+{
+"c": "community",
+"d": "2026-10-13",
+"s": "Evacuation Drill",
+"t": "08:00"
 },
 {
 "c": "sports",
@@ -335,6 +317,12 @@
 "s": "Hispanic Heritage Month Celebration"
 },
 {
+"c": "community",
+"d": "2026-10-15",
+"s": "School Lockdown Drill",
+"t": "09:00"
+},
+{
 "c": "sports",
 "d": "2026-10-15",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
@@ -363,6 +351,12 @@
 "d": "2026-10-15",
 "s": "Let's Play",
 "t": "14:45"
+},
+{
+"c": "community",
+"d": "2026-10-16",
+"s": "Shelter-In-Place",
+"t": "08:00"
 },
 {
 "c": "sports",
@@ -396,13 +390,6 @@
 {
 "c": "sports",
 "d": "2026-10-17",
-"s": "7th/8th Boys Soccer Game",
-"t": "09:00",
-"l": "Hanson Park"
-},
-{
-"c": "sports",
-"d": "2026-10-17",
 "s": "7th/8th Boys Volleyball Game",
 "t": "09:00",
 "l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
@@ -427,13 +414,6 @@
 "s": "Cross Country: North Regional- Afternoon Session 1 (Regional qualifiers only)",
 "t": "11:30",
 "l": "Humboldt Park"
-},
-{
-"c": "sports",
-"d": "2026-10-17",
-"s": "5th/6th Boys Soccer Game",
-"t": "12:00",
-"l": "Riis Park"
 },
 {
 "c": "sports",
@@ -569,6 +549,20 @@
 "c": "sports",
 "d": "2026-10-24",
 "s": "7th/8th Boys Volleyball Game",
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
+},
+{
+"c": "sports",
+"d": "2026-10-24",
+"s": "7th/8th Boys Soccer Game",
+"t": "09:00",
+"l": "Hanson Park"
+},
+{
+"c": "sports",
+"d": "2026-10-24",
+"s": "5th/6th Boys Volleyball Game",
+"t": "13:30",
 "l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
