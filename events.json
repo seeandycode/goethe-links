@@ -1,62 +1,7 @@
 {
-"generated": "2026-10-10T15:23:46Z",
-"through": "2027-02-07",
+"generated": "2026-10-11T15:43:21Z",
+"through": "2027-02-08",
 "events": [
-{
-"c": "sports",
-"d": "2026-10-03",
-"s": "5th/6th Boys Soccer Game"
-},
-{
-"c": "sports",
-"d": "2026-10-03",
-"s": "5th/6th Boys Volleyball Game",
-"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
-},
-{
-"c": "sports",
-"d": "2026-10-03",
-"s": "5th/6th Girls Volleyball Game"
-},
-{
-"c": "sports",
-"d": "2026-10-03",
-"s": "7th/8th Boys Soccer Game",
-"l": "Hanson Park"
-},
-{
-"c": "sports",
-"d": "2026-10-03",
-"s": "7th/8th Boys Volleyball Game",
-"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
-},
-{
-"c": "sports",
-"d": "2026-10-03",
-"s": "7th/8th Girls Volleyball Game",
-"l": "Roberto Clemente Community Academy"
-},
-{
-"c": "sports",
-"d": "2026-10-03",
-"s": "Cross Country Team: Network Regional Qualifier at Riis Park",
-"t": "08:00",
-"l": "Riis Park"
-},
-{
-"c": "sports",
-"d": "2026-10-03",
-"s": "5th/6th Girls Volleyball Game",
-"t": "13:30",
-"l": "Roberto Clemente Community Academy"
-},
-{
-"c": "sports",
-"d": "2026-10-03",
-"s": "7th/8th Boys Volleyball Game",
-"t": "13:30",
-"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
-},
 {
 "c": "sports",
 "d": "2026-10-05",
@@ -232,13 +177,6 @@
 {
 "c": "sports",
 "d": "2026-10-10",
-"s": "5th/6th Boys Volleyball Game",
-"t": "12:00",
-"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
-},
-{
-"c": "sports",
-"d": "2026-10-10",
 "s": "7th/8th Girls Volleyball Game",
 "t": "12:00",
 "l": "1119 N Cleveland Ave"
@@ -384,15 +322,15 @@
 {
 "c": "sports",
 "d": "2026-10-17",
-"s": "7th/8th Boys Soccer Game",
+"s": "7th/8th Boys Volleyball Game",
 "t": "09:00",
-"l": "Hanson Park"
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
 "c": "sports",
 "d": "2026-10-17",
-"s": "7th/8th Boys Volleyball Game",
-"t": "09:00",
+"s": "5th/6th Boys Volleyball Game",
+"t": "09:45",
 "l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
@@ -551,13 +489,6 @@
 "d": "2026-10-24",
 "s": "7th/8th Boys Volleyball Game",
 "l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
-},
-{
-"c": "sports",
-"d": "2026-10-24",
-"s": "5th/6th Boys Soccer Game",
-"t": "12:00",
-"l": "Riis Park"
 },
 {
 "c": "sports",
@@ -934,6 +865,12 @@
 "d": "2027-01-28",
 "s": "Let's Play",
 "t": "14:45"
+},
+{
+"c": "community",
+"d": "2027-02-08",
+"s": "FOGS General Meeting - 6:30pm Goethe Cafeteria",
+"t": "18:30"
 }
 ]
 }
