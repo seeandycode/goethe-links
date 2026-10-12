@@ -1,6 +1,6 @@
 {
-"generated": "2026-10-11T15:43:21Z",
-"through": "2027-02-08",
+"generated": "2026-10-12T19:04:41Z",
+"through": "2027-02-09",
 "events": [
 {
 "c": "sports",
@@ -177,6 +177,13 @@
 {
 "c": "sports",
 "d": "2026-10-10",
+"s": "5th/6th Boys Soccer Game",
+"t": "12:00",
+"l": "Riis Park"
+},
+{
+"c": "sports",
+"d": "2026-10-10",
 "s": "7th/8th Girls Volleyball Game",
 "t": "12:00",
 "l": "1119 N Cleveland Ave"
@@ -318,6 +325,13 @@
 "d": "2026-10-17",
 "s": "7th/8th Boys Volleyball Game",
 "l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
+},
+{
+"c": "sports",
+"d": "2026-10-17",
+"s": "7th/8th Boys Soccer Game",
+"t": "09:00",
+"l": "Hanson Park"
 },
 {
 "c": "sports",
