@@ -1,25 +1,7 @@
 {
-"generated": "2026-10-13T16:57:39Z",
-"through": "2027-02-10",
+"generated": "2026-10-14T14:31:34Z",
+"through": "2027-02-11",
 "events": [
-{
-"c": "sports",
-"d": "2026-10-06",
-"s": "5th/6th/7th/8th Boys Volleyball Practice",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-10-06",
-"s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-10-06",
-"s": "5th/6th Boys Soccer Practice",
-"t": "15:00"
-},
 {
 "c": "sports",
 "d": "2026-10-07",
@@ -194,6 +176,18 @@
 {
 "c": "ost",
 "d": "2026-10-13",
+"s": "Aventuras en Español",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-10-13",
+"s": "Beginning Choir",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-10-13",
 "s": "Little Architects",
 "t": "14:45"
 },
@@ -219,6 +213,24 @@
 "c": "sports",
 "d": "2026-10-14",
 "s": "7th/8th Girls Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-10-14",
+"s": "Extra Band Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-10-14",
+"s": "Math Scholars",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-10-14",
+"s": "Postcards from the Heart",
 "t": "14:45"
 },
 {
@@ -344,6 +356,12 @@
 "t": "14:45"
 },
 {
+"c": "ost",
+"d": "2026-10-19",
+"s": "Comics Club",
+"t": "14:45"
+},
+{
 "c": "sports",
 "d": "2026-10-19",
 "s": "Cross Country Team Practice",
@@ -365,6 +383,18 @@
 "c": "sports",
 "d": "2026-10-20",
 "s": "5th/6th/7th/8th Boys Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-10-20",
+"s": "Aventuras en Español",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-10-20",
+"s": "Beginning Choir",
 "t": "14:45"
 },
 {
@@ -395,6 +425,24 @@
 "c": "sports",
 "d": "2026-10-21",
 "s": "7th/8th Girls Volleyball Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-10-21",
+"s": "Extra Band Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-10-21",
+"s": "Math Scholars",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-10-21",
+"s": "Postcards from the Heart",
 "t": "14:45"
 },
 {
@@ -488,6 +536,12 @@
 "t": "14:45"
 },
 {
+"c": "ost",
+"d": "2026-10-26",
+"s": "Comics Club",
+"t": "14:45"
+},
+{
 "c": "sports",
 "d": "2026-10-26",
 "s": "Cross Country Team Practice",
@@ -508,6 +562,18 @@
 {
 "c": "ost",
 "d": "2026-10-27",
+"s": "Aventuras en Español",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-10-27",
+"s": "Beginning Choir",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-10-27",
 "s": "Little Architects",
 "t": "14:45"
 },
@@ -521,6 +587,24 @@
 "c": "sports",
 "d": "2026-10-28",
 "s": "7th/8th Boys Soccer Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-10-28",
+"s": "Extra Band Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-10-28",
+"s": "Math Scholars",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-10-28",
+"s": "Postcards from the Heart",
 "t": "14:45"
 },
 {
@@ -568,13 +652,49 @@
 {
 "c": "ost",
 "d": "2026-11-02",
+"s": "Comics Club",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-02",
 "s": "Goethe – Chess Club (Tuition-Based Vendor)",
 "t": "14:45"
 },
 {
 "c": "ost",
 "d": "2026-11-03",
+"s": "Aventuras en Español",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-03",
+"s": "Beginning Choir",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-03",
 "s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-04",
+"s": "Extra Band Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-04",
+"s": "Math Scholars",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-04",
+"s": "Postcards from the Heart",
 "t": "14:45"
 },
 {
@@ -610,6 +730,12 @@
 {
 "c": "ost",
 "d": "2026-11-09",
+"s": "Comics Club",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-09",
 "s": "Goethe – Chess Club (Tuition-Based Vendor)",
 "t": "14:45"
 },
@@ -622,7 +748,37 @@
 {
 "c": "ost",
 "d": "2026-11-10",
+"s": "Aventuras en Español",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-10",
+"s": "Beginning Choir",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-10",
 "s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-11",
+"s": "Extra Band Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-11",
+"s": "Math Scholars",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-11",
+"s": "Postcards from the Heart",
 "t": "14:45"
 },
 {
@@ -666,7 +822,37 @@
 {
 "c": "ost",
 "d": "2026-11-17",
+"s": "Aventuras en Español",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-17",
+"s": "Beginning Choir",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-17",
 "s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-18",
+"s": "Extra Band Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-18",
+"s": "Math Scholars",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-18",
+"s": "Postcards from the Heart",
 "t": "14:45"
 },
 {
@@ -689,6 +875,36 @@
 },
 {
 "c": "ost",
+"d": "2026-11-24",
+"s": "Aventuras en Español",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-24",
+"s": "Beginning Choir",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-25",
+"s": "Extra Band Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-25",
+"s": "Math Scholars",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-11-25",
+"s": "Postcards from the Heart",
+"t": "14:45"
+},
+{
+"c": "ost",
 "d": "2026-11-26",
 "s": "Let's Play",
 "t": "14:45"
@@ -702,7 +918,37 @@
 {
 "c": "ost",
 "d": "2026-12-01",
+"s": "Aventuras en Español",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-01",
+"s": "Beginning Choir",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-01",
 "s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-02",
+"s": "Extra Band Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-02",
+"s": "Math Scholars",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-02",
+"s": "Postcards from the Heart",
 "t": "14:45"
 },
 {
@@ -738,7 +984,37 @@
 {
 "c": "ost",
 "d": "2026-12-08",
+"s": "Aventuras en Español",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-08",
+"s": "Beginning Choir",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-08",
 "s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-09",
+"s": "Extra Band Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-09",
+"s": "Math Scholars",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-09",
+"s": "Postcards from the Heart",
 "t": "14:45"
 },
 {
@@ -785,7 +1061,31 @@
 {
 "c": "ost",
 "d": "2026-12-15",
+"s": "Aventuras en Español",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-15",
+"s": "Beginning Choir",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-15",
 "s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-16",
+"s": "Extra Band Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-16",
+"s": "Postcards from the Heart",
 "t": "14:45"
 },
 {
@@ -802,8 +1102,56 @@
 },
 {
 "c": "ost",
+"d": "2026-12-22",
+"s": "Aventuras en Español",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-22",
+"s": "Beginning Choir",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-23",
+"s": "Extra Band Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-23",
+"s": "Postcards from the Heart",
+"t": "14:45"
+},
+{
+"c": "ost",
 "d": "2026-12-24",
 "s": "Let's Play",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-29",
+"s": "Aventuras en Español",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-29",
+"s": "Beginning Choir",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-30",
+"s": "Extra Band Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2026-12-30",
+"s": "Postcards from the Heart",
 "t": "14:45"
 },
 {
@@ -814,8 +1162,56 @@
 },
 {
 "c": "ost",
+"d": "2027-01-05",
+"s": "Aventuras en Español",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-01-05",
+"s": "Beginning Choir",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-01-06",
+"s": "Extra Band Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-01-06",
+"s": "Postcards from the Heart",
+"t": "14:45"
+},
+{
+"c": "ost",
 "d": "2027-01-07",
 "s": "Let's Play",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-01-12",
+"s": "Aventuras en Español",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-01-12",
+"s": "Beginning Choir",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-01-13",
+"s": "Extra Band Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-01-13",
+"s": "Postcards from the Heart",
 "t": "14:45"
 },
 {
@@ -833,8 +1229,56 @@
 },
 {
 "c": "ost",
+"d": "2027-01-19",
+"s": "Aventuras en Español",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-01-19",
+"s": "Beginning Choir",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-01-20",
+"s": "Extra Band Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-01-20",
+"s": "Postcards from the Heart",
+"t": "14:45"
+},
+{
+"c": "ost",
 "d": "2027-01-21",
 "s": "Let's Play",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-01-26",
+"s": "Aventuras en Español",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-01-26",
+"s": "Beginning Choir",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-01-27",
+"s": "Extra Band Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-01-27",
+"s": "Postcards from the Heart",
 "t": "14:45"
 },
 {
@@ -844,10 +1288,53 @@
 "t": "14:45"
 },
 {
+"c": "ost",
+"d": "2027-02-02",
+"s": "Aventuras en Español",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-02-02",
+"s": "Beginning Choir",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-02-03",
+"s": "Extra Band Practice",
+"t": "14:45"
+},
+{
 "c": "community",
 "d": "2027-02-08",
 "s": "FOGS General Meeting - 6:30pm Goethe Cafeteria",
 "t": "18:30"
+},
+{
+"c": "ost",
+"d": "2027-02-09",
+"s": "Aventuras en Español",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-02-09",
+"s": "Beginning Choir",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-02-10",
+"s": "Extra Band Practice",
+"t": "14:45"
+},
+{
+"c": "community",
+"d": "2027-02-11",
+"s": "LSC Meeting",
+"t": "18:00",
+"l": "Goethe Elementary School"
 }
 ]
 }
