@@ -1,66 +1,7 @@
 {
-"generated": "2026-10-17T12:59:07Z",
-"through": "2027-02-14",
+"generated": "2026-10-18T13:19:23Z",
+"through": "2027-02-15",
 "events": [
-{
-"c": "sports",
-"d": "2026-10-10",
-"s": "5th/6th Boys Soccer Game"
-},
-{
-"c": "sports",
-"d": "2026-10-10",
-"s": "5th/6th Boys Volleyball Game",
-"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
-},
-{
-"c": "sports",
-"d": "2026-10-10",
-"s": "7th/8th Boys Volleyball Game",
-"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
-},
-{
-"c": "sports",
-"d": "2026-10-10",
-"s": "7th/8th Boys Soccer Game",
-"t": "10:00",
-"l": "Hanson Park"
-},
-{
-"c": "sports",
-"d": "2026-10-10",
-"s": "5th/6th Boys Volleyball Game",
-"t": "11:15",
-"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
-},
-{
-"c": "sports",
-"d": "2026-10-10",
-"s": "5th/6th Boys Volleyball Game",
-"t": "12:00",
-"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
-},
-{
-"c": "sports",
-"d": "2026-10-10",
-"s": "7th/8th Girls Volleyball Game",
-"t": "12:00",
-"l": "1119 N Cleveland Ave"
-},
-{
-"c": "sports",
-"d": "2026-10-10",
-"s": "5th/6th Girls Volleyball Game",
-"t": "12:45",
-"l": "The Ogden International School of Chicago - Jenner Campus"
-},
-{
-"c": "sports",
-"d": "2026-10-10",
-"s": "7th/8th Boys Volleyball Game",
-"t": "12:45",
-"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
-},
 {
 "c": "community",
 "d": "2026-10-13",
@@ -414,13 +355,6 @@
 "d": "2026-10-24",
 "s": "7th/8th Boys Volleyball Game",
 "l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
-},
-{
-"c": "sports",
-"d": "2026-10-24",
-"s": "7th/8th Boys Soccer Game",
-"t": "09:00",
-"l": "Hanson Park"
 },
 {
 "c": "sports",
