@@ -755,7 +755,11 @@ function renderWeek(events){
   const shown = new Set(weekEntries(events, today, calSunday).map(e => e.key));
   const soon = nextUp(events, calToday, calSunday);
   if (soon) shown.add(soon.key);
-  weekToggle.hidden = !nextEntries(events, calToday, NEXT_DAYS).some(e => !shown.has(e.key));
+  
+  // Check if we have events in next 5 days that aren't already in current view
+  const nextEntriesResult = nextEntries(events, calToday, NEXT_DAYS);
+  const hasMoreEvents = nextEntriesResult.some(e => !shown.has(e.key));
+  weekToggle.hidden = !hasMoreEvents;
 }
 
 function weekFailed(){
