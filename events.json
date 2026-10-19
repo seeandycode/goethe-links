@@ -1,6 +1,6 @@
 {
-"generated": "2026-10-18T13:19:23Z",
-"through": "2027-02-15",
+"generated": "2026-10-19T16:29:04Z",
+"through": "2027-02-16",
 "events": [
 {
 "c": "community",
@@ -159,8 +159,22 @@
 {
 "c": "sports",
 "d": "2026-10-17",
+"s": "7th/8th Boys Soccer Game",
+"t": "09:00",
+"l": "Hanson Park"
+},
+{
+"c": "sports",
+"d": "2026-10-17",
 "s": "7th/8th Boys Volleyball Game",
 "t": "09:00",
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
+},
+{
+"c": "sports",
+"d": "2026-10-17",
+"s": "5th/6th Boys Volleyball Game",
+"t": "09:45",
 "l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
@@ -183,6 +197,13 @@
 "s": "Cross Country: North Regional- Afternoon Session 1 (Regional qualifiers only)",
 "t": "11:30",
 "l": "Humboldt Park"
+},
+{
+"c": "sports",
+"d": "2026-10-17",
+"s": "5th/6th Boys Soccer Game",
+"t": "12:00",
+"l": "Riis Park"
 },
 {
 "c": "sports",
@@ -1176,6 +1197,18 @@
 "s": "LSC Meeting",
 "t": "18:00",
 "l": "Goethe Elementary School"
+},
+{
+"c": "ost",
+"d": "2027-02-16",
+"s": "Aventuras en Español",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-02-16",
+"s": "Beginning Choir",
+"t": "14:45"
 }
 ]
 }
