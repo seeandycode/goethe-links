@@ -1,6 +1,6 @@
 {
-"generated": "2026-10-19T16:29:04Z",
-"through": "2027-02-16",
+"generated": "2026-10-20T14:19:14Z",
+"through": "2027-02-17",
 "events": [
 {
 "c": "community",
@@ -168,13 +168,6 @@
 "d": "2026-10-17",
 "s": "7th/8th Boys Volleyball Game",
 "t": "09:00",
-"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
-},
-{
-"c": "sports",
-"d": "2026-10-17",
-"s": "5th/6th Boys Volleyball Game",
-"t": "09:45",
 "l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
@@ -1208,6 +1201,12 @@
 "c": "ost",
 "d": "2027-02-16",
 "s": "Beginning Choir",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-02-17",
+"s": "Extra Band Practice",
 "t": "14:45"
 }
 ]
