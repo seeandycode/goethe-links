@@ -1,43 +1,7 @@
 {
-"generated": "2026-10-21T14:29:51Z",
-"through": "2027-02-18",
+"generated": "2026-10-22T14:31:56Z",
+"through": "2027-02-19",
 "events": [
-{
-"c": "sports",
-"d": "2026-10-14",
-"s": "7th/8th Boys Soccer Practice",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-10-14",
-"s": "7th/8th Girls Volleyball Practice",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-10-14",
-"s": "Extra Band Practice",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-10-14",
-"s": "Math Scholars",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-10-14",
-"s": "Postcards from the Heart",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-10-14",
-"s": "Young Rembrandts - Artistic Explorers (Tuition-Based Vendor)",
-"t": "14:45"
-},
 {
 "c": "community",
 "d": "2026-10-15",
@@ -119,6 +83,13 @@
 "d": "2026-10-17",
 "s": "7th/8th Boys Volleyball Game",
 "t": "09:00",
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
+},
+{
+"c": "sports",
+"d": "2026-10-17",
+"s": "5th/6th Boys Volleyball Game",
+"t": "09:45",
 "l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
@@ -390,6 +361,12 @@
 "t": "14:45"
 },
 {
+"c": "community",
+"d": "2026-10-28",
+"s": "Coffee w/ the Principal: Understanding State Standards",
+"t": "08:00"
+},
+{
 "c": "sports",
 "d": "2026-10-28",
 "s": "7th/8th Boys Soccer Practice",
@@ -453,7 +430,8 @@
 "c": "sports",
 "d": "2026-10-31",
 "s": "Cross Country Team Score City Championships (Washington Park)",
-"t": "08:00"
+"t": "08:00",
+"l": "Hanson Park"
 },
 {
 "c": "ost",
@@ -466,6 +444,12 @@
 "d": "2026-11-02",
 "s": "Goethe – Chess Club (Tuition-Based Vendor)",
 "t": "14:45"
+},
+{
+"c": "community",
+"d": "2026-11-03",
+"s": "PAC FALL FAMILY PICNIC  11/3 10am-2pm @ Holstein Park Playground",
+"t": "10:00"
 },
 {
 "c": "ost",
@@ -516,12 +500,6 @@
 "t": "09:00"
 },
 {
-"c": "sports",
-"d": "2026-11-05",
-"s": "5th/6th/7th/8th Boys Volleyball Practice",
-"t": "14:45"
-},
-{
 "c": "ost",
 "d": "2026-11-05",
 "s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
@@ -534,6 +512,12 @@
 "t": "14:45"
 },
 {
+"c": "sports",
+"d": "2026-11-05",
+"s": "7/8 Boys Basketball Practice",
+"t": "14:50"
+},
+{
 "c": "ost",
 "d": "2026-11-09",
 "s": "Comics Club",
@@ -544,6 +528,12 @@
 "d": "2026-11-09",
 "s": "Goethe – Chess Club (Tuition-Based Vendor)",
 "t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-11-09",
+"s": "6th/7th/8th Girls Basketball Practice",
+"t": "14:50"
 },
 {
 "c": "sports",
@@ -568,6 +558,12 @@
 "d": "2026-11-10",
 "s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
 "t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-11-10",
+"s": "7/8 Boys Basketball Practice",
+"t": "14:50"
 },
 {
 "c": "ost",
@@ -606,6 +602,12 @@
 "t": "14:45"
 },
 {
+"c": "sports",
+"d": "2026-11-12",
+"s": "7/8 Boys Basketball Practice",
+"t": "14:50"
+},
+{
 "c": "community",
 "d": "2026-11-12",
 "s": "LSC Meeting",
@@ -626,6 +628,12 @@
 "t": "14:45"
 },
 {
+"c": "sports",
+"d": "2026-11-16",
+"s": "6th/7th/8th Girls Basketball Practice",
+"t": "14:50"
+},
+{
 "c": "ost",
 "d": "2026-11-17",
 "s": "Aventuras en Español",
@@ -642,6 +650,12 @@
 "d": "2026-11-17",
 "s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
 "t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-11-17",
+"s": "7/8 Boys Basketball Practice",
+"t": "14:50"
 },
 {
 "c": "ost",
@@ -668,6 +682,12 @@
 "t": "14:45"
 },
 {
+"c": "sports",
+"d": "2026-11-18",
+"s": "6th/7th/8th Girls Basketball Practice",
+"t": "14:50"
+},
+{
 "c": "ost",
 "d": "2026-11-19",
 "s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
@@ -678,6 +698,18 @@
 "d": "2026-11-19",
 "s": "Let's Play",
 "t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-11-19",
+"s": "7/8 Boys Basketball Practice",
+"t": "14:50"
+},
+{
+"c": "community",
+"d": "2026-11-23",
+"s": "Thanksgiving Break- No School",
+"e": "2026-11-27"
 },
 {
 "c": "ost",
@@ -722,6 +754,12 @@
 "t": "14:45"
 },
 {
+"c": "sports",
+"d": "2026-11-30",
+"s": "6th/7th/8th Girls Basketball Practice",
+"t": "14:50"
+},
+{
 "c": "ost",
 "d": "2026-12-01",
 "s": "Aventuras en Español",
@@ -738,6 +776,12 @@
 "d": "2026-12-01",
 "s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
 "t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-12-01",
+"s": "7/8 Boys Basketball Practice",
+"t": "14:50"
 },
 {
 "c": "ost",
@@ -764,6 +808,12 @@
 "t": "14:45"
 },
 {
+"c": "sports",
+"d": "2026-12-02",
+"s": "6th/7th/8th Girls Basketball Practice",
+"t": "14:50"
+},
+{
 "c": "ost",
 "d": "2026-12-03",
 "s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
@@ -776,10 +826,32 @@
 "t": "14:45"
 },
 {
+"c": "sports",
+"d": "2026-12-03",
+"s": "7/8 Boys Basketball Practice",
+"t": "14:50"
+},
+{
+"c": "sports",
+"d": "2026-12-05",
+"s": "7th/8th Boys Basketball Game"
+},
+{
+"c": "sports",
+"d": "2026-12-05",
+"s": "7th/8th Girls Basketball Game"
+},
+{
 "c": "ost",
 "d": "2026-12-07",
 "s": "Goethe – Chess Club (Tuition-Based Vendor)",
 "t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-12-07",
+"s": "6th/7th/8th Girls Basketball Practice",
+"t": "14:50"
 },
 {
 "c": "community",
@@ -806,6 +878,12 @@
 "t": "14:45"
 },
 {
+"c": "sports",
+"d": "2026-12-08",
+"s": "7/8 Boys Basketball Practice",
+"t": "14:50"
+},
+{
 "c": "ost",
 "d": "2026-12-09",
 "s": "Extra Band Practice",
@@ -830,6 +908,12 @@
 "t": "14:45"
 },
 {
+"c": "sports",
+"d": "2026-12-09",
+"s": "6th/7th/8th Girls Basketball Practice",
+"t": "14:50"
+},
+{
 "c": "community",
 "d": "2026-12-10",
 "s": "Fall Picture Retakes"
@@ -847,6 +931,12 @@
 "t": "14:45"
 },
 {
+"c": "sports",
+"d": "2026-12-10",
+"s": "7/8 Boys Basketball Practice",
+"t": "14:50"
+},
+{
 "c": "community",
 "d": "2026-12-10",
 "s": "LSC Meeting",
@@ -854,10 +944,26 @@
 "l": "Goethe Elementary School"
 },
 {
+"c": "sports",
+"d": "2026-12-12",
+"s": "7th/8th Boys Basketball Game"
+},
+{
+"c": "sports",
+"d": "2026-12-12",
+"s": "7th/8th Girls Basketball Game"
+},
+{
 "c": "ost",
 "d": "2026-12-14",
 "s": "Goethe – Chess Club (Tuition-Based Vendor)",
 "t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-12-14",
+"s": "6th/7th/8th Girls Basketball Practice",
+"t": "14:50"
 },
 {
 "c": "community",
@@ -883,6 +989,12 @@
 "t": "14:45"
 },
 {
+"c": "sports",
+"d": "2026-12-15",
+"s": "7/8 Boys Basketball Practice",
+"t": "14:50"
+},
+{
 "c": "ost",
 "d": "2026-12-16",
 "s": "Extra Band Practice",
@@ -895,6 +1007,12 @@
 "t": "14:45"
 },
 {
+"c": "sports",
+"d": "2026-12-16",
+"s": "6th/7th/8th Girls Basketball Practice",
+"t": "14:50"
+},
+{
 "c": "ost",
 "d": "2026-12-17",
 "s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
@@ -905,6 +1023,12 @@
 "d": "2026-12-17",
 "s": "Let's Play",
 "t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-12-17",
+"s": "7/8 Boys Basketball Practice",
+"t": "14:50"
 },
 {
 "c": "ost",
@@ -967,6 +1091,12 @@
 "t": "14:45"
 },
 {
+"c": "sports",
+"d": "2027-01-04",
+"s": "5th/6th Girls Basketball Practice",
+"t": "14:50"
+},
+{
 "c": "ost",
 "d": "2027-01-05",
 "s": "Aventuras en Español",
@@ -979,6 +1109,12 @@
 "t": "14:45"
 },
 {
+"c": "sports",
+"d": "2027-01-05",
+"s": "7/8 Boys Basketball Practice",
+"t": "14:50"
+},
+{
 "c": "ost",
 "d": "2027-01-06",
 "s": "Extra Band Practice",
@@ -989,6 +1125,12 @@
 "d": "2027-01-06",
 "s": "Postcards from the Heart",
 "t": "14:45"
+},
+{
+"c": "sports",
+"d": "2027-01-06",
+"s": "6th/7th/8th Girls Basketball Practice",
+"t": "14:50"
 },
 {
 "c": "ost",
@@ -997,6 +1139,33 @@
 "t": "14:45"
 },
 {
+"c": "sports",
+"d": "2027-01-07",
+"s": "7/8 Boys Basketball Practice",
+"t": "14:50"
+},
+{
+"c": "sports",
+"d": "2027-01-09",
+"s": "7th/8th Boys Basketball Game"
+},
+{
+"c": "sports",
+"d": "2027-01-09",
+"s": "7th/8th Girls Basketball Game"
+},
+{
+"c": "sports",
+"d": "2027-01-09",
+"s": "Cheer Competition (potential date)"
+},
+{
+"c": "sports",
+"d": "2027-01-11",
+"s": "5th/6th Girls Basketball Practice",
+"t": "14:50"
+},
+{
 "c": "ost",
 "d": "2027-01-12",
 "s": "Aventuras en Español",
@@ -1007,6 +1176,12 @@
 "d": "2027-01-12",
 "s": "Beginning Choir",
 "t": "14:45"
+},
+{
+"c": "sports",
+"d": "2027-01-12",
+"s": "5th/6th Boys Basketball Practice",
+"t": "14:50"
 },
 {
 "c": "ost",
@@ -1021,10 +1196,22 @@
 "t": "14:45"
 },
 {
+"c": "sports",
+"d": "2027-01-13",
+"s": "6th/7th/8th Girls Basketball Practice",
+"t": "14:50"
+},
+{
 "c": "ost",
 "d": "2027-01-14",
 "s": "Let's Play",
 "t": "14:45"
+},
+{
+"c": "sports",
+"d": "2027-01-14",
+"s": "7/8 Boys Basketball Practice",
+"t": "14:50"
 },
 {
 "c": "community",
@@ -1034,6 +1221,21 @@
 "l": "Goethe Elementary School"
 },
 {
+"c": "sports",
+"d": "2027-01-16",
+"s": "7th/8th Boys Basketball Game"
+},
+{
+"c": "sports",
+"d": "2027-01-16",
+"s": "7th/8th Girls Basketball Game"
+},
+{
+"c": "sports",
+"d": "2027-01-16",
+"s": "Cheer Competition (potential date)"
+},
+{
 "c": "ost",
 "d": "2027-01-19",
 "s": "Aventuras en Español",
@@ -1046,6 +1248,12 @@
 "t": "14:45"
 },
 {
+"c": "sports",
+"d": "2027-01-19",
+"s": "5th/6th Boys Basketball Practice",
+"t": "14:50"
+},
+{
 "c": "ost",
 "d": "2027-01-20",
 "s": "Extra Band Practice",
@@ -1056,6 +1264,12 @@
 "d": "2027-01-20",
 "s": "Postcards from the Heart",
 "t": "14:45"
+},
+{
+"c": "sports",
+"d": "2027-01-20",
+"s": "6th/7th/8th Girls Basketball Practice",
+"t": "14:50"
 },
 {
 "c": "ost",
@@ -1064,6 +1278,33 @@
 "t": "14:45"
 },
 {
+"c": "sports",
+"d": "2027-01-21",
+"s": "7/8 Boys Basketball Practice",
+"t": "14:50"
+},
+{
+"c": "sports",
+"d": "2027-01-23",
+"s": "7th/8th Boys Basketball Game"
+},
+{
+"c": "sports",
+"d": "2027-01-23",
+"s": "7th/8th Girls Basketball Game"
+},
+{
+"c": "sports",
+"d": "2027-01-23",
+"s": "Cheer Competition (potential date)"
+},
+{
+"c": "sports",
+"d": "2027-01-25",
+"s": "5th/6th Girls Basketball Practice",
+"t": "14:50"
+},
+{
 "c": "ost",
 "d": "2027-01-26",
 "s": "Aventuras en Español",
@@ -1074,6 +1315,12 @@
 "d": "2027-01-26",
 "s": "Beginning Choir",
 "t": "14:45"
+},
+{
+"c": "sports",
+"d": "2027-01-26",
+"s": "5th/6th Boys Basketball Practice",
+"t": "14:50"
 },
 {
 "c": "ost",
@@ -1088,10 +1335,43 @@
 "t": "14:45"
 },
 {
+"c": "sports",
+"d": "2027-01-27",
+"s": "6th/7th/8th Girls Basketball Practice",
+"t": "14:50"
+},
+{
 "c": "ost",
 "d": "2027-01-28",
 "s": "Let's Play",
 "t": "14:45"
+},
+{
+"c": "sports",
+"d": "2027-01-28",
+"s": "7/8 Boys Basketball Practice",
+"t": "14:50"
+},
+{
+"c": "sports",
+"d": "2027-01-30",
+"s": "7th/8th Boys Basketball Game"
+},
+{
+"c": "sports",
+"d": "2027-01-30",
+"s": "7th/8th Girls Basketball Game"
+},
+{
+"c": "sports",
+"d": "2027-01-30",
+"s": "Cheer Competition (potential date)"
+},
+{
+"c": "sports",
+"d": "2027-02-01",
+"s": "5th/6th Girls Basketball Practice",
+"t": "14:50"
 },
 {
 "c": "ost",
@@ -1106,10 +1386,49 @@
 "t": "14:45"
 },
 {
+"c": "sports",
+"d": "2027-02-02",
+"s": "5th/6th Boys Basketball Practice",
+"t": "14:50"
+},
+{
 "c": "ost",
 "d": "2027-02-03",
 "s": "Extra Band Practice",
 "t": "14:45"
+},
+{
+"c": "sports",
+"d": "2027-02-03",
+"s": "5th/6th Girls Basketball Practice",
+"t": "14:50"
+},
+{
+"c": "sports",
+"d": "2027-02-04",
+"s": "5th/6th Boys Basketball Practice",
+"t": "14:50"
+},
+{
+"c": "sports",
+"d": "2027-02-06",
+"s": "5th/6th Boys Basketball Game"
+},
+{
+"c": "sports",
+"d": "2027-02-06",
+"s": "5th/6th Girls Basketball Game"
+},
+{
+"c": "sports",
+"d": "2027-02-06",
+"s": "Cheer Competition (potential date)"
+},
+{
+"c": "sports",
+"d": "2027-02-08",
+"s": "5th/6th Girls Basketball Practice",
+"t": "14:50"
 },
 {
 "c": "community",
@@ -1130,10 +1449,28 @@
 "t": "14:45"
 },
 {
+"c": "sports",
+"d": "2027-02-09",
+"s": "5th/6th Boys Basketball Practice",
+"t": "14:50"
+},
+{
 "c": "ost",
 "d": "2027-02-10",
 "s": "Extra Band Practice",
 "t": "14:45"
+},
+{
+"c": "sports",
+"d": "2027-02-10",
+"s": "5th/6th Girls Basketball Practice",
+"t": "14:50"
+},
+{
+"c": "sports",
+"d": "2027-02-11",
+"s": "5th/6th Boys Basketball Practice",
+"t": "14:50"
 },
 {
 "c": "community",
@@ -1141,6 +1478,21 @@
 "s": "LSC Meeting",
 "t": "18:00",
 "l": "Goethe Elementary School"
+},
+{
+"c": "sports",
+"d": "2027-02-13",
+"s": "5th/6th Boys Basketball Game"
+},
+{
+"c": "sports",
+"d": "2027-02-13",
+"s": "5th/6th Girls Basketball Game"
+},
+{
+"c": "sports",
+"d": "2027-02-13",
+"s": "Cheer Competition (potential date)"
 },
 {
 "c": "ost",
@@ -1155,10 +1507,28 @@
 "t": "14:45"
 },
 {
+"c": "sports",
+"d": "2027-02-16",
+"s": "5th/6th Boys Basketball Practice",
+"t": "14:50"
+},
+{
 "c": "ost",
 "d": "2027-02-17",
 "s": "Extra Band Practice",
 "t": "14:45"
+},
+{
+"c": "sports",
+"d": "2027-02-17",
+"s": "5th/6th Girls Basketball Practice",
+"t": "14:50"
+},
+{
+"c": "sports",
+"d": "2027-02-18",
+"s": "5th/6th Boys Basketball Practice",
+"t": "14:50"
 }
 ]
 }
