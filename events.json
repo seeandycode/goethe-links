@@ -1,48 +1,7 @@
 {
-"generated": "2026-10-22T14:31:56Z",
-"through": "2027-02-19",
+"generated": "2026-10-23T14:15:28Z",
+"through": "2027-02-20",
 "events": [
-{
-"c": "community",
-"d": "2026-10-15",
-"s": "Hispanic Heritage Month Celebration"
-},
-{
-"c": "community",
-"d": "2026-10-15",
-"s": "School Lockdown Drill",
-"t": "09:00"
-},
-{
-"c": "sports",
-"d": "2026-10-15",
-"s": "5th/6th/7th/8th Boys Volleyball Practice",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-10-15",
-"s": "7th/8th Boys Soccer Practice",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-10-15",
-"s": "Cross Country Team Practice",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-10-15",
-"s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-10-15",
-"s": "Let's Play",
-"t": "14:45"
-},
 {
 "c": "community",
 "d": "2026-10-16",
@@ -81,15 +40,15 @@
 {
 "c": "sports",
 "d": "2026-10-17",
-"s": "7th/8th Boys Volleyball Game",
+"s": "7th/8th Boys Soccer Game",
 "t": "09:00",
-"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
+"l": "Hanson Park"
 },
 {
 "c": "sports",
 "d": "2026-10-17",
-"s": "5th/6th Boys Volleyball Game",
-"t": "09:45",
+"s": "7th/8th Boys Volleyball Game",
+"t": "09:00",
 "l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
@@ -112,6 +71,13 @@
 "s": "Cross Country: North Regional- Afternoon Session 1 (Regional qualifiers only)",
 "t": "11:30",
 "l": "Humboldt Park"
+},
+{
+"c": "sports",
+"d": "2026-10-17",
+"s": "5th/6th Boys Soccer Game",
+"t": "12:00",
+"l": "Riis Park"
 },
 {
 "c": "sports",
@@ -284,13 +250,6 @@
 "d": "2026-10-24",
 "s": "7th/8th Boys Volleyball Game",
 "l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
-},
-{
-"c": "sports",
-"d": "2026-10-24",
-"s": "7th/8th Boys Soccer Game",
-"t": "09:00",
-"l": "Hanson Park"
 },
 {
 "c": "sports",
@@ -1529,6 +1488,21 @@
 "d": "2027-02-18",
 "s": "5th/6th Boys Basketball Practice",
 "t": "14:50"
+},
+{
+"c": "sports",
+"d": "2027-02-20",
+"s": "5th/6th Boys Basketball Game"
+},
+{
+"c": "sports",
+"d": "2027-02-20",
+"s": "5th/6th Girls Basketball Game"
+},
+{
+"c": "sports",
+"d": "2027-02-20",
+"s": "Cheer Competition (potential date)"
 }
 ]
 }
