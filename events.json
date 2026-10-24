@@ -1,19 +1,7 @@
 {
-"generated": "2026-10-23T14:15:28Z",
-"through": "2027-02-20",
+"generated": "2026-10-24T13:21:00Z",
+"through": "2027-02-21",
 "events": [
-{
-"c": "community",
-"d": "2026-10-16",
-"s": "Shelter-In-Place",
-"t": "08:00"
-},
-{
-"c": "sports",
-"d": "2026-10-16",
-"s": "7th/8th Girls Volleyball Practice",
-"t": "14:45"
-},
 {
 "c": "sports",
 "d": "2026-10-17",
@@ -40,15 +28,15 @@
 {
 "c": "sports",
 "d": "2026-10-17",
-"s": "7th/8th Boys Soccer Game",
+"s": "7th/8th Boys Volleyball Game",
 "t": "09:00",
-"l": "Hanson Park"
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
 "c": "sports",
 "d": "2026-10-17",
-"s": "7th/8th Boys Volleyball Game",
-"t": "09:00",
+"s": "5th/6th Boys Volleyball Game",
+"t": "09:45",
 "l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
@@ -71,13 +59,6 @@
 "s": "Cross Country: North Regional- Afternoon Session 1 (Regional qualifiers only)",
 "t": "11:30",
 "l": "Humboldt Park"
-},
-{
-"c": "sports",
-"d": "2026-10-17",
-"s": "5th/6th Boys Soccer Game",
-"t": "12:00",
-"l": "Riis Park"
 },
 {
 "c": "sports",
@@ -254,6 +235,13 @@
 {
 "c": "sports",
 "d": "2026-10-24",
+"s": "7th/8th Boys Soccer Game",
+"t": "09:00",
+"l": "Hanson Park"
+},
+{
+"c": "sports",
+"d": "2026-10-24",
 "s": "7th/8th Girls Volleyball Game",
 "t": "13:30",
 "l": "1119 N Cleveland Ave"
@@ -287,12 +275,6 @@
 "c": "ost",
 "d": "2026-10-26",
 "s": "Goethe – Chess Club (Tuition-Based Vendor)",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-10-27",
-"s": "5th/6th/7th/8th Boys Volleyball Practice",
 "t": "14:45"
 },
 {
@@ -353,12 +335,6 @@
 "c": "ost",
 "d": "2026-10-28",
 "s": "Young Rembrandts - Artistic Explorers (Tuition-Based Vendor)",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-10-29",
-"s": "5th/6th/7th/8th Boys Volleyball Practice",
 "t": "14:45"
 },
 {
@@ -495,12 +471,6 @@
 "t": "14:50"
 },
 {
-"c": "sports",
-"d": "2026-11-10",
-"s": "5th/6th/7th/8th Boys Volleyball Practice",
-"t": "14:45"
-},
-{
 "c": "ost",
 "d": "2026-11-10",
 "s": "Aventuras en Español",
@@ -540,12 +510,6 @@
 "c": "ost",
 "d": "2026-11-11",
 "s": "Postcards from the Heart",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-11-12",
-"s": "5th/6th/7th/8th Boys Volleyball Practice",
 "t": "14:45"
 },
 {
