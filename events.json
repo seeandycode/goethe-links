@@ -1,6 +1,6 @@
 {
-"generated": "2026-10-25T13:43:28Z",
-"through": "2027-02-22",
+"generated": "2026-10-26T16:08:40Z",
+"through": "2027-02-23",
 "events": [
 {
 "c": "sports",
@@ -1414,6 +1414,24 @@
 "c": "sports",
 "d": "2027-02-22",
 "s": "5th/6th Girls Basketball Practice",
+"t": "14:50"
+},
+{
+"c": "ost",
+"d": "2027-02-23",
+"s": "Aventuras en Español",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-02-23",
+"s": "Beginning Choir",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2027-02-23",
+"s": "5th/6th Boys Basketball Practice",
 "t": "14:50"
 }
 ]
