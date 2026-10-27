@@ -1,37 +1,7 @@
 {
-"generated": "2026-10-26T16:08:40Z",
-"through": "2027-02-23",
+"generated": "2026-10-27T15:22:31Z",
+"through": "2027-02-24",
 "events": [
-{
-"c": "sports",
-"d": "2026-10-19",
-"s": "5th/6th Girls Volleyball Practice",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-10-19",
-"s": "7th/8th Boys Soccer Practice",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-10-19",
-"s": "Comics Club",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-10-19",
-"s": "Cross Country Team Practice",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-10-19",
-"s": "Goethe – Chess Club (Tuition-Based Vendor)",
-"t": "14:45"
-},
 {
 "c": "community",
 "d": "2026-10-20",
@@ -177,9 +147,9 @@
 {
 "c": "sports",
 "d": "2026-10-24",
-"s": "5th/6th Boys Volleyball Game",
-"t": "13:30",
-"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
+"s": "5th/6th Boys Soccer Game",
+"t": "12:00",
+"l": "Riis Park"
 },
 {
 "c": "sports",
@@ -277,12 +247,6 @@
 "c": "ost",
 "d": "2026-10-28",
 "s": "Young Rembrandts - Artistic Explorers (Tuition-Based Vendor)",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-10-29",
-"s": "7th/8th Boys Soccer Practice",
 "t": "14:45"
 },
 {
@@ -433,6 +397,12 @@
 {
 "c": "sports",
 "d": "2026-11-10",
+"s": "Spirit Squad Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-11-10",
 "s": "7/8 Boys Basketball Practice",
 "t": "14:50"
 },
@@ -514,6 +484,12 @@
 "c": "ost",
 "d": "2026-11-17",
 "s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-11-17",
+"s": "Spirit Squad Practice",
 "t": "14:45"
 },
 {
@@ -645,6 +621,12 @@
 {
 "c": "sports",
 "d": "2026-12-01",
+"s": "Spirit Squad Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-12-01",
 "s": "7/8 Boys Basketball Practice",
 "t": "14:50"
 },
@@ -740,6 +722,12 @@
 "c": "ost",
 "d": "2026-12-08",
 "s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2026-12-08",
+"s": "Spirit Squad Practice",
 "t": "14:45"
 },
 {
@@ -976,6 +964,12 @@
 {
 "c": "sports",
 "d": "2027-01-05",
+"s": "Spirit Squad Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2027-01-05",
 "s": "7/8 Boys Basketball Practice",
 "t": "14:50"
 },
@@ -1040,6 +1034,12 @@
 "c": "ost",
 "d": "2027-01-12",
 "s": "Beginning Choir",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2027-01-12",
+"s": "Spirit Squad Practice",
 "t": "14:45"
 },
 {
@@ -1110,6 +1110,12 @@
 "c": "ost",
 "d": "2027-01-19",
 "s": "Beginning Choir",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2027-01-19",
+"s": "Spirit Squad Practice",
 "t": "14:45"
 },
 {
@@ -1184,6 +1190,12 @@
 {
 "c": "sports",
 "d": "2027-01-26",
+"s": "Spirit Squad Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2027-01-26",
 "s": "5th/6th Boys Basketball Practice",
 "t": "14:50"
 },
@@ -1253,6 +1265,12 @@
 {
 "c": "sports",
 "d": "2027-02-02",
+"s": "Spirit Squad Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2027-02-02",
 "s": "5th/6th Boys Basketball Practice",
 "t": "14:50"
 },
@@ -1316,6 +1334,12 @@
 {
 "c": "sports",
 "d": "2027-02-09",
+"s": "Spirit Squad Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2027-02-09",
 "s": "5th/6th Boys Basketball Practice",
 "t": "14:50"
 },
@@ -1369,6 +1393,12 @@
 "c": "ost",
 "d": "2027-02-16",
 "s": "Beginning Choir",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2027-02-16",
+"s": "Spirit Squad Practice",
 "t": "14:45"
 },
 {
@@ -1431,7 +1461,25 @@
 {
 "c": "sports",
 "d": "2027-02-23",
+"s": "Spirit Squad Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2027-02-23",
 "s": "5th/6th Boys Basketball Practice",
+"t": "14:50"
+},
+{
+"c": "ost",
+"d": "2027-02-24",
+"s": "Extra Band Practice",
+"t": "14:45"
+},
+{
+"c": "sports",
+"d": "2027-02-24",
+"s": "5th/6th Girls Basketball Practice",
 "t": "14:50"
 }
 ]
