@@ -1,43 +1,7 @@
 {
-"generated": "2026-10-28T16:05:23Z",
-"through": "2027-02-25",
+"generated": "2026-10-29T16:08:52Z",
+"through": "2027-02-26",
 "events": [
-{
-"c": "sports",
-"d": "2026-10-21",
-"s": "7th/8th Boys Soccer Practice",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-10-21",
-"s": "7th/8th Girls Volleyball Practice",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-10-21",
-"s": "Extra Band Practice",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-10-21",
-"s": "Math Scholars",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-10-21",
-"s": "Postcards from the Heart",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-10-21",
-"s": "Young Rembrandts - Artistic Explorers (Tuition-Based Vendor)",
-"t": "14:45"
-},
 {
 "c": "community",
 "d": "2026-10-22",
@@ -100,6 +64,13 @@
 "c": "sports",
 "d": "2026-10-24",
 "s": "7th/8th Boys Volleyball Game",
+"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
+},
+{
+"c": "sports",
+"d": "2026-10-24",
+"s": "5th/6th Boys Volleyball Game",
+"t": "13:30",
 "l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
