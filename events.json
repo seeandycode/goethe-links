@@ -1,42 +1,7 @@
 {
-"generated": "2026-10-29T16:08:52Z",
-"through": "2027-02-26",
+"generated": "2026-10-30T15:57:19Z",
+"through": "2027-02-27",
 "events": [
-{
-"c": "community",
-"d": "2026-10-22",
-"s": "Fall Picture Day"
-},
-{
-"c": "sports",
-"d": "2026-10-22",
-"s": "5th/6th/7th/8th Boys Volleyball Practice",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-10-22",
-"s": "7th/8th Boys Soccer Practice",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-10-22",
-"s": "Cross Country Team: Intrasquad Meet @ Palmer Square Park",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-10-22",
-"s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-10-22",
-"s": "Let's Play",
-"t": "14:45"
-},
 {
 "c": "sports",
 "d": "2026-10-23",
@@ -65,6 +30,13 @@
 "d": "2026-10-24",
 "s": "7th/8th Boys Volleyball Game",
 "l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
+},
+{
+"c": "sports",
+"d": "2026-10-24",
+"s": "5th/6th Boys Soccer Game",
+"t": "12:00",
+"l": "Riis Park"
 },
 {
 "c": "sports",
@@ -1409,6 +1381,21 @@
 "d": "2027-02-25",
 "s": "5th/6th Boys Basketball Practice",
 "t": "14:50"
+},
+{
+"c": "sports",
+"d": "2027-02-27",
+"s": "5th/6th Boys Basketball Game"
+},
+{
+"c": "sports",
+"d": "2027-02-27",
+"s": "5th/6th Girls Basketball Game"
+},
+{
+"c": "sports",
+"d": "2027-02-27",
+"s": "Cheer Competition (potential date)"
 }
 ]
 }
