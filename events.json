@@ -1,13 +1,7 @@
 {
-"generated": "2026-10-30T15:57:19Z",
-"through": "2027-02-27",
+"generated": "2026-10-31T15:20:44Z",
+"through": "2027-02-28",
 "events": [
-{
-"c": "sports",
-"d": "2026-10-23",
-"s": "7th/8th Girls Volleyball Practice",
-"t": "14:45"
-},
 {
 "c": "sports",
 "d": "2026-10-24",
@@ -37,13 +31,6 @@
 "s": "5th/6th Boys Soccer Game",
 "t": "12:00",
 "l": "Riis Park"
-},
-{
-"c": "sports",
-"d": "2026-10-24",
-"s": "5th/6th Boys Volleyball Game",
-"t": "13:30",
-"l": "AL RABY SCHOOL / CMTY ENVIRONMENT"
 },
 {
 "c": "sports",
