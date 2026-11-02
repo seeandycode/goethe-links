@@ -1,6 +1,6 @@
 {
-"generated": "2026-11-01T16:03:24Z",
-"through": "2027-03-01",
+"generated": "2026-11-02T19:30:08Z",
+"through": "2027-03-02",
 "events": [
 {
 "c": "sports",
@@ -112,18 +112,6 @@
 "l": "Hanson Park"
 },
 {
-"c": "ost",
-"d": "2026-11-02",
-"s": "Comics Club",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-11-02",
-"s": "Goethe – Chess Club (Tuition-Based Vendor)",
-"t": "14:45"
-},
-{
 "c": "community",
 "d": "2026-11-03",
 "s": "PAC FALL FAMILY PICNIC  11/3 10am-2pm @ Holstein Park Playground",
@@ -132,19 +120,7 @@
 {
 "c": "ost",
 "d": "2026-11-03",
-"s": "Aventuras en Español",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-11-03",
 "s": "Beginning Choir",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-11-03",
-"s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
 "t": "14:45"
 },
 {
@@ -1339,6 +1315,18 @@
 "c": "sports",
 "d": "2027-02-27",
 "s": "Cheer Competition (potential date)"
+},
+{
+"c": "ost",
+"d": "2027-03-02",
+"s": "Aventuras en Español",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-03-02",
+"s": "Beginning Choir",
+"t": "14:45"
 }
 ]
 }
