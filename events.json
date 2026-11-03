@@ -1,31 +1,7 @@
 {
-"generated": "2026-11-02T19:30:08Z",
-"through": "2027-03-02",
+"generated": "2026-11-03T17:04:28Z",
+"through": "2027-03-03",
 "events": [
-{
-"c": "sports",
-"d": "2026-10-26",
-"s": "7th/8th Boys Soccer Practice",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-10-26",
-"s": "Comics Club",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-10-26",
-"s": "Cross Country Team Practice",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-10-26",
-"s": "Goethe – Chess Club (Tuition-Based Vendor)",
-"t": "14:45"
-},
 {
 "c": "ost",
 "d": "2026-10-27",
@@ -116,12 +92,6 @@
 "d": "2026-11-03",
 "s": "PAC FALL FAMILY PICNIC  11/3 10am-2pm @ Holstein Park Playground",
 "t": "10:00"
-},
-{
-"c": "ost",
-"d": "2026-11-03",
-"s": "Beginning Choir",
-"t": "14:45"
 },
 {
 "c": "ost",
@@ -1326,6 +1296,12 @@
 "c": "ost",
 "d": "2027-03-02",
 "s": "Beginning Choir",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-03-03",
+"s": "Extra Band Practice",
 "t": "14:45"
 }
 ]
