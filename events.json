@@ -1,31 +1,7 @@
 {
-"generated": "2026-11-03T17:04:28Z",
-"through": "2027-03-03",
+"generated": "2026-11-04T17:16:31Z",
+"through": "2027-03-04",
 "events": [
-{
-"c": "ost",
-"d": "2026-10-27",
-"s": "Aventuras en Español",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-10-27",
-"s": "Beginning Choir",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-10-27",
-"s": "Little Architects",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-10-27",
-"s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
-"t": "14:45"
-},
 {
 "c": "community",
 "d": "2026-10-28",
@@ -729,7 +705,7 @@
 {
 "c": "sports",
 "d": "2027-01-04",
-"s": "5th/6th Girls Basketball Practice",
+"s": "6th/7th/8th Girls Basketball Practice",
 "t": "14:50"
 },
 {
