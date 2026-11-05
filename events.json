@@ -1,43 +1,7 @@
 {
-"generated": "2026-11-04T17:16:31Z",
-"through": "2027-03-04",
+"generated": "2026-11-05T17:25:36Z",
+"through": "2027-03-05",
 "events": [
-{
-"c": "community",
-"d": "2026-10-28",
-"s": "Coffee w/ the Principal: Understanding State Standards",
-"t": "08:00"
-},
-{
-"c": "sports",
-"d": "2026-10-28",
-"s": "7th/8th Boys Soccer Practice",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-10-28",
-"s": "Extra Band Practice",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-10-28",
-"s": "Math Scholars",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-10-28",
-"s": "Postcards from the Heart",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-10-28",
-"s": "Young Rembrandts - Artistic Explorers (Tuition-Based Vendor)",
-"t": "14:45"
-},
 {
 "c": "sports",
 "d": "2026-10-29",
@@ -94,12 +58,6 @@
 "t": "14:45"
 },
 {
-"c": "community",
-"d": "2026-11-05",
-"s": "Goethe Tour (K-8)",
-"t": "09:00"
-},
-{
 "c": "ost",
 "d": "2026-11-05",
 "s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
@@ -116,6 +74,12 @@
 "d": "2026-11-05",
 "s": "7/8 Boys Basketball Practice",
 "t": "14:50"
+},
+{
+"c": "community",
+"d": "2026-11-05",
+"s": "Goethe Tour (K-8)",
+"t": "15:00"
 },
 {
 "c": "ost",
