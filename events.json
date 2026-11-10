@@ -1,6 +1,6 @@
 {
-"generated": "2026-11-09T19:51:04Z",
-"through": "2027-03-09",
+"generated": "2026-11-10T17:03:53Z",
+"through": "2027-03-10",
 "events": [
 {
 "c": "community",
@@ -1241,6 +1241,12 @@
 "c": "ost",
 "d": "2027-03-09",
 "s": "Beginning Choir",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-03-10",
+"s": "Extra Band Practice",
 "t": "14:45"
 }
 ]
