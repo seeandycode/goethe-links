@@ -1,13 +1,7 @@
 {
-"generated": "2026-11-10T17:03:53Z",
-"through": "2027-03-10",
+"generated": "2026-11-11T17:09:38Z",
+"through": "2027-03-11",
 "events": [
-{
-"c": "community",
-"d": "2026-11-03",
-"s": "PAC FALL FAMILY PICNIC  11/3 10am-2pm @ Holstein Park Playground",
-"t": "10:00"
-},
 {
 "c": "ost",
 "d": "2026-11-04",
@@ -110,24 +104,6 @@
 "s": "⛸️ Lace Up for 8th Grade: Community Ice Skating Event",
 "t": "14:00",
 "l": "Blackhawks Ice Center Presented by Fifth Third Bank"
-},
-{
-"c": "ost",
-"d": "2026-11-11",
-"s": "Extra Band Practice",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-11-11",
-"s": "Math Scholars",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-11-11",
-"s": "Postcards from the Heart",
-"t": "14:45"
 },
 {
 "c": "ost",
@@ -1248,6 +1224,13 @@
 "d": "2027-03-10",
 "s": "Extra Band Practice",
 "t": "14:45"
+},
+{
+"c": "community",
+"d": "2027-03-11",
+"s": "LSC Meeting",
+"t": "18:00",
+"l": "Goethe Elementary School"
 }
 ]
 }
