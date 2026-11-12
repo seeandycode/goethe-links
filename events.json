@@ -1,31 +1,7 @@
 {
-"generated": "2026-11-11T17:09:38Z",
-"through": "2027-03-11",
+"generated": "2026-11-12T17:36:28Z",
+"through": "2027-03-12",
 "events": [
-{
-"c": "ost",
-"d": "2026-11-04",
-"s": "Extra Band Practice",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-11-04",
-"s": "Math Scholars",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-11-04",
-"s": "Postcards from the Heart",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-11-04",
-"s": "Young Rembrandts - Artistic Explorers (Tuition-Based Vendor)",
-"t": "14:45"
-},
 {
 "c": "ost",
 "d": "2026-11-05",
@@ -97,6 +73,11 @@
 "d": "2026-11-10",
 "s": "7/8 Boys Basketball Practice",
 "t": "14:50"
+},
+{
+"c": "community",
+"d": "2026-11-11",
+"s": "Professional Development"
 },
 {
 "c": "community",
