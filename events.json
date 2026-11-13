@@ -1,31 +1,7 @@
 {
-"generated": "2026-11-12T17:36:28Z",
-"through": "2027-03-12",
+"generated": "2026-11-13T17:13:45Z",
+"through": "2027-03-13",
 "events": [
-{
-"c": "ost",
-"d": "2026-11-05",
-"s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-11-05",
-"s": "Let's Play",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-11-05",
-"s": "7/8 Boys Basketball Practice",
-"t": "14:50"
-},
-{
-"c": "community",
-"d": "2026-11-05",
-"s": "Goethe Tour (K-8)",
-"t": "15:00"
-},
 {
 "c": "ost",
 "d": "2026-11-09",
