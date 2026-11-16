@@ -1,6 +1,6 @@
 {
-"generated": "2026-11-13T17:13:45Z",
-"through": "2027-03-13",
+"generated": "2026-11-16T19:37:36Z",
+"through": "2027-03-16",
 "events": [
 {
 "c": "ost",
@@ -1188,6 +1188,24 @@
 "s": "LSC Meeting",
 "t": "18:00",
 "l": "Goethe Elementary School"
+},
+{
+"c": "ost",
+"d": "2027-03-16",
+"s": "Aventuras en Español",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-03-16",
+"s": "Beginning Choir",
+"t": "14:45"
+},
+{
+"c": "community",
+"d": "2027-03-16",
+"s": "K-8 Open House with Principal Elmasri",
+"t": "15:00"
 }
 ]
 }
