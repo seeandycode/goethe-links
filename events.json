@@ -1,25 +1,7 @@
 {
-"generated": "2026-11-16T19:37:36Z",
-"through": "2027-03-16",
+"generated": "2026-11-17T18:35:32Z",
+"through": "2027-03-17",
 "events": [
-{
-"c": "ost",
-"d": "2026-11-09",
-"s": "Comics Club",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-11-09",
-"s": "Goethe – Chess Club (Tuition-Based Vendor)",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-11-09",
-"s": "6th/7th/8th Girls Basketball Practice",
-"t": "14:50"
-},
 {
 "c": "ost",
 "d": "2026-11-10",
@@ -1206,6 +1188,12 @@
 "d": "2027-03-16",
 "s": "K-8 Open House with Principal Elmasri",
 "t": "15:00"
+},
+{
+"c": "ost",
+"d": "2027-03-17",
+"s": "Extra Band Practice",
+"t": "14:45"
 }
 ]
 }
