@@ -1,37 +1,7 @@
 {
-"generated": "2026-11-17T18:35:32Z",
-"through": "2027-03-17",
+"generated": "2026-11-18T18:06:14Z",
+"through": "2027-03-18",
 "events": [
-{
-"c": "ost",
-"d": "2026-11-10",
-"s": "Aventuras en Español",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-11-10",
-"s": "Beginning Choir",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-11-10",
-"s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-11-10",
-"s": "Spirit Squad Practice",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-11-10",
-"s": "7/8 Boys Basketball Practice",
-"t": "14:50"
-},
 {
 "c": "community",
 "d": "2026-11-11",
