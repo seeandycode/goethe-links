@@ -1,32 +1,7 @@
 {
-"generated": "2026-11-19T18:17:56Z",
-"through": "2027-03-19",
+"generated": "2026-11-20T17:49:41Z",
+"through": "2027-03-20",
 "events": [
-{
-"c": "ost",
-"d": "2026-11-12",
-"s": "Good Food Experience: Cooking & Baking (Tuition-Based Vendor)",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-11-12",
-"s": "Let's Play",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-11-12",
-"s": "7/8 Boys Basketball Practice",
-"t": "14:50"
-},
-{
-"c": "community",
-"d": "2026-11-12",
-"s": "LSC Meeting",
-"t": "18:00",
-"l": "Goethe Elementary School"
-},
 {
 "c": "community",
 "d": "2026-11-15",
@@ -259,12 +234,14 @@
 {
 "c": "sports",
 "d": "2026-12-05",
-"s": "7th/8th Boys Basketball Game"
+"s": "7th/8th Boys Basketball Game",
+"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
 "d": "2026-12-05",
-"s": "7th/8th Girls Basketball Game"
+"s": "7th/8th Girls Basketball Game",
+"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "ost",
@@ -377,12 +354,21 @@
 {
 "c": "sports",
 "d": "2026-12-12",
-"s": "7th/8th Boys Basketball Game"
+"s": "7th/8th Boys Basketball Game",
+"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
 "d": "2026-12-12",
-"s": "7th/8th Girls Basketball Game"
+"s": "7th/8th Girls Basketball Game",
+"l": "Roberto Clemente Community Academy"
+},
+{
+"c": "sports",
+"d": "2026-12-12",
+"s": "7th/8th Girls Basketball Game",
+"t": "14:00",
+"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "ost",
@@ -418,12 +404,6 @@
 "d": "2026-12-15",
 "s": "PIANO/KEYBOARD (Tuition-Based Vendor)",
 "t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-12-15",
-"s": "7/8 Boys Basketball Practice",
-"t": "14:50"
 },
 {
 "c": "ost",
@@ -584,12 +564,14 @@
 {
 "c": "sports",
 "d": "2027-01-09",
-"s": "7th/8th Boys Basketball Game"
+"s": "7th/8th Boys Basketball Game",
+"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
 "d": "2027-01-09",
-"s": "7th/8th Girls Basketball Game"
+"s": "7th/8th Girls Basketball Game",
+"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
@@ -666,12 +648,14 @@
 {
 "c": "sports",
 "d": "2027-01-16",
-"s": "7th/8th Boys Basketball Game"
+"s": "7th/8th Boys Basketball Game",
+"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
 "d": "2027-01-16",
-"s": "7th/8th Girls Basketball Game"
+"s": "7th/8th Girls Basketball Game",
+"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
@@ -735,17 +719,26 @@
 {
 "c": "sports",
 "d": "2027-01-23",
-"s": "7th/8th Boys Basketball Game"
+"s": "7th/8th Boys Basketball Game",
+"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
 "d": "2027-01-23",
-"s": "7th/8th Girls Basketball Game"
+"s": "7th/8th Girls Basketball Game",
+"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
 "d": "2027-01-23",
 "s": "Cheer Competition (potential date)"
+},
+{
+"c": "sports",
+"d": "2027-01-23",
+"s": "7th/8th Boys Basketball Game",
+"t": "11:00",
+"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
@@ -810,12 +803,14 @@
 {
 "c": "sports",
 "d": "2027-01-30",
-"s": "7th/8th Boys Basketball Game"
+"s": "7th/8th Boys Basketball Game",
+"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
 "d": "2027-01-30",
-"s": "7th/8th Girls Basketball Game"
+"s": "7th/8th Girls Basketball Game",
+"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
