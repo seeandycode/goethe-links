@@ -1,6 +1,6 @@
 {
-"generated": "2026-11-20T17:49:41Z",
-"through": "2027-03-20",
+"generated": "2026-11-21T16:48:18Z",
+"through": "2027-03-21",
 "events": [
 {
 "c": "community",
@@ -364,13 +364,6 @@
 "l": "Roberto Clemente Community Academy"
 },
 {
-"c": "sports",
-"d": "2026-12-12",
-"s": "7th/8th Girls Basketball Game",
-"t": "14:00",
-"l": "Roberto Clemente Community Academy"
-},
-{
 "c": "ost",
 "d": "2026-12-14",
 "s": "Goethe – Chess Club (Tuition-Based Vendor)",
@@ -580,6 +573,13 @@
 },
 {
 "c": "sports",
+"d": "2027-01-09",
+"s": "7th/8th Boys Basketball Game",
+"t": "11:00",
+"l": "Roberto Clemente Community Academy"
+},
+{
+"c": "sports",
 "d": "2027-01-11",
 "s": "5th/6th Girls Basketball Practice",
 "t": "14:50"
@@ -735,13 +735,6 @@
 },
 {
 "c": "sports",
-"d": "2027-01-23",
-"s": "7th/8th Boys Basketball Game",
-"t": "11:00",
-"l": "Roberto Clemente Community Academy"
-},
-{
-"c": "sports",
 "d": "2027-01-25",
 "s": "5th/6th Girls Basketball Practice",
 "t": "14:50"
@@ -816,6 +809,13 @@
 "c": "sports",
 "d": "2027-01-30",
 "s": "Cheer Competition (potential date)"
+},
+{
+"c": "sports",
+"d": "2027-01-30",
+"s": "7th/8th Girls Basketball Game",
+"t": "16:00",
+"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
