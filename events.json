@@ -1,6 +1,6 @@
 {
-"generated": "2026-11-21T16:48:18Z",
-"through": "2027-03-21",
+"generated": "2026-11-22T17:10:19Z",
+"through": "2027-03-22",
 "events": [
 {
 "c": "community",
@@ -573,13 +573,6 @@
 },
 {
 "c": "sports",
-"d": "2027-01-09",
-"s": "7th/8th Boys Basketball Game",
-"t": "11:00",
-"l": "Roberto Clemente Community Academy"
-},
-{
-"c": "sports",
 "d": "2027-01-11",
 "s": "5th/6th Girls Basketball Practice",
 "t": "14:50"
@@ -732,6 +725,13 @@
 "c": "sports",
 "d": "2027-01-23",
 "s": "Cheer Competition (potential date)"
+},
+{
+"c": "sports",
+"d": "2027-01-23",
+"s": "7th/8th Boys Basketball Game",
+"t": "11:00",
+"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
