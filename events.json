@@ -1,14 +1,7 @@
 {
-"generated": "2026-11-22T17:10:19Z",
-"through": "2027-03-22",
+"generated": "2026-11-23T21:27:29Z",
+"through": "2027-03-23",
 "events": [
-{
-"c": "community",
-"d": "2026-11-15",
-"s": "Chicago Wolves Game w/ the Choir - 3pm Allstate Arena",
-"t": "15:00",
-"l": "Allstate Arena"
-},
 {
 "c": "ost",
 "d": "2026-11-16",
@@ -241,6 +234,13 @@
 "c": "sports",
 "d": "2026-12-05",
 "s": "7th/8th Girls Basketball Game",
+"l": "Roberto Clemente Community Academy"
+},
+{
+"c": "sports",
+"d": "2026-12-05",
+"s": "7th/8th Boys Basketball Game",
+"t": "13:00",
 "l": "Roberto Clemente Community Academy"
 },
 {
@@ -656,6 +656,13 @@
 "s": "Cheer Competition (potential date)"
 },
 {
+"c": "sports",
+"d": "2027-01-16",
+"s": "7th/8th Girls Basketball Game",
+"t": "14:00",
+"l": "Roberto Clemente Community Academy"
+},
+{
 "c": "ost",
 "d": "2027-01-19",
 "s": "Aventuras en Español",
@@ -725,13 +732,6 @@
 "c": "sports",
 "d": "2027-01-23",
 "s": "Cheer Competition (potential date)"
-},
-{
-"c": "sports",
-"d": "2027-01-23",
-"s": "7th/8th Boys Basketball Game",
-"t": "11:00",
-"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
@@ -809,13 +809,6 @@
 "c": "sports",
 "d": "2027-01-30",
 "s": "Cheer Competition (potential date)"
-},
-{
-"c": "sports",
-"d": "2027-01-30",
-"s": "7th/8th Girls Basketball Game",
-"t": "16:00",
-"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
@@ -1146,6 +1139,18 @@
 "c": "ost",
 "d": "2027-03-17",
 "s": "Extra Band Practice",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-03-23",
+"s": "Aventuras en Español",
+"t": "14:45"
+},
+{
+"c": "ost",
+"d": "2027-03-23",
+"s": "Beginning Choir",
 "t": "14:45"
 }
 ]
