@@ -1,37 +1,7 @@
 {
-"generated": "2026-11-25T19:18:26Z",
-"through": "2027-03-25",
+"generated": "2026-11-26T19:02:51Z",
+"through": "2027-03-26",
 "events": [
-{
-"c": "ost",
-"d": "2026-11-18",
-"s": "Extra Band Practice",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-11-18",
-"s": "Math Scholars",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-11-18",
-"s": "Postcards from the Heart",
-"t": "14:45"
-},
-{
-"c": "ost",
-"d": "2026-11-18",
-"s": "Young Rembrandts - Artistic Explorers (Tuition-Based Vendor)",
-"t": "14:45"
-},
-{
-"c": "sports",
-"d": "2026-11-18",
-"s": "6th/7th/8th Girls Basketball Practice",
-"t": "14:50"
-},
 {
 "c": "ost",
 "d": "2026-11-19",
@@ -303,6 +273,13 @@
 "l": "Roberto Clemente Community Academy"
 },
 {
+"c": "sports",
+"d": "2026-12-12",
+"s": "7th/8th Girls Basketball Game",
+"t": "14:00",
+"l": "Roberto Clemente Community Academy"
+},
+{
 "c": "ost",
 "d": "2026-12-14",
 "s": "Goethe – Chess Club (Tuition-Based Vendor)",
@@ -512,13 +489,6 @@
 },
 {
 "c": "sports",
-"d": "2027-01-09",
-"s": "7th/8th Boys Basketball Game",
-"t": "11:00",
-"l": "Roberto Clemente Community Academy"
-},
-{
-"c": "sports",
 "d": "2027-01-11",
 "s": "5th/6th Girls Basketball Practice",
 "t": "14:50"
@@ -602,6 +572,13 @@
 "s": "Cheer Competition (potential date)"
 },
 {
+"c": "sports",
+"d": "2027-01-16",
+"s": "7th/8th Boys Basketball Game",
+"t": "13:00",
+"l": "Roberto Clemente Community Academy"
+},
+{
 "c": "ost",
 "d": "2027-01-19",
 "s": "Aventuras en Español",
@@ -671,13 +648,6 @@
 "c": "sports",
 "d": "2027-01-23",
 "s": "Cheer Competition (potential date)"
-},
-{
-"c": "sports",
-"d": "2027-01-23",
-"s": "7th/8th Girls Basketball Game",
-"t": "12:00",
-"l": "Roberto Clemente Community Academy"
 },
 {
 "c": "sports",
